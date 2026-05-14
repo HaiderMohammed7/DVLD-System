@@ -1,1 +1,5 @@
-<Solution />
+<Solution>
+  <Project Path="DVLD.Application/DVLD.Application.csproj" />
+  <Project Path="DVLD.Infrastructure/DVLD.Infrastructure.csproj" />
+  <Project Path="DVLD.WinForms/DVLD.WinForms.csproj" />
+</Solution>

@@ -8,4 +8,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.7" />
+    <PackageReference Include="Krypton.Toolkit" Version="105.26.4.110" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DVLD.Application\DVLD.Application.csproj" />
+    <ProjectReference Include="..\DVLD.Infrastructure\DVLD.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="People\controllers\" />
+    <Folder Include="People\Forms\" />
+  </ItemGroup>
+
 </Project>
