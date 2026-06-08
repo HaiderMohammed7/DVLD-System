@@ -5,7 +5,7 @@ using System.Net.Http.Json;
 
 namespace DVLD.Infrastructure.Authentication
 {
-    public class AuthService : IAuthService
+    public class AuthService
     {
         private readonly AuthApiClient _http;
 
