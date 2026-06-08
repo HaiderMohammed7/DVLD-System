@@ -77,7 +77,7 @@ namespace DVLD.People
             txtAddress.Text = _person.Address;
             txtPhone.Text = _person.Phone;
             txtEmail.Text = _person.Email;
-            cbCountry.SelectedIndex = _person.NationalityCountryID;
+            cbCountry.SelectedValue = _person.NationalityCountryID;
 
             if (_person.ImagePath != "")
             {
