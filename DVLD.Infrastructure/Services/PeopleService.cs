@@ -1,5 +1,4 @@
 ﻿using DVLD.Application.DTOs;
-using DVLD.Application.Interfaces;
 using DVLD.Infrastructure.HTTP;
 using System.Net.Http.Json;
 

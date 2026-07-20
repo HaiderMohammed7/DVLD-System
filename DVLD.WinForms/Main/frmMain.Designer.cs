@@ -98,6 +98,7 @@
             employeesToolStripMenuItem.Name = "employeesToolStripMenuItem";
             employeesToolStripMenuItem.Size = new Size(127, 68);
             employeesToolStripMenuItem.Text = "Users";
+            employeesToolStripMenuItem.Click += employeesToolStripMenuItem_Click;
             // 
             // closeToolStripMenuItem
             // 
@@ -115,13 +116,16 @@
             currentUserInfoToolStripMenuItem.Name = "currentUserInfoToolStripMenuItem";
             currentUserInfoToolStripMenuItem.Size = new Size(230, 38);
             currentUserInfoToolStripMenuItem.Text = "&Current User Info";
+            currentUserInfoToolStripMenuItem.Click += currentUserInfoToolStripMenuItem_Click;
             // 
             // changePasswordToolStripMenuItem
             // 
+            changePasswordToolStripMenuItem.Image = WinForms.Properties.Resources.Password_32;
             changePasswordToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
             changePasswordToolStripMenuItem.Size = new Size(230, 38);
             changePasswordToolStripMenuItem.Text = "Change Password";
+            changePasswordToolStripMenuItem.Click += changePasswordToolStripMenuItem_Click;
             // 
             // toolStripSeparator4
             // 
@@ -130,10 +134,12 @@
             // 
             // signOutToolStripMenuItem
             // 
+            signOutToolStripMenuItem.Image = WinForms.Properties.Resources.sign_out_32__2;
             signOutToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
             signOutToolStripMenuItem.Size = new Size(230, 38);
             signOutToolStripMenuItem.Text = "Sign &Out";
+            signOutToolStripMenuItem.Click += signOutToolStripMenuItem_Click;
             // 
             // lblLoggedInUser
             // 

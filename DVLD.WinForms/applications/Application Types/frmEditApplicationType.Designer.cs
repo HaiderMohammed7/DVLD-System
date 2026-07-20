@@ -28,175 +28,179 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.lblApplicationTypeID = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtFees = new System.Windows.Forms.TextBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            lblApplicationTypeID = new Label();
+            label4 = new Label();
+            txtTitle = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            txtFees = new TextBox();
+            lblTitle = new Label();
+            errorProvider1 = new ErrorProvider(components);
+            btnSave = new Button();
+            btnClose = new Button();
+            pictureBox8 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            SuspendLayout();
             // 
             // lblApplicationTypeID
             // 
-            this.lblApplicationTypeID.AutoSize = true;
-            this.lblApplicationTypeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationTypeID.Location = new System.Drawing.Point(117, 81);
-            this.lblApplicationTypeID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblApplicationTypeID.Name = "lblApplicationTypeID";
-            this.lblApplicationTypeID.Size = new System.Drawing.Size(39, 20);
-            this.lblApplicationTypeID.TabIndex = 137;
-            this.lblApplicationTypeID.Text = "???";
+            lblApplicationTypeID.AutoSize = true;
+            lblApplicationTypeID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblApplicationTypeID.Location = new Point(117, 81);
+            lblApplicationTypeID.Margin = new Padding(4, 0, 4, 0);
+            lblApplicationTypeID.Name = "lblApplicationTypeID";
+            lblApplicationTypeID.Size = new Size(39, 20);
+            lblApplicationTypeID.TabIndex = 137;
+            lblApplicationTypeID.Text = "???";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 81);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 20);
-            this.label4.TabIndex = 136;
-            this.label4.Text = "ID:";
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(28, 81);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(33, 20);
+            label4.TabIndex = 136;
+            label4.Text = "ID:";
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(115, 119);
-            this.txtTitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTitle.MaxLength = 50;
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(282, 26);
-            this.txtTitle.TabIndex = 130;
+            txtTitle.Location = new Point(115, 119);
+            txtTitle.Margin = new Padding(4, 5, 4, 5);
+            txtTitle.MaxLength = 50;
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(282, 26);
+            txtTitle.TabIndex = 130;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 119);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
-            this.label1.TabIndex = 132;
-            this.label1.Text = "Title:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(13, 119);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(48, 20);
+            label1.TabIndex = 132;
+            label1.Text = "Title:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 155);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
-            this.label2.TabIndex = 133;
-            this.label2.Text = "Fees";
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(13, 155);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(49, 20);
+            label2.TabIndex = 133;
+            label2.Text = "Fees";
             // 
             // txtFees
             // 
-            this.txtFees.Location = new System.Drawing.Point(115, 155);
-            this.txtFees.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtFees.MaxLength = 50;
-            this.txtFees.Name = "txtFees";
-            this.txtFees.Size = new System.Drawing.Size(282, 26);
-            this.txtFees.TabIndex = 131;
+            txtFees.Location = new Point(115, 155);
+            txtFees.Margin = new Padding(4, 5, 4, 5);
+            txtFees.MaxLength = 50;
+            txtFees.Name = "txtFees";
+            txtFees.Size = new Size(282, 26);
+            txtFees.TabIndex = 131;
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(1, 18);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(419, 39);
-            this.lblTitle.TabIndex = 138;
-            this.lblTitle.Text = "Update Application Type";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-             // 
+            lblTitle.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(192, 0, 0);
+            lblTitle.Location = new Point(1, 18);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(419, 39);
+            lblTitle.TabIndex = 138;
+            lblTitle.Text = "Update Application Type";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // errorProvider1
             // 
-            this.errorProvider1.ContainerControl = this;
+            errorProvider1.ContainerControl = this;
             // 
             // btnSave
             // 
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(271, 201);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(126, 37);
-            this.btnSave.TabIndex = 139;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            btnSave.FlatStyle = FlatStyle.Popup;
+            btnSave.Image = WinForms.Properties.Resources.Save_32;
+            btnSave.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSave.Location = new Point(271, 201);
+            btnSave.Margin = new Padding(4, 5, 4, 5);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(126, 37);
+            btnSave.TabIndex = 139;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
             // 
             // btnClose
             // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(137, 201);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(126, 37);
-            this.btnClose.TabIndex = 140;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            btnClose.DialogResult = DialogResult.Cancel;
+            btnClose.FlatStyle = FlatStyle.Popup;
+            btnClose.Image = WinForms.Properties.Resources.Close_32;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.Location = new Point(137, 201);
+            btnClose.Margin = new Padding(4, 5, 4, 5);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(126, 37);
+            btnClose.TabIndex = 140;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(77, 117);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 135;
-            this.pictureBox8.TabStop = false;
+            pictureBox8.Image = WinForms.Properties.Resources.ApplicationTitle;
+            pictureBox8.Location = new Point(77, 117);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(31, 26);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 135;
+            pictureBox8.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(77, 154);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 134;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Image = WinForms.Properties.Resources.money_32;
+            pictureBox3.Location = new Point(77, 154);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(31, 26);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 134;
+            pictureBox3.TabStop = false;
             // 
             // frmEditApplicationType
             // 
-            this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(420, 258);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.lblApplicationTypeID);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtTitle);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtFees);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox3);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmEditApplicationType";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Update Application Type";
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnSave;
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.EnableAllowFocusChange;
+            BackColor = Color.White;
+            CancelButton = btnClose;
+            ClientSize = new Size(420, 258);
+            Controls.Add(btnClose);
+            Controls.Add(btnSave);
+            Controls.Add(lblTitle);
+            Controls.Add(lblApplicationTypeID);
+            Controls.Add(label4);
+            Controls.Add(txtTitle);
+            Controls.Add(label1);
+            Controls.Add(label2);
+            Controls.Add(txtFees);
+            Controls.Add(pictureBox8);
+            Controls.Add(pictureBox3);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmEditApplicationType";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Update Application Type";
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

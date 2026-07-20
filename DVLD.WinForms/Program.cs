@@ -3,6 +3,7 @@ using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.HTTP;
 using DVLD.Infrastructure.Services;
 using DVLD.People;
+using DVLD.User;
 using DVLD.WinForms.Forms;
 using Microsoft.Extensions.DependencyInjection;
 using WinApp = System.Windows.Forms.Application;
@@ -11,6 +12,8 @@ namespace DVLD.WinForms
 {
     internal static class Program
     {
+        public static IServiceProvider provider { get; private set; }
+
         [STAThread]
         static void Main()
         {
@@ -22,6 +25,7 @@ namespace DVLD.WinForms
             services.AddSingleton<AuthService>();
             services.AddTransient<PeopleService>();
             services.AddTransient<CountriesService>();
+            services.AddTransient<UsersService>();
 
             services.AddTransient<frmLogin>();
             services.AddTransient<frmMain>();
@@ -32,38 +36,44 @@ namespace DVLD.WinForms
             services.AddTransient<frmFindPerson>();
             services.AddTransient<ctrlPersonCard>();
             services.AddTransient<ctrlPersonCardWithFilter>();
-            
 
-            var provider = services.BuildServiceProvider();
+            services.AddTransient<frmListUsers>();
+            services.AddTransient<frmAddUpdateUser>();
+            services.AddTransient<frmUserInfo>();
+            services.AddTransient<frmChangePassword>();
+            services.AddTransient<ctrlUserCard>();
 
+            provider = services.BuildServiceProvider();
             ApplicationConfiguration.Initialize();
 
-            Form startForm = GetStartFormAsync(provider).GetAwaiter().GetResult();
+            bool isAutoLoggedIn = false;
 
-            WinApp.Run(startForm);
-        }
+            var authService = provider.GetRequiredService<AuthService>();
+            isAutoLoggedIn = Task.Run(() => authService.TryAutoLoginAsync()).GetAwaiter().GetResult();
 
-        private static async Task<Form> GetStartFormAsync(IServiceProvider provider)
-        {
-            var refreshToken = TokenStorage.GetRefreshToken();
+            bool initialRun = true;
 
-            if (!string.IsNullOrEmpty(refreshToken))
+            while (true)
             {
-                var authService = provider.GetRequiredService<AuthService>();
-
-                var result = await authService.RefreshTokenAsync(refreshToken);
-
-                if (result != null)
+                if (initialRun && isAutoLoggedIn) initialRun = false;
+                else
                 {
-                    TokenStore.Token = result.AccessToken;
+                    initialRun = false;
 
-                    TokenStorage.SaveRefreshToken(result.RefreshToken);
-
-                    return provider.GetRequiredService<frmMain>();
+                    using (var loginForm = provider.GetRequiredService<frmLogin>())
+                    {
+                        if (loginForm.ShowDialog() != DialogResult.OK) break;
+                    }
                 }
-                TokenStorage.Clear();
+
+                using (var mainForm = provider.GetRequiredService<frmMain>())
+                {
+                    WinApp.Run(mainForm);
+                }
+
+                if (string.IsNullOrEmpty(TokenStore.Token)) continue;
+                else break;
             }
-            return provider.GetRequiredService<frmLogin>();
         }
     }
 }

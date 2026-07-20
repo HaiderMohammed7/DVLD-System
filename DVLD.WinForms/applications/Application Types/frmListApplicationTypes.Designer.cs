@@ -28,159 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblRecordsCount = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dgvApplicationTypes = new System.Windows.Forms.DataGridView();
-            this.cmsApplicationTypes = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.pbApplicationTypesmage = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvApplicationTypes)).BeginInit();
-            this.cmsApplicationTypes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbApplicationTypesmage)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            lblTitle = new Label();
+            lblRecordsCount = new Label();
+            label2 = new Label();
+            dgvApplicationTypes = new DataGridView();
+            cmsApplicationTypes = new ContextMenuStrip(components);
+            toolStripSeparator2 = new ToolStripSeparator();
+            editToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            btnClose = new Button();
+            pbApplicationTypesmage = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)dgvApplicationTypes).BeginInit();
+            cmsApplicationTypes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbApplicationTypesmage).BeginInit();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(145, 211);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(446, 39);
-            this.lblTitle.TabIndex = 111;
-            this.lblTitle.Text = "Manage Application Types";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTitle.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(192, 0, 0);
+            lblTitle.Location = new Point(145, 211);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(446, 39);
+            lblTitle.TabIndex = 111;
+            lblTitle.Text = "Manage Application Types";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblRecordsCount
             // 
-            this.lblRecordsCount.AutoSize = true;
-            this.lblRecordsCount.Location = new System.Drawing.Point(129, 640);
-            this.lblRecordsCount.Name = "lblRecordsCount";
-            this.lblRecordsCount.Size = new System.Drawing.Size(27, 20);
-            this.lblRecordsCount.TabIndex = 109;
-            this.lblRecordsCount.Text = "??";
+            lblRecordsCount.AutoSize = true;
+            lblRecordsCount.Location = new Point(129, 640);
+            lblRecordsCount.Name = "lblRecordsCount";
+            lblRecordsCount.Size = new Size(27, 20);
+            lblRecordsCount.TabIndex = 109;
+            lblRecordsCount.Text = "??";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 640);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 20);
-            this.label2.TabIndex = 108;
-            this.label2.Text = "# Records:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(27, 640);
+            label2.Name = "label2";
+            label2.Size = new Size(96, 20);
+            label2.TabIndex = 108;
+            label2.Text = "# Records:";
             // 
             // dgvApplicationTypes
             // 
-            this.dgvApplicationTypes.AllowUserToAddRows = false;
-            this.dgvApplicationTypes.AllowUserToDeleteRows = false;
-            this.dgvApplicationTypes.AllowUserToResizeRows = false;
-            this.dgvApplicationTypes.BackgroundColor = System.Drawing.Color.White;
-            this.dgvApplicationTypes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvApplicationTypes.ContextMenuStrip = this.cmsApplicationTypes;
-            this.dgvApplicationTypes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvApplicationTypes.Location = new System.Drawing.Point(25, 271);
-            this.dgvApplicationTypes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dgvApplicationTypes.MultiSelect = false;
-            this.dgvApplicationTypes.Name = "dgvApplicationTypes";
-            this.dgvApplicationTypes.ReadOnly = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvApplicationTypes.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvApplicationTypes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvApplicationTypes.Size = new System.Drawing.Size(679, 354);
-            this.dgvApplicationTypes.TabIndex = 104;
-            this.dgvApplicationTypes.TabStop = false;
+            dgvApplicationTypes.AllowUserToAddRows = false;
+            dgvApplicationTypes.AllowUserToDeleteRows = false;
+            dgvApplicationTypes.AllowUserToResizeRows = false;
+            dgvApplicationTypes.BackgroundColor = Color.White;
+            dgvApplicationTypes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvApplicationTypes.ContextMenuStrip = cmsApplicationTypes;
+            dgvApplicationTypes.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvApplicationTypes.Location = new Point(25, 271);
+            dgvApplicationTypes.Margin = new Padding(4, 5, 4, 5);
+            dgvApplicationTypes.MultiSelect = false;
+            dgvApplicationTypes.Name = "dgvApplicationTypes";
+            dgvApplicationTypes.ReadOnly = true;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvApplicationTypes.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvApplicationTypes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvApplicationTypes.Size = new Size(679, 354);
+            dgvApplicationTypes.TabIndex = 104;
+            dgvApplicationTypes.TabStop = false;
             // 
             // cmsApplicationTypes
             // 
-            this.cmsApplicationTypes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator2,
-            this.editToolStripMenuItem,
-            this.toolStripSeparator1});
-            this.cmsApplicationTypes.Name = "contextMenuStrip1";
-            this.cmsApplicationTypes.Size = new System.Drawing.Size(202, 54);
+            cmsApplicationTypes.Items.AddRange(new ToolStripItem[] { toolStripSeparator2, editToolStripMenuItem, toolStripSeparator1 });
+            cmsApplicationTypes.Name = "contextMenuStrip1";
+            cmsApplicationTypes.Size = new Size(187, 38);
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(198, 6);
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(183, 6);
             // 
             // editToolStripMenuItem
             // 
-
-            this.editToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(201, 38);
-            this.editToolStripMenuItem.Text = "&Edit Application Type";
+            editToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            editToolStripMenuItem.Name = "editToolStripMenuItem";
+            editToolStripMenuItem.Size = new Size(186, 22);
+            editToolStripMenuItem.Text = "&Edit Application Type";
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(198, 6);
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(183, 6);
             // 
             // btnClose
             // 
-            this.btnClose.AutoEllipsis = true;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(569, 633);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(135, 36);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-
+            btnClose.AutoEllipsis = true;
+            btnClose.DialogResult = DialogResult.Cancel;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Image = WinForms.Properties.Resources.Close_32;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.Location = new Point(569, 633);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(135, 36);
+            btnClose.TabIndex = 1;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
             // 
             // pbApplicationTypesmage
             // 
-            this.pbApplicationTypesmage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbApplicationTypesmage.InitialImage = null;
-            this.pbApplicationTypesmage.Location = new System.Drawing.Point(269, 6);
-            this.pbApplicationTypesmage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pbApplicationTypesmage.Name = "pbApplicationTypesmage";
-            this.pbApplicationTypesmage.Size = new System.Drawing.Size(220, 189);
-            this.pbApplicationTypesmage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbApplicationTypesmage.TabIndex = 110;
-            this.pbApplicationTypesmage.TabStop = false;
+            pbApplicationTypesmage.BackgroundImageLayout = ImageLayout.Zoom;
+            pbApplicationTypesmage.Image = WinForms.Properties.Resources.Application_Types_512;
+            pbApplicationTypesmage.InitialImage = null;
+            pbApplicationTypesmage.Location = new Point(269, 6);
+            pbApplicationTypesmage.Margin = new Padding(4, 5, 4, 5);
+            pbApplicationTypesmage.Name = "pbApplicationTypesmage";
+            pbApplicationTypesmage.Size = new Size(220, 189);
+            pbApplicationTypesmage.SizeMode = PictureBoxSizeMode.Zoom;
+            pbApplicationTypesmage.TabIndex = 110;
+            pbApplicationTypesmage.TabStop = false;
             // 
             // frmManageApplicationTypes
             // 
-            this.AcceptButton = this.btnClose;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(719, 695);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.pbApplicationTypesmage);
-            this.Controls.Add(this.lblRecordsCount);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dgvApplicationTypes);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmManageApplicationTypes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Manage Application Types";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvApplicationTypes)).EndInit();
-            this.cmsApplicationTypes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbApplicationTypesmage)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnClose;
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            CancelButton = btnClose;
+            ClientSize = new Size(719, 695);
+            Controls.Add(btnClose);
+            Controls.Add(lblTitle);
+            Controls.Add(pbApplicationTypesmage);
+            Controls.Add(lblRecordsCount);
+            Controls.Add(label2);
+            Controls.Add(dgvApplicationTypes);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmManageApplicationTypes";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Manage Application Types";
+            ((System.ComponentModel.ISupportInitialize)dgvApplicationTypes).EndInit();
+            cmsApplicationTypes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pbApplicationTypesmage).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

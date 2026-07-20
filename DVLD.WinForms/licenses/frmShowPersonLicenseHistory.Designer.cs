@@ -28,91 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.pbPersonImage = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.ctrlDriverLicenses1 = new DVLD.Licenses.Local_Licenses.Controls.ctrlDriverLicenses();
-            this.ctrlPersonCardWithFilter1 = new DVLD.Controls.ctrlPersonCardWithFilter();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            pbPersonImage = new PictureBox();
+            btnClose = new Button();
+            ctrlDriverLicenses1 = new DVLD.Licenses.Local_Licenses.Controls.ctrlDriverLicenses();
+            ctrlPersonCardWithFilter1 = new DVLD.Controls.ctrlPersonCardWithFilter();
+            ((System.ComponentModel.ISupportInitialize)pbPersonImage).BeginInit();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(12, 12);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1062, 39);
-            this.lblTitle.TabIndex = 129;
-            this.lblTitle.Text = "License History";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTitle.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(192, 0, 0);
+            lblTitle.Location = new Point(12, 12);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(1062, 39);
+            lblTitle.TabIndex = 129;
+            lblTitle.Text = "License History";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pbPersonImage
             // 
-            this.pbPersonImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbPersonImage.InitialImage = null;
-            this.pbPersonImage.Location = new System.Drawing.Point(8, 188);
-            this.pbPersonImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pbPersonImage.Name = "pbPersonImage";
-            this.pbPersonImage.Size = new System.Drawing.Size(220, 189);
-            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPersonImage.TabIndex = 130;
-            this.pbPersonImage.TabStop = false;
+            pbPersonImage.BackgroundImageLayout = ImageLayout.Zoom;
+            pbPersonImage.Image = WinForms.Properties.Resources.PersonLicenseHistory_512;
+            pbPersonImage.InitialImage = null;
+            pbPersonImage.Location = new Point(8, 188);
+            pbPersonImage.Margin = new Padding(4, 5, 4, 5);
+            pbPersonImage.Name = "pbPersonImage";
+            pbPersonImage.Size = new Size(220, 189);
+            pbPersonImage.SizeMode = PictureBoxSizeMode.Zoom;
+            pbPersonImage.TabIndex = 130;
+            pbPersonImage.TabStop = false;
             // 
             // btnClose
             // 
-            this.btnClose.AutoEllipsis = true;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(938, 783);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(135, 36);
-            this.btnClose.TabIndex = 131;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            btnClose.AutoEllipsis = true;
+            btnClose.DialogResult = DialogResult.Cancel;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Image = WinForms.Properties.Resources.Close_32;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.Location = new Point(938, 783);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(135, 36);
+            btnClose.TabIndex = 131;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
             // 
             // ctrlDriverLicenses1
             // 
-            this.ctrlDriverLicenses1.BackColor = System.Drawing.Color.White;
-            this.ctrlDriverLicenses1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlDriverLicenses1.Location = new System.Drawing.Point(13, 437);
-            this.ctrlDriverLicenses1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
-            this.ctrlDriverLicenses1.Size = new System.Drawing.Size(1061, 342);
-            this.ctrlDriverLicenses1.TabIndex = 2;
+            ctrlDriverLicenses1.BackColor = Color.White;
+            ctrlDriverLicenses1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ctrlDriverLicenses1.Location = new Point(13, 437);
+            ctrlDriverLicenses1.Margin = new Padding(4, 5, 4, 5);
+            ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
+            ctrlDriverLicenses1.Size = new Size(1061, 342);
+            ctrlDriverLicenses1.TabIndex = 2;
             // 
             // ctrlPersonCardWithFilter1
             // 
-            this.ctrlPersonCardWithFilter1.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ctrlPersonCardWithFilter1.BackColor = System.Drawing.Color.White;
-            this.ctrlPersonCardWithFilter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(241, 46);
-            this.ctrlPersonCardWithFilter1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
-            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(837, 399);
-            this.ctrlPersonCardWithFilter1.TabIndex = 132;
+            ctrlPersonCardWithFilter1.AutoValidate = AutoValidate.EnableAllowFocusChange;
+            ctrlPersonCardWithFilter1.BackColor = Color.White;
+            ctrlPersonCardWithFilter1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ctrlPersonCardWithFilter1.Location = new Point(241, 46);
+            ctrlPersonCardWithFilter1.Margin = new Padding(4, 5, 4, 5);
+            ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
+            ctrlPersonCardWithFilter1.Size = new Size(837, 399);
+            ctrlPersonCardWithFilter1.TabIndex = 132;
             // 
             // frmShowPersonLicenseHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(1086, 829);
-            this.Controls.Add(this.ctrlPersonCardWithFilter1);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.pbPersonImage);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.ctrlDriverLicenses1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmShowPersonLicenseHistory";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "License History";
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            CancelButton = btnClose;
+            ClientSize = new Size(1086, 829);
+            Controls.Add(ctrlPersonCardWithFilter1);
+            Controls.Add(btnClose);
+            Controls.Add(pbPersonImage);
+            Controls.Add(lblTitle);
+            Controls.Add(ctrlDriverLicenses1);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmShowPersonLicenseHistory";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "License History";
+            ((System.ComponentModel.ISupportInitialize)pbPersonImage).EndInit();
+            ResumeLayout(false);
 
         }
 

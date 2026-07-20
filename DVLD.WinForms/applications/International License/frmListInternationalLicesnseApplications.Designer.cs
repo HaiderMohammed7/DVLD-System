@@ -28,243 +28,234 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnNewApplication = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.showPersonLicenseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pbPersonImage = new System.Windows.Forms.PictureBox();
-            this.PesonDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsApplications = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.dgvInternationalLicenses = new System.Windows.Forms.DataGridView();
-            this.lblInternationalLicensesRecords = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbIsReleased = new System.Windows.Forms.ComboBox();
-            this.cbFilterBy = new System.Windows.Forms.ComboBox();
-            this.txtFilterValue = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
-            this.cmsApplications.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenses)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            pictureBox1 = new PictureBox();
+            btnNewApplication = new Button();
+            btnClose = new Button();
+            showPersonLicenseHistoryToolStripMenuItem = new ToolStripMenuItem();
+            pbPersonImage = new PictureBox();
+            PesonDetailsToolStripMenuItem = new ToolStripMenuItem();
+            showDetailsToolStripMenuItem = new ToolStripMenuItem();
+            cmsApplications = new ContextMenuStrip(components);
+            lblTitle = new Label();
+            dgvInternationalLicenses = new DataGridView();
+            lblInternationalLicensesRecords = new Label();
+            label5 = new Label();
+            cbIsReleased = new ComboBox();
+            cbFilterBy = new ComboBox();
+            txtFilterValue = new TextBox();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbPersonImage).BeginInit();
+            cmsApplications.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvInternationalLicenses).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(669, 81);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(78, 58);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 141;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.InitialImage = null;
+            pictureBox1.Location = new Point(669, 81);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(78, 58);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 141;
+            pictureBox1.TabStop = false;
             // 
             // btnNewApplication
             // 
-            this.btnNewApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewApplication.Location = new System.Drawing.Point(1038, 243);
-            this.btnNewApplication.Name = "btnNewApplication";
-            this.btnNewApplication.Size = new System.Drawing.Size(88, 75);
-            this.btnNewApplication.TabIndex = 140;
-            this.btnNewApplication.UseVisualStyleBackColor = true;
+            btnNewApplication.FlatStyle = FlatStyle.Flat;
+            btnNewApplication.Image = WinForms.Properties.Resources.New_Application_64;
+            btnNewApplication.Location = new Point(1038, 243);
+            btnNewApplication.Name = "btnNewApplication";
+            btnNewApplication.Size = new Size(88, 75);
+            btnNewApplication.TabIndex = 140;
+            btnNewApplication.UseVisualStyleBackColor = true;
             // 
             // btnClose
             // 
-            this.btnClose.AutoEllipsis = true;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(991, 674);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(135, 36);
-            this.btnClose.TabIndex = 131;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            btnClose.AutoEllipsis = true;
+            btnClose.DialogResult = DialogResult.Cancel;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Image = WinForms.Properties.Resources.Close_32;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.Location = new Point(991, 674);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(135, 36);
+            btnClose.TabIndex = 131;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
             // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
-            this.showPersonLicenseHistoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
-            this.showPersonLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(241, 38);
-            this.showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
+            showPersonLicenseHistoryToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
+            showPersonLicenseHistoryToolStripMenuItem.Size = new Size(225, 22);
+            showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
             // 
             // pbPersonImage
             // 
-            this.pbPersonImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbPersonImage.InitialImage = null;
-            this.pbPersonImage.Location = new System.Drawing.Point(493, 14);
-            this.pbPersonImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pbPersonImage.Name = "pbPersonImage";
-            this.pbPersonImage.Size = new System.Drawing.Size(220, 189);
-            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPersonImage.TabIndex = 139;
-            this.pbPersonImage.TabStop = false;
+            pbPersonImage.BackgroundImageLayout = ImageLayout.Zoom;
+            pbPersonImage.Image = WinForms.Properties.Resources.Applications1;
+            pbPersonImage.InitialImage = null;
+            pbPersonImage.Location = new Point(493, 14);
+            pbPersonImage.Margin = new Padding(4, 5, 4, 5);
+            pbPersonImage.Name = "pbPersonImage";
+            pbPersonImage.Size = new Size(220, 189);
+            pbPersonImage.SizeMode = PictureBoxSizeMode.Zoom;
+            pbPersonImage.TabIndex = 139;
+            pbPersonImage.TabStop = false;
             // 
             // PesonDetailsToolStripMenuItem
             // 
-            this.PesonDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.PesonDetailsToolStripMenuItem.Name = "PesonDetailsToolStripMenuItem";
-            this.PesonDetailsToolStripMenuItem.Size = new System.Drawing.Size(241, 38);
-            this.PesonDetailsToolStripMenuItem.Text = "Show Person Details";
+            PesonDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            PesonDetailsToolStripMenuItem.Name = "PesonDetailsToolStripMenuItem";
+            PesonDetailsToolStripMenuItem.Size = new Size(225, 22);
+            PesonDetailsToolStripMenuItem.Text = "Show Person Details";
             // 
             // showDetailsToolStripMenuItem
             // 
-            this.showDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(241, 38);
-            this.showDetailsToolStripMenuItem.Text = "&Show License Details";
+            showDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
+            showDetailsToolStripMenuItem.Size = new Size(225, 22);
+            showDetailsToolStripMenuItem.Text = "&Show License Details";
             // 
             // cmsApplications
             // 
-            this.cmsApplications.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PesonDetailsToolStripMenuItem,
-            this.showDetailsToolStripMenuItem,
-            this.showPersonLicenseHistoryToolStripMenuItem});
-            this.cmsApplications.Name = "contextMenuStrip1";
-            this.cmsApplications.Size = new System.Drawing.Size(242, 118);
+            cmsApplications.Items.AddRange(new ToolStripItem[] { PesonDetailsToolStripMenuItem, showDetailsToolStripMenuItem, showPersonLicenseHistoryToolStripMenuItem });
+            cmsApplications.Name = "contextMenuStrip1";
+            cmsApplications.Size = new Size(226, 70);
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(311, 208);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(568, 39);
-            this.lblTitle.TabIndex = 135;
-            this.lblTitle.Text = "International License Applications";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTitle.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(192, 0, 0);
+            lblTitle.Location = new Point(311, 208);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(568, 39);
+            lblTitle.TabIndex = 135;
+            lblTitle.Text = "International License Applications";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // dgvInternationalLicenses
             // 
-            this.dgvInternationalLicenses.AllowUserToAddRows = false;
-            this.dgvInternationalLicenses.AllowUserToDeleteRows = false;
-            this.dgvInternationalLicenses.AllowUserToResizeRows = false;
-            this.dgvInternationalLicenses.BackgroundColor = System.Drawing.Color.White;
-            this.dgvInternationalLicenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInternationalLicenses.ContextMenuStrip = this.cmsApplications;
-            this.dgvInternationalLicenses.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvInternationalLicenses.Location = new System.Drawing.Point(24, 326);
-            this.dgvInternationalLicenses.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dgvInternationalLicenses.MultiSelect = false;
-            this.dgvInternationalLicenses.Name = "dgvInternationalLicenses";
-            this.dgvInternationalLicenses.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInternationalLicenses.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvInternationalLicenses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInternationalLicenses.Size = new System.Drawing.Size(1102, 340);
-            this.dgvInternationalLicenses.TabIndex = 145;
-            this.dgvInternationalLicenses.TabStop = false;
+            dgvInternationalLicenses.AllowUserToAddRows = false;
+            dgvInternationalLicenses.AllowUserToDeleteRows = false;
+            dgvInternationalLicenses.AllowUserToResizeRows = false;
+            dgvInternationalLicenses.BackgroundColor = Color.White;
+            dgvInternationalLicenses.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvInternationalLicenses.ContextMenuStrip = cmsApplications;
+            dgvInternationalLicenses.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvInternationalLicenses.Location = new Point(24, 326);
+            dgvInternationalLicenses.Margin = new Padding(4, 5, 4, 5);
+            dgvInternationalLicenses.MultiSelect = false;
+            dgvInternationalLicenses.Name = "dgvInternationalLicenses";
+            dgvInternationalLicenses.ReadOnly = true;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvInternationalLicenses.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvInternationalLicenses.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvInternationalLicenses.Size = new Size(1102, 340);
+            dgvInternationalLicenses.TabIndex = 145;
+            dgvInternationalLicenses.TabStop = false;
             // 
             // lblInternationalLicensesRecords
             // 
-            this.lblInternationalLicensesRecords.AutoSize = true;
-            this.lblInternationalLicensesRecords.Location = new System.Drawing.Point(118, 675);
-            this.lblInternationalLicensesRecords.Name = "lblInternationalLicensesRecords";
-            this.lblInternationalLicensesRecords.Size = new System.Drawing.Size(27, 20);
-            this.lblInternationalLicensesRecords.TabIndex = 147;
-            this.lblInternationalLicensesRecords.Text = "??";
+            lblInternationalLicensesRecords.AutoSize = true;
+            lblInternationalLicensesRecords.Location = new Point(118, 675);
+            lblInternationalLicensesRecords.Name = "lblInternationalLicensesRecords";
+            lblInternationalLicensesRecords.Size = new Size(27, 20);
+            lblInternationalLicensesRecords.TabIndex = 147;
+            lblInternationalLicensesRecords.Text = "??";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 675);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 20);
-            this.label5.TabIndex = 146;
-            this.label5.Text = "# Records:";
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(24, 675);
+            label5.Name = "label5";
+            label5.Size = new Size(96, 20);
+            label5.TabIndex = 146;
+            label5.Text = "# Records:";
             // 
             // cbIsReleased
             // 
-            this.cbIsReleased.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbIsReleased.FormattingEnabled = true;
-            this.cbIsReleased.Items.AddRange(new object[] {
-            "All",
-            "Yes",
-            "No"});
-            this.cbIsReleased.Location = new System.Drawing.Point(320, 290);
-            this.cbIsReleased.Name = "cbIsReleased";
-            this.cbIsReleased.Size = new System.Drawing.Size(121, 28);
-            this.cbIsReleased.TabIndex = 163;
-            this.cbIsReleased.Visible = false;
+            cbIsReleased.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbIsReleased.FormattingEnabled = true;
+            cbIsReleased.Items.AddRange(new object[] { "All", "Yes", "No" });
+            cbIsReleased.Location = new Point(320, 290);
+            cbIsReleased.Name = "cbIsReleased";
+            cbIsReleased.Size = new Size(121, 28);
+            cbIsReleased.TabIndex = 163;
+            cbIsReleased.Visible = false;
             // 
             // cbFilterBy
             // 
-            this.cbFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbFilterBy.FormattingEnabled = true;
-            this.cbFilterBy.Items.AddRange(new object[] {
-            "None",
-            "International License ID",
-            "Application ID",
-            "Driver ID",
-            "Local License ID",
-            "Is Active"});
-            this.cbFilterBy.Location = new System.Drawing.Point(104, 290);
-            this.cbFilterBy.Name = "cbFilterBy";
-            this.cbFilterBy.Size = new System.Drawing.Size(210, 28);
-            this.cbFilterBy.TabIndex = 162;
+            cbFilterBy.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbFilterBy.FormattingEnabled = true;
+            cbFilterBy.Items.AddRange(new object[] { "None", "International License ID", "Application ID", "Driver ID", "Local License ID", "Is Active" });
+            cbFilterBy.Location = new Point(104, 290);
+            cbFilterBy.Name = "cbFilterBy";
+            cbFilterBy.Size = new Size(210, 28);
+            cbFilterBy.TabIndex = 162;
             // 
             // txtFilterValue
             // 
-            this.txtFilterValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFilterValue.Location = new System.Drawing.Point(321, 290);
-            this.txtFilterValue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtFilterValue.Name = "txtFilterValue";
-            this.txtFilterValue.Size = new System.Drawing.Size(256, 26);
-            this.txtFilterValue.TabIndex = 161;
+            txtFilterValue.BorderStyle = BorderStyle.FixedSingle;
+            txtFilterValue.Location = new Point(321, 290);
+            txtFilterValue.Margin = new Padding(4, 5, 4, 5);
+            txtFilterValue.Name = "txtFilterValue";
+            txtFilterValue.Size = new Size(256, 26);
+            txtFilterValue.TabIndex = 161;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 293);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
-            this.label1.TabIndex = 160;
-            this.label1.Text = "Filter By:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(28, 293);
+            label1.Name = "label1";
+            label1.Size = new Size(80, 20);
+            label1.TabIndex = 160;
+            label1.Text = "Filter By:";
             // 
             // frmListInternationalLicesnseApplications
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1139, 720);
-            this.Controls.Add(this.cbIsReleased);
-            this.Controls.Add(this.cbFilterBy);
-            this.Controls.Add(this.txtFilterValue);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblInternationalLicensesRecords);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dgvInternationalLicenses);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnNewApplication);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.pbPersonImage);
-            this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmListInternationalLicesnseApplications";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "List International Licesnse Applications";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
-            this.cmsApplications.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenses)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.EnableAllowFocusChange;
+            BackColor = Color.White;
+            ClientSize = new Size(1139, 720);
+            Controls.Add(cbIsReleased);
+            Controls.Add(cbFilterBy);
+            Controls.Add(txtFilterValue);
+            Controls.Add(label1);
+            Controls.Add(lblInternationalLicensesRecords);
+            Controls.Add(label5);
+            Controls.Add(dgvInternationalLicenses);
+            Controls.Add(pictureBox1);
+            Controls.Add(btnNewApplication);
+            Controls.Add(btnClose);
+            Controls.Add(pbPersonImage);
+            Controls.Add(lblTitle);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmListInternationalLicesnseApplications";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "List International Licesnse Applications";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbPersonImage).EndInit();
+            cmsApplications.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvInternationalLicenses).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

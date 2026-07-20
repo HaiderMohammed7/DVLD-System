@@ -28,467 +28,477 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbTestType = new System.Windows.Forms.GroupBox();
-            this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
-            this.lblUserMessage = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.lblDrivingClass = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblLocalDrivingLicenseAppID = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.lblFullName = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblTrial = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblFees = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.dtpTestDate = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.gbRetakeTestInfo = new System.Windows.Forms.GroupBox();
-            this.lblTotalFees = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.lblRetakeAppFees = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.lblRetakeTestAppID = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.gbTestType.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.gbRetakeTestInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.SuspendLayout();
+            gbTestType = new GroupBox();
+            gbRetakeTestInfo = new GroupBox();
+            lblTotalFees = new Label();
+            label9 = new Label();
+            pictureBox9 = new PictureBox();
+            lblRetakeAppFees = new Label();
+            label7 = new Label();
+            pictureBox6 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            lblRetakeTestAppID = new Label();
+            label4 = new Label();
+            pbTestTypeImage = new PictureBox();
+            lblUserMessage = new Label();
+            pictureBox7 = new PictureBox();
+            lblDrivingClass = new Label();
+            label10 = new Label();
+            pictureBox4 = new PictureBox();
+            lblLocalDrivingLicenseAppID = new Label();
+            label8 = new Label();
+            btnSave = new Button();
+            lblFullName = new Label();
+            pictureBox2 = new PictureBox();
+            label6 = new Label();
+            lblTrial = new Label();
+            label5 = new Label();
+            pictureBox1 = new PictureBox();
+            lblFees = new Label();
+            label2 = new Label();
+            pictureBox3 = new PictureBox();
+            dtpTestDate = new DateTimePicker();
+            label1 = new Label();
+            pictureBox8 = new PictureBox();
+            lblTitle = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            gbTestType.SuspendLayout();
+            gbRetakeTestInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbTestTypeImage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            SuspendLayout();
             // 
             // gbTestType
             // 
-            this.gbTestType.Controls.Add(this.gbRetakeTestInfo);
-            this.gbTestType.Controls.Add(this.pbTestTypeImage);
-            this.gbTestType.Controls.Add(this.lblUserMessage);
-            this.gbTestType.Controls.Add(this.pictureBox7);
-            this.gbTestType.Controls.Add(this.lblDrivingClass);
-            this.gbTestType.Controls.Add(this.label10);
-            this.gbTestType.Controls.Add(this.pictureBox4);
-            this.gbTestType.Controls.Add(this.lblLocalDrivingLicenseAppID);
-            this.gbTestType.Controls.Add(this.label8);
-            this.gbTestType.Controls.Add(this.btnSave);
-            this.gbTestType.Controls.Add(this.lblFullName);
-            this.gbTestType.Controls.Add(this.pictureBox2);
-            this.gbTestType.Controls.Add(this.label6);
-            this.gbTestType.Controls.Add(this.lblTrial);
-            this.gbTestType.Controls.Add(this.label5);
-            this.gbTestType.Controls.Add(this.pictureBox1);
-            this.gbTestType.Controls.Add(this.lblFees);
-            this.gbTestType.Controls.Add(this.label2);
-            this.gbTestType.Controls.Add(this.pictureBox3);
-            this.gbTestType.Controls.Add(this.dtpTestDate);
-            this.gbTestType.Controls.Add(this.label1);
-            this.gbTestType.Controls.Add(this.pictureBox8);
-            this.gbTestType.Controls.Add(this.lblTitle);
-            this.gbTestType.Location = new System.Drawing.Point(4, 5);
-            this.gbTestType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbTestType.Name = "gbTestType";
-            this.gbTestType.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbTestType.Size = new System.Drawing.Size(522, 706);
-            this.gbTestType.TabIndex = 152;
-            this.gbTestType.TabStop = false;
-            this.gbTestType.Text = "Test Type";
-            // 
-            // pbTestTypeImage
-            // 
-            this.pbTestTypeImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbTestTypeImage.InitialImage = null;
-            this.pbTestTypeImage.Location = new System.Drawing.Point(166, 45);
-            this.pbTestTypeImage.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.pbTestTypeImage.Name = "pbTestTypeImage";
-            this.pbTestTypeImage.Size = new System.Drawing.Size(225, 177);
-            this.pbTestTypeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbTestTypeImage.TabIndex = 152;
-            this.pbTestTypeImage.TabStop = false;
-            // 
-            // lblUserMessage
-            // 
-            this.lblUserMessage.AutoSize = true;
-            this.lblUserMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblUserMessage.Location = new System.Drawing.Point(53, 271);
-            this.lblUserMessage.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblUserMessage.Name = "lblUserMessage";
-            this.lblUserMessage.Size = new System.Drawing.Size(432, 20);
-            this.lblUserMessage.TabIndex = 188;
-            this.lblUserMessage.Text = "Cannot Sechule, Vision Test Should be Passed First.";
-            this.lblUserMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(135, 343);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 187;
-            this.pictureBox7.TabStop = false;
-            // 
-            // lblDrivingClass
-            // 
-            this.lblDrivingClass.AutoSize = true;
-            this.lblDrivingClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDrivingClass.Location = new System.Drawing.Point(175, 343);
-            this.lblDrivingClass.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblDrivingClass.Name = "lblDrivingClass";
-            this.lblDrivingClass.Size = new System.Drawing.Size(89, 20);
-            this.lblDrivingClass.TabIndex = 171;
-            this.lblDrivingClass.Text = "[???????]";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(44, 343);
-            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 20);
-            this.label10.TabIndex = 170;
-            this.label10.Text = "D. Class:";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(135, 307);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 169;
-            this.pictureBox4.TabStop = false;
-            // 
-            // lblLocalDrivingLicenseAppID
-            // 
-            this.lblLocalDrivingLicenseAppID.AutoSize = true;
-            this.lblLocalDrivingLicenseAppID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocalDrivingLicenseAppID.Location = new System.Drawing.Point(175, 307);
-            this.lblLocalDrivingLicenseAppID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblLocalDrivingLicenseAppID.Name = "lblLocalDrivingLicenseAppID";
-            this.lblLocalDrivingLicenseAppID.Size = new System.Drawing.Size(39, 20);
-            this.lblLocalDrivingLicenseAppID.TabIndex = 168;
-            this.lblLocalDrivingLicenseAppID.Text = "[??]";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(22, 307);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 20);
-            this.label8.TabIndex = 167;
-            this.label8.Text = "D.L.App.ID:";
-            // 
-            // btnSave
-            // 
-            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(375, 657);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(137, 36);
-            this.btnSave.TabIndex = 166;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // lblFullName
-            // 
-            this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(175, 379);
-            this.lblFullName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(89, 20);
-            this.lblFullName.TabIndex = 165;
-            this.lblFullName.Text = "[???????]";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(135, 379);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 164;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(65, 379);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 20);
-            this.label6.TabIndex = 163;
-            this.label6.Text = "Name:";
-            // 
-            // lblTrial
-            // 
-            this.lblTrial.AutoSize = true;
-            this.lblTrial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrial.Location = new System.Drawing.Point(175, 415);
-            this.lblTrial.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblTrial.Name = "lblTrial";
-            this.lblTrial.Size = new System.Drawing.Size(39, 20);
-            this.lblTrial.TabIndex = 162;
-            this.lblTrial.Text = "[??]";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(77, 415);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 20);
-            this.label5.TabIndex = 160;
-            this.label5.Text = "Trial:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(135, 415);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 161;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblFees
-            // 
-            this.lblFees.AutoSize = true;
-            this.lblFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFees.Location = new System.Drawing.Point(175, 487);
-            this.lblFees.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblFees.Name = "lblFees";
-            this.lblFees.Size = new System.Drawing.Size(49, 20);
-            this.lblFees.TabIndex = 159;
-            this.lblFees.Text = "[$$$]";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 487);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 20);
-            this.label2.TabIndex = 157;
-            this.label2.Text = "Fees:";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(135, 487);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 158;
-            this.pictureBox3.TabStop = false;
-            // 
-            // dtpTestDate
-            // 
-            this.dtpTestDate.CustomFormat = "dd/M/yyyy";
-            this.dtpTestDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpTestDate.Location = new System.Drawing.Point(175, 451);
-            this.dtpTestDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dtpTestDate.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dtpTestDate.Name = "dtpTestDate";
-            this.dtpTestDate.Size = new System.Drawing.Size(163, 26);
-            this.dtpTestDate.TabIndex = 155;
-            this.dtpTestDate.Value = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(72, 451);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
-            this.label1.TabIndex = 153;
-            this.label1.Text = "Date:";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(135, 451);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 154;
-            this.pictureBox8.TabStop = false;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(99, 218);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(354, 60);
-            this.lblTitle.TabIndex = 153;
-            this.lblTitle.Text = "Schedule Test";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            gbTestType.Controls.Add(gbRetakeTestInfo);
+            gbTestType.Controls.Add(pbTestTypeImage);
+            gbTestType.Controls.Add(lblUserMessage);
+            gbTestType.Controls.Add(pictureBox7);
+            gbTestType.Controls.Add(lblDrivingClass);
+            gbTestType.Controls.Add(label10);
+            gbTestType.Controls.Add(pictureBox4);
+            gbTestType.Controls.Add(lblLocalDrivingLicenseAppID);
+            gbTestType.Controls.Add(label8);
+            gbTestType.Controls.Add(btnSave);
+            gbTestType.Controls.Add(lblFullName);
+            gbTestType.Controls.Add(pictureBox2);
+            gbTestType.Controls.Add(label6);
+            gbTestType.Controls.Add(lblTrial);
+            gbTestType.Controls.Add(label5);
+            gbTestType.Controls.Add(pictureBox1);
+            gbTestType.Controls.Add(lblFees);
+            gbTestType.Controls.Add(label2);
+            gbTestType.Controls.Add(pictureBox3);
+            gbTestType.Controls.Add(dtpTestDate);
+            gbTestType.Controls.Add(label1);
+            gbTestType.Controls.Add(pictureBox8);
+            gbTestType.Controls.Add(lblTitle);
+            gbTestType.Location = new Point(4, 5);
+            gbTestType.Margin = new Padding(4, 5, 4, 5);
+            gbTestType.Name = "gbTestType";
+            gbTestType.Padding = new Padding(4, 5, 4, 5);
+            gbTestType.Size = new Size(522, 706);
+            gbTestType.TabIndex = 152;
+            gbTestType.TabStop = false;
+            gbTestType.Text = "Test Type";
             // 
             // gbRetakeTestInfo
             // 
-            this.gbRetakeTestInfo.Controls.Add(this.lblTotalFees);
-            this.gbRetakeTestInfo.Controls.Add(this.label9);
-            this.gbRetakeTestInfo.Controls.Add(this.pictureBox9);
-            this.gbRetakeTestInfo.Controls.Add(this.lblRetakeAppFees);
-            this.gbRetakeTestInfo.Controls.Add(this.label7);
-            this.gbRetakeTestInfo.Controls.Add(this.pictureBox6);
-            this.gbRetakeTestInfo.Controls.Add(this.pictureBox5);
-            this.gbRetakeTestInfo.Controls.Add(this.lblRetakeTestAppID);
-            this.gbRetakeTestInfo.Controls.Add(this.label4);
-            this.gbRetakeTestInfo.Location = new System.Drawing.Point(7, 531);
-            this.gbRetakeTestInfo.Name = "gbRetakeTestInfo";
-            this.gbRetakeTestInfo.Size = new System.Drawing.Size(505, 115);
-            this.gbRetakeTestInfo.TabIndex = 189;
-            this.gbRetakeTestInfo.TabStop = false;
-            this.gbRetakeTestInfo.Text = "Retake Test Info";
+            gbRetakeTestInfo.Controls.Add(lblTotalFees);
+            gbRetakeTestInfo.Controls.Add(label9);
+            gbRetakeTestInfo.Controls.Add(pictureBox9);
+            gbRetakeTestInfo.Controls.Add(lblRetakeAppFees);
+            gbRetakeTestInfo.Controls.Add(label7);
+            gbRetakeTestInfo.Controls.Add(pictureBox6);
+            gbRetakeTestInfo.Controls.Add(pictureBox5);
+            gbRetakeTestInfo.Controls.Add(lblRetakeTestAppID);
+            gbRetakeTestInfo.Controls.Add(label4);
+            gbRetakeTestInfo.Location = new Point(7, 531);
+            gbRetakeTestInfo.Name = "gbRetakeTestInfo";
+            gbRetakeTestInfo.Size = new Size(505, 115);
+            gbRetakeTestInfo.TabIndex = 189;
+            gbRetakeTestInfo.TabStop = false;
+            gbRetakeTestInfo.Text = "Retake Test Info";
             // 
             // lblTotalFees
             // 
-            this.lblTotalFees.AutoSize = true;
-            this.lblTotalFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalFees.Location = new System.Drawing.Point(446, 40);
-            this.lblTotalFees.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblTotalFees.Name = "lblTotalFees";
-            this.lblTotalFees.Size = new System.Drawing.Size(49, 20);
-            this.lblTotalFees.TabIndex = 206;
-            this.lblTotalFees.Text = "[$$$]";
+            lblTotalFees.AutoSize = true;
+            lblTotalFees.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalFees.Location = new Point(446, 40);
+            lblTotalFees.Margin = new Padding(6, 0, 6, 0);
+            lblTotalFees.Name = "lblTotalFees";
+            lblTotalFees.Size = new Size(49, 20);
+            lblTotalFees.TabIndex = 206;
+            lblTotalFees.Text = "[$$$]";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(287, 40);
-            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 20);
-            this.label9.TabIndex = 204;
-            this.label9.Text = "Total Fees:";
+            label9.AutoSize = true;
+            label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(287, 40);
+            label9.Margin = new Padding(6, 0, 6, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(99, 20);
+            label9.TabIndex = 204;
+            label9.Text = "Total Fees:";
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(406, 40);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 205;
-            this.pictureBox9.TabStop = false;
+            pictureBox9.Image = WinForms.Properties.Resources.money_32;
+            pictureBox9.Location = new Point(406, 40);
+            pictureBox9.Margin = new Padding(4, 5, 4, 5);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(31, 26);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 205;
+            pictureBox9.TabStop = false;
             // 
             // lblRetakeAppFees
             // 
-            this.lblRetakeAppFees.AutoSize = true;
-            this.lblRetakeAppFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRetakeAppFees.Location = new System.Drawing.Point(180, 40);
-            this.lblRetakeAppFees.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblRetakeAppFees.Name = "lblRetakeAppFees";
-            this.lblRetakeAppFees.Size = new System.Drawing.Size(49, 20);
-            this.lblRetakeAppFees.TabIndex = 203;
-            this.lblRetakeAppFees.Text = "[$$$]";
+            lblRetakeAppFees.AutoSize = true;
+            lblRetakeAppFees.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRetakeAppFees.Location = new Point(180, 40);
+            lblRetakeAppFees.Margin = new Padding(6, 0, 6, 0);
+            lblRetakeAppFees.Name = "lblRetakeAppFees";
+            lblRetakeAppFees.Size = new Size(49, 20);
+            lblRetakeAppFees.TabIndex = 203;
+            lblRetakeAppFees.Text = "[$$$]";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(21, 40);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 20);
-            this.label7.TabIndex = 201;
-            this.label7.Text = "R.App.Fees:";
+            label7.AutoSize = true;
+            label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(21, 40);
+            label7.Margin = new Padding(6, 0, 6, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(109, 20);
+            label7.TabIndex = 201;
+            label7.Text = "R.App.Fees:";
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(140, 40);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 202;
-            this.pictureBox6.TabStop = false;
+            pictureBox6.Image = WinForms.Properties.Resources.money_32;
+            pictureBox6.Location = new Point(140, 40);
+            pictureBox6.Margin = new Padding(4, 5, 4, 5);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(31, 26);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 202;
+            pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(140, 76);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 200;
-            this.pictureBox5.TabStop = false;
+            pictureBox5.Image = WinForms.Properties.Resources.Number_32;
+            pictureBox5.Location = new Point(140, 76);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(31, 26);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 200;
+            pictureBox5.TabStop = false;
             // 
             // lblRetakeTestAppID
             // 
-            this.lblRetakeTestAppID.AutoSize = true;
-            this.lblRetakeTestAppID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRetakeTestAppID.Location = new System.Drawing.Point(180, 76);
-            this.lblRetakeTestAppID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblRetakeTestAppID.Name = "lblRetakeTestAppID";
-            this.lblRetakeTestAppID.Size = new System.Drawing.Size(39, 20);
-            this.lblRetakeTestAppID.TabIndex = 199;
-            this.lblRetakeTestAppID.Text = "[??]";
+            lblRetakeTestAppID.AutoSize = true;
+            lblRetakeTestAppID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRetakeTestAppID.Location = new Point(180, 76);
+            lblRetakeTestAppID.Margin = new Padding(6, 0, 6, 0);
+            lblRetakeTestAppID.Name = "lblRetakeTestAppID";
+            lblRetakeTestAppID.Size = new Size(39, 20);
+            lblRetakeTestAppID.TabIndex = 199;
+            lblRetakeTestAppID.Text = "[??]";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 76);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 20);
-            this.label4.TabIndex = 198;
-            this.label4.Text = "R.Test.App.ID";
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(7, 76);
+            label4.Margin = new Padding(6, 0, 6, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(123, 20);
+            label4.TabIndex = 198;
+            label4.Text = "R.Test.App.ID";
+            // 
+            // pbTestTypeImage
+            // 
+            pbTestTypeImage.BackgroundImageLayout = ImageLayout.Zoom;
+            pbTestTypeImage.Image = WinForms.Properties.Resources.driving_test_512;
+            pbTestTypeImage.InitialImage = null;
+            pbTestTypeImage.Location = new Point(166, 45);
+            pbTestTypeImage.Margin = new Padding(6, 8, 6, 8);
+            pbTestTypeImage.Name = "pbTestTypeImage";
+            pbTestTypeImage.Size = new Size(225, 177);
+            pbTestTypeImage.SizeMode = PictureBoxSizeMode.Zoom;
+            pbTestTypeImage.TabIndex = 152;
+            pbTestTypeImage.TabStop = false;
+            // 
+            // lblUserMessage
+            // 
+            lblUserMessage.AutoSize = true;
+            lblUserMessage.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUserMessage.ForeColor = Color.Red;
+            lblUserMessage.Location = new Point(53, 271);
+            lblUserMessage.Margin = new Padding(6, 0, 6, 0);
+            lblUserMessage.Name = "lblUserMessage";
+            lblUserMessage.Size = new Size(432, 20);
+            lblUserMessage.TabIndex = 188;
+            lblUserMessage.Text = "Cannot Sechule, Vision Test Should be Passed First.";
+            lblUserMessage.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = WinForms.Properties.Resources.New_Driving_License_32;
+            pictureBox7.Location = new Point(135, 343);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(31, 26);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 187;
+            pictureBox7.TabStop = false;
+            // 
+            // lblDrivingClass
+            // 
+            lblDrivingClass.AutoSize = true;
+            lblDrivingClass.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDrivingClass.Location = new Point(175, 343);
+            lblDrivingClass.Margin = new Padding(6, 0, 6, 0);
+            lblDrivingClass.Name = "lblDrivingClass";
+            lblDrivingClass.Size = new Size(89, 20);
+            lblDrivingClass.TabIndex = 171;
+            lblDrivingClass.Text = "[???????]";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(44, 343);
+            label10.Margin = new Padding(6, 0, 6, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(81, 20);
+            label10.TabIndex = 170;
+            label10.Text = "D. Class:";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = WinForms.Properties.Resources.Number_32;
+            pictureBox4.Location = new Point(135, 307);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(31, 26);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 169;
+            pictureBox4.TabStop = false;
+            // 
+            // lblLocalDrivingLicenseAppID
+            // 
+            lblLocalDrivingLicenseAppID.AutoSize = true;
+            lblLocalDrivingLicenseAppID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLocalDrivingLicenseAppID.Location = new Point(175, 307);
+            lblLocalDrivingLicenseAppID.Margin = new Padding(6, 0, 6, 0);
+            lblLocalDrivingLicenseAppID.Name = "lblLocalDrivingLicenseAppID";
+            lblLocalDrivingLicenseAppID.Size = new Size(39, 20);
+            lblLocalDrivingLicenseAppID.TabIndex = 168;
+            lblLocalDrivingLicenseAppID.Text = "[??]";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(22, 307);
+            label8.Margin = new Padding(6, 0, 6, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(103, 20);
+            label8.TabIndex = 167;
+            label8.Text = "D.L.App.ID:";
+            // 
+            // btnSave
+            // 
+            btnSave.DialogResult = DialogResult.Cancel;
+            btnSave.FlatStyle = FlatStyle.Popup;
+            btnSave.Image = WinForms.Properties.Resources.Save_32;
+            btnSave.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSave.Location = new Point(375, 657);
+            btnSave.Margin = new Padding(6, 8, 6, 8);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(137, 36);
+            btnSave.TabIndex = 166;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            // 
+            // lblFullName
+            // 
+            lblFullName.AutoSize = true;
+            lblFullName.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFullName.Location = new Point(175, 379);
+            lblFullName.Margin = new Padding(6, 0, 6, 0);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new Size(89, 20);
+            lblFullName.TabIndex = 165;
+            lblFullName.Text = "[???????]";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = WinForms.Properties.Resources.Person_32;
+            pictureBox2.Location = new Point(135, 379);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(31, 26);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 164;
+            pictureBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(65, 379);
+            label6.Margin = new Padding(6, 0, 6, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(60, 20);
+            label6.TabIndex = 163;
+            label6.Text = "Name:";
+            // 
+            // lblTrial
+            // 
+            lblTrial.AutoSize = true;
+            lblTrial.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTrial.Location = new Point(175, 415);
+            lblTrial.Margin = new Padding(6, 0, 6, 0);
+            lblTrial.Name = "lblTrial";
+            lblTrial.Size = new Size(39, 20);
+            lblTrial.TabIndex = 162;
+            lblTrial.Text = "[??]";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(77, 415);
+            label5.Margin = new Padding(6, 0, 6, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(48, 20);
+            label5.TabIndex = 160;
+            label5.Text = "Trial:";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = WinForms.Properties.Resources.Count_32;
+            pictureBox1.Location = new Point(135, 415);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(31, 26);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 161;
+            pictureBox1.TabStop = false;
+            // 
+            // lblFees
+            // 
+            lblFees.AutoSize = true;
+            lblFees.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFees.Location = new Point(175, 487);
+            lblFees.Margin = new Padding(6, 0, 6, 0);
+            lblFees.Name = "lblFees";
+            lblFees.Size = new Size(49, 20);
+            lblFees.TabIndex = 159;
+            lblFees.Text = "[$$$]";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(71, 487);
+            label2.Margin = new Padding(6, 0, 6, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(54, 20);
+            label2.TabIndex = 157;
+            label2.Text = "Fees:";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = WinForms.Properties.Resources.money_32;
+            pictureBox3.Location = new Point(135, 487);
+            pictureBox3.Margin = new Padding(4, 5, 4, 5);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(31, 26);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 158;
+            pictureBox3.TabStop = false;
+            // 
+            // dtpTestDate
+            // 
+            dtpTestDate.CustomFormat = "dd/M/yyyy";
+            dtpTestDate.Format = DateTimePickerFormat.Custom;
+            dtpTestDate.Location = new Point(175, 451);
+            dtpTestDate.Margin = new Padding(4, 5, 4, 5);
+            dtpTestDate.MinDate = new DateTime(1900, 1, 1, 0, 0, 0, 0);
+            dtpTestDate.Name = "dtpTestDate";
+            dtpTestDate.Size = new Size(163, 26);
+            dtpTestDate.TabIndex = 155;
+            dtpTestDate.Value = new DateTime(2000, 12, 31, 0, 0, 0, 0);
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(72, 451);
+            label1.Margin = new Padding(6, 0, 6, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(53, 20);
+            label1.TabIndex = 153;
+            label1.Text = "Date:";
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = WinForms.Properties.Resources.Calendar_32;
+            pictureBox8.Location = new Point(135, 451);
+            pictureBox8.Margin = new Padding(4, 5, 4, 5);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(31, 26);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 154;
+            pictureBox8.TabStop = false;
+            // 
+            // lblTitle
+            // 
+            lblTitle.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(192, 0, 0);
+            lblTitle.Location = new Point(99, 218);
+            lblTitle.Margin = new Padding(4, 0, 4, 0);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(354, 60);
+            lblTitle.TabIndex = 153;
+            lblTitle.Text = "Schedule Test";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ctrlScheduleTest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gbTestType);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "ctrlScheduleTest";
-            this.Size = new System.Drawing.Size(533, 722);
-         
-            this.gbTestType.ResumeLayout(false);
-            this.gbTestType.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.gbRetakeTestInfo.ResumeLayout(false);
-            this.gbRetakeTestInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(gbTestType);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "ctrlScheduleTest";
+            Size = new Size(533, 722);
+            gbTestType.ResumeLayout(false);
+            gbTestType.PerformLayout();
+            gbRetakeTestInfo.ResumeLayout(false);
+            gbRetakeTestInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbTestTypeImage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ResumeLayout(false);
 
         }
 

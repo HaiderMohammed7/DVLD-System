@@ -28,92 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnClose = new System.Windows.Forms.Button();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
-            this.ctrlDriverInternationalLicenseInfo1 = new DVLD.Licenses.International_Licenses.Controls.ctrlDriverInternationalLicenseInfo();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.SuspendLayout();
+            btnClose = new Button();
+            lblTitle = new Label();
+            pbTestTypeImage = new PictureBox();
+            ctrlDriverInternationalLicenseInfo1 = new DVLD.Licenses.International_Licenses.Controls.ctrlDriverInternationalLicenseInfo();
+            pictureBox9 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pbTestTypeImage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            SuspendLayout();
             // 
             // btnClose
             // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(744, 435);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(126, 37);
-            this.btnClose.TabIndex = 139;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            btnClose.DialogResult = DialogResult.Cancel;
+            btnClose.FlatStyle = FlatStyle.Popup;
+            btnClose.Image = WinForms.Properties.Resources.Close_32;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.Location = new Point(744, 435);
+            btnClose.Margin = new Padding(4, 5, 4, 5);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(126, 37);
+            btnClose.TabIndex = 139;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(176, 119);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(520, 39);
-            this.lblTitle.TabIndex = 138;
-            this.lblTitle.Text = "Driver International License Info";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTitle.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(192, 0, 0);
+            lblTitle.Location = new Point(176, 119);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(520, 39);
+            lblTitle.TabIndex = 138;
+            lblTitle.Text = "Driver International License Info";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pbTestTypeImage
             // 
-            this.pbTestTypeImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbTestTypeImage.InitialImage = null;
-            this.pbTestTypeImage.Location = new System.Drawing.Point(393, 9);
-            this.pbTestTypeImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pbTestTypeImage.Name = "pbTestTypeImage";
-            this.pbTestTypeImage.Size = new System.Drawing.Size(113, 104);
-            this.pbTestTypeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbTestTypeImage.TabIndex = 137;
-            this.pbTestTypeImage.TabStop = false;
+            pbTestTypeImage.BackgroundImageLayout = ImageLayout.Zoom;
+            pbTestTypeImage.Image = WinForms.Properties.Resources.LicenseView_400;
+            pbTestTypeImage.InitialImage = null;
+            pbTestTypeImage.Location = new Point(393, 9);
+            pbTestTypeImage.Margin = new Padding(4, 5, 4, 5);
+            pbTestTypeImage.Name = "pbTestTypeImage";
+            pbTestTypeImage.Size = new Size(113, 104);
+            pbTestTypeImage.SizeMode = PictureBoxSizeMode.Zoom;
+            pbTestTypeImage.TabIndex = 137;
+            pbTestTypeImage.TabStop = false;
             // 
             // ctrlDriverInternationalLicenseInfo1
             // 
-            this.ctrlDriverInternationalLicenseInfo1.BackColor = System.Drawing.Color.White;
-            this.ctrlDriverInternationalLicenseInfo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlDriverInternationalLicenseInfo1.Location = new System.Drawing.Point(13, 163);
-            this.ctrlDriverInternationalLicenseInfo1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ctrlDriverInternationalLicenseInfo1.Name = "ctrlDriverInternationalLicenseInfo1";
-            this.ctrlDriverInternationalLicenseInfo1.Size = new System.Drawing.Size(869, 273);
-            this.ctrlDriverInternationalLicenseInfo1.TabIndex = 140;
+            ctrlDriverInternationalLicenseInfo1.BackColor = Color.White;
+            ctrlDriverInternationalLicenseInfo1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ctrlDriverInternationalLicenseInfo1.Location = new Point(13, 163);
+            ctrlDriverInternationalLicenseInfo1.Margin = new Padding(4, 5, 4, 5);
+            ctrlDriverInternationalLicenseInfo1.Name = "ctrlDriverInternationalLicenseInfo1";
+            ctrlDriverInternationalLicenseInfo1.Size = new Size(869, 273);
+            ctrlDriverInternationalLicenseInfo1.TabIndex = 140;
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(393, 9);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 190;
-            this.pictureBox9.TabStop = false;
+            pictureBox9.Location = new Point(393, 9);
+            pictureBox9.Margin = new Padding(4, 5, 4, 5);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(31, 26);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 190;
+            pictureBox9.TabStop = false;
             // 
             // frmShowInternationalLicenseInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(883, 482);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.ctrlDriverInternationalLicenseInfo1);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.pbTestTypeImage);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmShowInternationalLicenseInfo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "International Driver Info";
-            ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            CancelButton = btnClose;
+            ClientSize = new Size(883, 482);
+            Controls.Add(pictureBox9);
+            Controls.Add(btnClose);
+            Controls.Add(ctrlDriverInternationalLicenseInfo1);
+            Controls.Add(lblTitle);
+            Controls.Add(pbTestTypeImage);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmShowInternationalLicenseInfo";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "International Driver Info";
+            ((System.ComponentModel.ISupportInitialize)pbTestTypeImage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ResumeLayout(false);
 
         }
 

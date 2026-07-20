@@ -28,50 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnClose = new System.Windows.Forms.Button();
-            this.ctrlUserCard1 = new DVLD.Controls.ctrlUserCard();
-            this.SuspendLayout();
+            btnClose = new Button();
+            ctrlUserCard2 = new DVLD.Controls.ctrlUserCard();
+            SuspendLayout();
             // 
             // btnClose
             // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(720, 413);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(126, 37);
-            this.btnClose.TabIndex = 16;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            btnClose.DialogResult = DialogResult.Cancel;
+            btnClose.FlatStyle = FlatStyle.Popup;
+            btnClose.Image = WinForms.Properties.Resources.Close_32;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.Location = new Point(720, 413);
+            btnClose.Margin = new Padding(4, 5, 4, 5);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(126, 37);
+            btnClose.TabIndex = 16;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
-            // ctrlUserCard1
+            // ctrlUserCard2
             // 
-            this.ctrlUserCard1.BackColor = System.Drawing.Color.White;
-            this.ctrlUserCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlUserCard1.Location = new System.Drawing.Point(13, 14);
-            this.ctrlUserCard1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ctrlUserCard1.Name = "ctrlUserCard1";
-            this.ctrlUserCard1.Size = new System.Drawing.Size(839, 399);
-            this.ctrlUserCard1.TabIndex = 0;
+            ctrlUserCard2.BackColor = Color.White;
+            ctrlUserCard2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ctrlUserCard2.Location = new Point(13, 14);
+            ctrlUserCard2.Margin = new Padding(4, 5, 4, 5);
+            ctrlUserCard2.Name = "ctrlUserCard2";
+            ctrlUserCard2.Size = new Size(839, 399);
+            ctrlUserCard2.TabIndex = 17;
             // 
             // frmUserInfo
             // 
-            this.AcceptButton = this.btnClose;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(859, 462);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.ctrlUserCard1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmUserInfo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmUserInfo";
-            this.ResumeLayout(false);
+            AcceptButton = btnClose;
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            CancelButton = btnClose;
+            ClientSize = new Size(859, 462);
+            Controls.Add(ctrlUserCard2);
+            Controls.Add(btnClose);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmUserInfo";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "frmUserInfo";
+            ResumeLayout(false);
 
         }
 
@@ -79,5 +81,6 @@
 
         private Controls.ctrlUserCard ctrlUserCard1;
         private System.Windows.Forms.Button btnClose;
+        private Controls.ctrlUserCard ctrlUserCard2;
     }
 }

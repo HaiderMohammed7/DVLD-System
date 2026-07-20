@@ -28,47 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlScheduleTest1 = new DVLD.Tests.ctrlScheduleTest();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            ctrlScheduleTest1 = new ctrlScheduleTest();
+            btnClose = new Button();
+            SuspendLayout();
             // 
             // ctrlScheduleTest1
             // 
-            this.ctrlScheduleTest1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlScheduleTest1.Location = new System.Drawing.Point(-1, 14);
-            this.ctrlScheduleTest1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ctrlScheduleTest1.Name = "ctrlScheduleTest1";
-            this.ctrlScheduleTest1.Size = new System.Drawing.Size(533, 722);
-            this.ctrlScheduleTest1.TabIndex = 0;
+            ctrlScheduleTest1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ctrlScheduleTest1.Location = new Point(-1, 14);
+            ctrlScheduleTest1.Margin = new Padding(4, 5, 4, 5);
+            ctrlScheduleTest1.Name = "ctrlScheduleTest1";
+            ctrlScheduleTest1.Size = new Size(533, 722);
+            ctrlScheduleTest1.TabIndex = 0;
             // 
             // btnClose
             // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(200, 737);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(126, 37);
-            this.btnClose.TabIndex = 125;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            btnClose.DialogResult = DialogResult.Cancel;
+            btnClose.FlatStyle = FlatStyle.Popup;
+            btnClose.Image = WinForms.Properties.Resources.Close_32;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.Location = new Point(200, 737);
+            btnClose.Margin = new Padding(4, 5, 4, 5);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(126, 37);
+            btnClose.TabIndex = 125;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
             // 
             // frmScheduleTest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(545, 786);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.ctrlScheduleTest1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmScheduleTest";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Schedule Test";
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(545, 786);
+            Controls.Add(btnClose);
+            Controls.Add(ctrlScheduleTest1);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmScheduleTest";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Schedule Test";
+            ResumeLayout(false);
 
         }
 

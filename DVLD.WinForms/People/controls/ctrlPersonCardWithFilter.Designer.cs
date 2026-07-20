@@ -36,6 +36,7 @@
             cbFilterBy = new ComboBox();
             txtFilterValue = new TextBox();
             label1 = new Label();
+            ctrlPersonCard2 = new ctrlPersonCard();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             gbFilters.SuspendLayout();
             SuspendLayout();
@@ -69,6 +70,7 @@
             btnAddNewPerson.Size = new Size(44, 37);
             btnAddNewPerson.TabIndex = 20;
             btnAddNewPerson.UseVisualStyleBackColor = true;
+            btnAddNewPerson.Click += btnAddNewPerson_Click;
             // 
             // btnFind
             // 
@@ -79,6 +81,7 @@
             btnFind.Size = new Size(44, 37);
             btnFind.TabIndex = 18;
             btnFind.UseVisualStyleBackColor = true;
+            btnFind.Click += btnFind_Click;
             // 
             // cbFilterBy
             // 
@@ -89,6 +92,7 @@
             cbFilterBy.Name = "cbFilterBy";
             cbFilterBy.Size = new Size(210, 28);
             cbFilterBy.TabIndex = 16;
+            cbFilterBy.SelectedIndexChanged += cbFilterBy_SelectedIndexChanged;
             // 
             // txtFilterValue
             // 
@@ -109,15 +113,15 @@
             label1.TabIndex = 19;
             label1.Text = "Find By:";
             // 
-            // ctrlPersonCard1
+            // ctrlPersonCard2
             // 
-            ctrlPersonCard1.BackColor = Color.White;
-            ctrlPersonCard1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ctrlPersonCard1.Location = new Point(0, 101);
-            ctrlPersonCard1.Margin = new Padding(6, 8, 6, 8);
-            ctrlPersonCard1.Name = "ctrlPersonCard1";
-            ctrlPersonCard1.Size = new Size(836, 299);
-            ctrlPersonCard1.TabIndex = 0;
+            ctrlPersonCard2.BackColor = Color.White;
+            ctrlPersonCard2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ctrlPersonCard2.Location = new Point(0, 101);
+            ctrlPersonCard2.Margin = new Padding(6, 8, 6, 8);
+            ctrlPersonCard2.Name = "ctrlPersonCard2";
+            ctrlPersonCard2.Size = new Size(836, 299);
+            ctrlPersonCard2.TabIndex = 17;
             // 
             // ctrlPersonCardWithFilter
             // 
@@ -125,12 +129,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackColor = Color.White;
+            Controls.Add(ctrlPersonCard2);
             Controls.Add(gbFilters);
-            Controls.Add(ctrlPersonCard1);
             Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 5, 4, 5);
             Name = "ctrlPersonCardWithFilter";
             Size = new Size(837, 399);
+            Load += ctrlPersonCardWithFilter_Load;
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             gbFilters.ResumeLayout(false);
             gbFilters.PerformLayout();
@@ -148,5 +153,6 @@
         private System.Windows.Forms.ComboBox cbFilterBy;
         private System.Windows.Forms.TextBox txtFilterValue;
         private System.Windows.Forms.Label label1;
+        private ctrlPersonCard ctrlPersonCard2;
     }
 }

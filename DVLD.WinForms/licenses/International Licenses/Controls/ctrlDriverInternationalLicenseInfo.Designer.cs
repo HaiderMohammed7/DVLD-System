@@ -28,493 +28,505 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblIsActive = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblFullName = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblInternationalLicenseID = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblExpirationDate = new System.Windows.Forms.Label();
-            this.lblDriverID = new System.Windows.Forms.Label();
-            this.lblDateOfBirth = new System.Windows.Forms.Label();
-            this.lblGendor = new System.Windows.Forms.Label();
-            this.lblIssueDate = new System.Windows.Forms.Label();
-            this.lblNationalNo = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblLocalLicenseID = new System.Windows.Forms.Label();
-            this.pbGendor = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pbPersonImage = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.lblApplicationID = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGendor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.SuspendLayout();
+            groupBox1 = new GroupBox();
+            pictureBox7 = new PictureBox();
+            lblApplicationID = new Label();
+            label9 = new Label();
+            lblIsActive = new Label();
+            pictureBox8 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            label1 = new Label();
+            pictureBox9 = new PictureBox();
+            label8 = new Label();
+            lblFullName = new Label();
+            pictureBox2 = new PictureBox();
+            lblInternationalLicenseID = new Label();
+            pictureBox1 = new PictureBox();
+            label10 = new Label();
+            lblExpirationDate = new Label();
+            lblDriverID = new Label();
+            lblDateOfBirth = new Label();
+            lblGendor = new Label();
+            lblIssueDate = new Label();
+            lblNationalNo = new Label();
+            pictureBox4 = new PictureBox();
+            label22 = new Label();
+            label5 = new Label();
+            lblLocalLicenseID = new Label();
+            pbGendor = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            label15 = new Label();
+            label6 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            pbPersonImage = new PictureBox();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbGendor).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbPersonImage).BeginInit();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pictureBox7);
-            this.groupBox1.Controls.Add(this.lblApplicationID);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.lblIsActive);
-            this.groupBox1.Controls.Add(this.pictureBox8);
-            this.groupBox1.Controls.Add(this.pictureBox10);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.pictureBox9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.lblFullName);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.lblInternationalLicenseID);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.lblExpirationDate);
-            this.groupBox1.Controls.Add(this.lblDriverID);
-            this.groupBox1.Controls.Add(this.lblDateOfBirth);
-            this.groupBox1.Controls.Add(this.lblGendor);
-            this.groupBox1.Controls.Add(this.lblIssueDate);
-            this.groupBox1.Controls.Add(this.lblNationalNo);
-            this.groupBox1.Controls.Add(this.pictureBox4);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.lblLocalLicenseID);
-            this.groupBox1.Controls.Add(this.pbGendor);
-            this.groupBox1.Controls.Add(this.pictureBox6);
-            this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.pbPersonImage);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(6, 8);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.groupBox1.Size = new System.Drawing.Size(852, 255);
-            this.groupBox1.TabIndex = 20;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Driver Internationa License Info";
-            // 
-            // lblIsActive
-            // 
-            this.lblIsActive.AutoSize = true;
-            this.lblIsActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIsActive.Location = new System.Drawing.Point(524, 109);
-            this.lblIsActive.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblIsActive.Name = "lblIsActive";
-            this.lblIsActive.Size = new System.Drawing.Size(53, 20);
-            this.lblIsActive.TabIndex = 192;
-            this.lblIsActive.Text = "[????]";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(146, 32);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 128;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Location = new System.Drawing.Point(484, 109);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 191;
-            this.pictureBox10.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 20);
-            this.label1.TabIndex = 114;
-            this.label1.Text = "Name:";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Location = new System.Drawing.Point(146, 68);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 189;
-            this.pictureBox9.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(391, 109);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 20);
-            this.label8.TabIndex = 190;
-            this.label8.Text = "Is Active?";
-            // 
-            // lblFullName
-            // 
-            this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblFullName.Location = new System.Drawing.Point(186, 32);
-            this.lblFullName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(59, 20);
-            this.lblFullName.TabIndex = 131;
-            this.lblFullName.Text = "[????]";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(484, 180);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 140;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblInternationalLicenseID
-            // 
-            this.lblInternationalLicenseID.AutoSize = true;
-            this.lblInternationalLicenseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInternationalLicenseID.Location = new System.Drawing.Point(186, 68);
-            this.lblInternationalLicenseID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblInternationalLicenseID.Name = "lblInternationalLicenseID";
-            this.lblInternationalLicenseID.Size = new System.Drawing.Size(49, 20);
-            this.lblInternationalLicenseID.TabIndex = 188;
-            this.lblInternationalLicenseID.Text = "[???]";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(146, 106);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 139;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(11, 68);
-            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(127, 20);
-            this.label10.TabIndex = 187;
-            this.label10.Text = "Int.License ID:";
-            // 
-            // lblExpirationDate
-            // 
-            this.lblExpirationDate.AutoSize = true;
-            this.lblExpirationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpirationDate.Location = new System.Drawing.Point(524, 216);
-            this.lblExpirationDate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblExpirationDate.Name = "lblExpirationDate";
-            this.lblExpirationDate.Size = new System.Drawing.Size(53, 20);
-            this.lblExpirationDate.TabIndex = 138;
-            this.lblExpirationDate.Text = "[????]";
-            // 
-            // lblDriverID
-            // 
-            this.lblDriverID.AutoSize = true;
-            this.lblDriverID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDriverID.Location = new System.Drawing.Point(524, 180);
-            this.lblDriverID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblDriverID.Name = "lblDriverID";
-            this.lblDriverID.Size = new System.Drawing.Size(53, 20);
-            this.lblDriverID.TabIndex = 137;
-            this.lblDriverID.Text = "[????]";
-            // 
-            // lblDateOfBirth
-            // 
-            this.lblDateOfBirth.AutoSize = true;
-            this.lblDateOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateOfBirth.Location = new System.Drawing.Point(524, 144);
-            this.lblDateOfBirth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblDateOfBirth.Name = "lblDateOfBirth";
-            this.lblDateOfBirth.Size = new System.Drawing.Size(53, 20);
-            this.lblDateOfBirth.TabIndex = 136;
-            this.lblDateOfBirth.Text = "[????]";
-            // 
-            // lblGendor
-            // 
-            this.lblGendor.AutoSize = true;
-            this.lblGendor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGendor.Location = new System.Drawing.Point(186, 180);
-            this.lblGendor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblGendor.Name = "lblGendor";
-            this.lblGendor.Size = new System.Drawing.Size(53, 20);
-            this.lblGendor.TabIndex = 135;
-            this.lblGendor.Text = "[????]";
-            // 
-            // lblIssueDate
-            // 
-            this.lblIssueDate.AutoSize = true;
-            this.lblIssueDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIssueDate.Location = new System.Drawing.Point(186, 216);
-            this.lblIssueDate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblIssueDate.Name = "lblIssueDate";
-            this.lblIssueDate.Size = new System.Drawing.Size(53, 20);
-            this.lblIssueDate.TabIndex = 133;
-            this.lblIssueDate.Text = "[????]";
-            // 
-            // lblNationalNo
-            // 
-            this.lblNationalNo.AutoSize = true;
-            this.lblNationalNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNationalNo.Location = new System.Drawing.Point(186, 144);
-            this.lblNationalNo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblNationalNo.Name = "lblNationalNo";
-            this.lblNationalNo.Size = new System.Drawing.Size(53, 20);
-            this.lblNationalNo.TabIndex = 132;
-            this.lblNationalNo.Text = "[????]";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(484, 144);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 123;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(10, 106);
-            this.label22.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(105, 20);
-            this.label22.TabIndex = 113;
-            this.label22.Text = "License ID :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 180);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 20);
-            this.label5.TabIndex = 129;
-            this.label5.Text = "Gendor:";
-            // 
-            // lblLocalLicenseID
-            // 
-            this.lblLocalLicenseID.AutoSize = true;
-            this.lblLocalLicenseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocalLicenseID.Location = new System.Drawing.Point(186, 106);
-            this.lblLocalLicenseID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblLocalLicenseID.Name = "lblLocalLicenseID";
-            this.lblLocalLicenseID.Size = new System.Drawing.Size(53, 20);
-            this.lblLocalLicenseID.TabIndex = 127;
-            this.lblLocalLicenseID.Text = "[????]";
-            // 
-            // pbGendor
-            // 
-            this.pbGendor.Location = new System.Drawing.Point(146, 180);
-            this.pbGendor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pbGendor.Name = "pbGendor";
-            this.pbGendor.Size = new System.Drawing.Size(31, 26);
-            this.pbGendor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbGendor.TabIndex = 130;
-            this.pbGendor.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(484, 216);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 125;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(146, 216);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 124;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(146, 144);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 122;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(341, 216);
-            this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(138, 20);
-            this.label15.TabIndex = 120;
-            this.label15.Text = "Expiration Date:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 216);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 20);
-            this.label6.TabIndex = 118;
-            this.label6.Text = "Issue Date:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(394, 180);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 20);
-            this.label4.TabIndex = 117;
-            this.label4.Text = "Driver ID:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(359, 144);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 20);
-            this.label3.TabIndex = 116;
-            this.label3.Text = "Date Of Birth:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 144);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
-            this.label2.TabIndex = 115;
-            this.label2.Text = "National No:";
-            // 
-            // pbPersonImage
-            // 
-            this.pbPersonImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbPersonImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbPersonImage.InitialImage = null;
-            this.pbPersonImage.Location = new System.Drawing.Point(669, 56);
-            this.pbPersonImage.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.pbPersonImage.Name = "pbPersonImage";
-            this.pbPersonImage.Size = new System.Drawing.Size(169, 169);
-            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPersonImage.TabIndex = 112;
-            this.pbPersonImage.TabStop = false;
+            groupBox1.Controls.Add(pictureBox7);
+            groupBox1.Controls.Add(lblApplicationID);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(lblIsActive);
+            groupBox1.Controls.Add(pictureBox8);
+            groupBox1.Controls.Add(pictureBox10);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(pictureBox9);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(lblFullName);
+            groupBox1.Controls.Add(pictureBox2);
+            groupBox1.Controls.Add(lblInternationalLicenseID);
+            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Controls.Add(lblExpirationDate);
+            groupBox1.Controls.Add(lblDriverID);
+            groupBox1.Controls.Add(lblDateOfBirth);
+            groupBox1.Controls.Add(lblGendor);
+            groupBox1.Controls.Add(lblIssueDate);
+            groupBox1.Controls.Add(lblNationalNo);
+            groupBox1.Controls.Add(pictureBox4);
+            groupBox1.Controls.Add(label22);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(lblLocalLicenseID);
+            groupBox1.Controls.Add(pbGendor);
+            groupBox1.Controls.Add(pictureBox6);
+            groupBox1.Controls.Add(pictureBox5);
+            groupBox1.Controls.Add(pictureBox3);
+            groupBox1.Controls.Add(label15);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(pbPersonImage);
+            groupBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.Location = new Point(6, 8);
+            groupBox1.Margin = new Padding(6, 8, 6, 8);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(6, 8, 6, 8);
+            groupBox1.Size = new Size(852, 255);
+            groupBox1.TabIndex = 20;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Driver Internationa License Info";
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(484, 73);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 195;
-            this.pictureBox7.TabStop = false;
+            pictureBox7.Image = WinForms.Properties.Resources.International_32;
+            pictureBox7.Location = new Point(484, 73);
+            pictureBox7.Margin = new Padding(4, 5, 4, 5);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(31, 26);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 195;
+            pictureBox7.TabStop = false;
             // 
             // lblApplicationID
             // 
-            this.lblApplicationID.AutoSize = true;
-            this.lblApplicationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApplicationID.Location = new System.Drawing.Point(527, 73);
-            this.lblApplicationID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblApplicationID.Name = "lblApplicationID";
-            this.lblApplicationID.Size = new System.Drawing.Size(49, 20);
-            this.lblApplicationID.TabIndex = 194;
-            this.lblApplicationID.Text = "[???]";
+            lblApplicationID.AutoSize = true;
+            lblApplicationID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblApplicationID.Location = new Point(527, 73);
+            lblApplicationID.Margin = new Padding(6, 0, 6, 0);
+            lblApplicationID.Name = "lblApplicationID";
+            lblApplicationID.Size = new Size(49, 20);
+            lblApplicationID.TabIndex = 194;
+            lblApplicationID.Text = "[???]";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(352, 73);
-            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 20);
-            this.label9.TabIndex = 193;
-            this.label9.Text = "Application ID:";
+            label9.AutoSize = true;
+            label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(352, 73);
+            label9.Margin = new Padding(6, 0, 6, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(127, 20);
+            label9.TabIndex = 193;
+            label9.Text = "Application ID:";
+            // 
+            // lblIsActive
+            // 
+            lblIsActive.AutoSize = true;
+            lblIsActive.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblIsActive.Location = new Point(524, 109);
+            lblIsActive.Margin = new Padding(6, 0, 6, 0);
+            lblIsActive.Name = "lblIsActive";
+            lblIsActive.Size = new Size(53, 20);
+            lblIsActive.TabIndex = 192;
+            lblIsActive.Text = "[????]";
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = WinForms.Properties.Resources.Person_32;
+            pictureBox8.Location = new Point(146, 32);
+            pictureBox8.Margin = new Padding(4, 5, 4, 5);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(31, 26);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 128;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = WinForms.Properties.Resources.Question_32;
+            pictureBox10.Location = new Point(484, 109);
+            pictureBox10.Margin = new Padding(4, 5, 4, 5);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(31, 26);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 191;
+            pictureBox10.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(13, 32);
+            label1.Margin = new Padding(6, 0, 6, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(60, 20);
+            label1.TabIndex = 114;
+            label1.Text = "Name:";
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = WinForms.Properties.Resources.International_32;
+            pictureBox9.Location = new Point(146, 68);
+            pictureBox9.Margin = new Padding(4, 5, 4, 5);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(31, 26);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 189;
+            pictureBox9.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(391, 109);
+            label8.Margin = new Padding(6, 0, 6, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(88, 20);
+            label8.TabIndex = 190;
+            label8.Text = "Is Active?";
+            // 
+            // lblFullName
+            // 
+            lblFullName.AutoSize = true;
+            lblFullName.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFullName.ForeColor = Color.FromArgb(192, 0, 0);
+            lblFullName.Location = new Point(186, 32);
+            lblFullName.Margin = new Padding(6, 0, 6, 0);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new Size(59, 20);
+            lblFullName.TabIndex = 131;
+            lblFullName.Text = "[????]";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = WinForms.Properties.Resources.Number_32;
+            pictureBox2.Location = new Point(484, 180);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(31, 26);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 140;
+            pictureBox2.TabStop = false;
+            // 
+            // lblInternationalLicenseID
+            // 
+            lblInternationalLicenseID.AutoSize = true;
+            lblInternationalLicenseID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblInternationalLicenseID.Location = new Point(186, 68);
+            lblInternationalLicenseID.Margin = new Padding(6, 0, 6, 0);
+            lblInternationalLicenseID.Name = "lblInternationalLicenseID";
+            lblInternationalLicenseID.Size = new Size(49, 20);
+            lblInternationalLicenseID.TabIndex = 188;
+            lblInternationalLicenseID.Text = "[???]";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = WinForms.Properties.Resources.Number_32;
+            pictureBox1.Location = new Point(146, 106);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(31, 26);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 139;
+            pictureBox1.TabStop = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(11, 68);
+            label10.Margin = new Padding(6, 0, 6, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(127, 20);
+            label10.TabIndex = 187;
+            label10.Text = "Int.License ID:";
+            // 
+            // lblExpirationDate
+            // 
+            lblExpirationDate.AutoSize = true;
+            lblExpirationDate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblExpirationDate.Location = new Point(524, 216);
+            lblExpirationDate.Margin = new Padding(6, 0, 6, 0);
+            lblExpirationDate.Name = "lblExpirationDate";
+            lblExpirationDate.Size = new Size(53, 20);
+            lblExpirationDate.TabIndex = 138;
+            lblExpirationDate.Text = "[????]";
+            // 
+            // lblDriverID
+            // 
+            lblDriverID.AutoSize = true;
+            lblDriverID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDriverID.Location = new Point(524, 180);
+            lblDriverID.Margin = new Padding(6, 0, 6, 0);
+            lblDriverID.Name = "lblDriverID";
+            lblDriverID.Size = new Size(53, 20);
+            lblDriverID.TabIndex = 137;
+            lblDriverID.Text = "[????]";
+            // 
+            // lblDateOfBirth
+            // 
+            lblDateOfBirth.AutoSize = true;
+            lblDateOfBirth.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDateOfBirth.Location = new Point(524, 144);
+            lblDateOfBirth.Margin = new Padding(6, 0, 6, 0);
+            lblDateOfBirth.Name = "lblDateOfBirth";
+            lblDateOfBirth.Size = new Size(53, 20);
+            lblDateOfBirth.TabIndex = 136;
+            lblDateOfBirth.Text = "[????]";
+            // 
+            // lblGendor
+            // 
+            lblGendor.AutoSize = true;
+            lblGendor.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblGendor.Location = new Point(186, 180);
+            lblGendor.Margin = new Padding(6, 0, 6, 0);
+            lblGendor.Name = "lblGendor";
+            lblGendor.Size = new Size(53, 20);
+            lblGendor.TabIndex = 135;
+            lblGendor.Text = "[????]";
+            // 
+            // lblIssueDate
+            // 
+            lblIssueDate.AutoSize = true;
+            lblIssueDate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblIssueDate.Location = new Point(186, 216);
+            lblIssueDate.Margin = new Padding(6, 0, 6, 0);
+            lblIssueDate.Name = "lblIssueDate";
+            lblIssueDate.Size = new Size(53, 20);
+            lblIssueDate.TabIndex = 133;
+            lblIssueDate.Text = "[????]";
+            // 
+            // lblNationalNo
+            // 
+            lblNationalNo.AutoSize = true;
+            lblNationalNo.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNationalNo.Location = new Point(186, 144);
+            lblNationalNo.Margin = new Padding(6, 0, 6, 0);
+            lblNationalNo.Name = "lblNationalNo";
+            lblNationalNo.Size = new Size(53, 20);
+            lblNationalNo.TabIndex = 132;
+            lblNationalNo.Text = "[????]";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = WinForms.Properties.Resources.Calendar_32;
+            pictureBox4.Location = new Point(484, 144);
+            pictureBox4.Margin = new Padding(4, 5, 4, 5);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(31, 26);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 123;
+            pictureBox4.TabStop = false;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.Location = new Point(10, 106);
+            label22.Margin = new Padding(6, 0, 6, 0);
+            label22.Name = "label22";
+            label22.Size = new Size(105, 20);
+            label22.TabIndex = 113;
+            label22.Text = "License ID :";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(12, 180);
+            label5.Margin = new Padding(6, 0, 6, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(74, 20);
+            label5.TabIndex = 129;
+            label5.Text = "Gendor:";
+            // 
+            // lblLocalLicenseID
+            // 
+            lblLocalLicenseID.AutoSize = true;
+            lblLocalLicenseID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblLocalLicenseID.Location = new Point(186, 106);
+            lblLocalLicenseID.Margin = new Padding(6, 0, 6, 0);
+            lblLocalLicenseID.Name = "lblLocalLicenseID";
+            lblLocalLicenseID.Size = new Size(53, 20);
+            lblLocalLicenseID.TabIndex = 127;
+            lblLocalLicenseID.Text = "[????]";
+            // 
+            // pbGendor
+            // 
+            pbGendor.Image = WinForms.Properties.Resources.Man_32;
+            pbGendor.Location = new Point(146, 180);
+            pbGendor.Margin = new Padding(4, 5, 4, 5);
+            pbGendor.Name = "pbGendor";
+            pbGendor.Size = new Size(31, 26);
+            pbGendor.SizeMode = PictureBoxSizeMode.Zoom;
+            pbGendor.TabIndex = 130;
+            pbGendor.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = WinForms.Properties.Resources.Calendar_32;
+            pictureBox6.Location = new Point(484, 216);
+            pictureBox6.Margin = new Padding(4, 5, 4, 5);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(31, 26);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 125;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = WinForms.Properties.Resources.Calendar_32;
+            pictureBox5.Location = new Point(146, 216);
+            pictureBox5.Margin = new Padding(4, 5, 4, 5);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(31, 26);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 124;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = WinForms.Properties.Resources.Number_32;
+            pictureBox3.Location = new Point(146, 144);
+            pictureBox3.Margin = new Padding(4, 5, 4, 5);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(31, 26);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 122;
+            pictureBox3.TabStop = false;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.Location = new Point(341, 216);
+            label15.Margin = new Padding(6, 0, 6, 0);
+            label15.Name = "label15";
+            label15.Size = new Size(138, 20);
+            label15.TabIndex = 120;
+            label15.Text = "Expiration Date:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(12, 216);
+            label6.Margin = new Padding(6, 0, 6, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(102, 20);
+            label6.TabIndex = 118;
+            label6.Text = "Issue Date:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(394, 180);
+            label4.Margin = new Padding(6, 0, 6, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(85, 20);
+            label4.TabIndex = 117;
+            label4.Text = "Driver ID:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(359, 144);
+            label3.Margin = new Padding(6, 0, 6, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(120, 20);
+            label3.TabIndex = 116;
+            label3.Text = "Date Of Birth:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 144);
+            label2.Margin = new Padding(6, 0, 6, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(107, 20);
+            label2.TabIndex = 115;
+            label2.Text = "National No:";
+            // 
+            // pbPersonImage
+            // 
+            pbPersonImage.BackgroundImageLayout = ImageLayout.Zoom;
+            pbPersonImage.BorderStyle = BorderStyle.FixedSingle;
+            pbPersonImage.Image = WinForms.Properties.Resources.Male_512;
+            pbPersonImage.InitialImage = null;
+            pbPersonImage.Location = new Point(669, 56);
+            pbPersonImage.Margin = new Padding(6, 8, 6, 8);
+            pbPersonImage.Name = "pbPersonImage";
+            pbPersonImage.Size = new Size(169, 169);
+            pbPersonImage.SizeMode = PictureBoxSizeMode.Zoom;
+            pbPersonImage.TabIndex = 112;
+            pbPersonImage.TabStop = false;
             // 
             // ctrlDriverInternationalLicenseInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "ctrlDriverInternationalLicenseInfo";
-            this.Size = new System.Drawing.Size(869, 273);
-             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGendor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            Controls.Add(groupBox1);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "ctrlDriverInternationalLicenseInfo";
+            Size = new Size(869, 273);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbGendor).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbPersonImage).EndInit();
+            ResumeLayout(false);
 
         }
 

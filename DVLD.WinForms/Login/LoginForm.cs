@@ -18,11 +18,14 @@ namespace DVLD.WinForms.Forms
 
         private async void btnlogin_Click(object sender, EventArgs e)
         {
+            btnlogin.Enabled = false;
+
             var result = await _authService.LoginAsync(txtEmail.Text, txtPassword.Text);
 
             if (result == null)
             {
                 lblError.Text = "Invalid email or password";
+                btnlogin.Enabled = true;
                 return;
             }
 
@@ -37,11 +40,8 @@ namespace DVLD.WinForms.Forms
                 TokenStorage.Clear();
             }
 
-            this.Hide();
-
-            var main = _provider.GetRequiredService<frmMain>();
-            main.Show();
-
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }

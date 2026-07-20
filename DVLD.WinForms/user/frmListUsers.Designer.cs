@@ -28,278 +28,257 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblRecordsCount = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbFilterBy = new System.Windows.Forms.ComboBox();
-            this.txtFilterValue = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmsUsers = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ChangePasswordtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phoneCallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dgvUsers = new System.Windows.Forms.DataGridView();
-            this.cbIsActive = new System.Windows.Forms.ComboBox();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnAddUser = new System.Windows.Forms.Button();
-            this.pbPersonImage = new System.Windows.Forms.PictureBox();
-            this.cmsUsers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            lblTitle = new Label();
+            lblRecordsCount = new Label();
+            label2 = new Label();
+            cbFilterBy = new ComboBox();
+            txtFilterValue = new TextBox();
+            label1 = new Label();
+            toolStripSeparator2 = new ToolStripSeparator();
+            cmsUsers = new ContextMenuStrip(components);
+            showDetailsToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            editToolStripMenuItem = new ToolStripMenuItem();
+            deleteToolStripMenuItem = new ToolStripMenuItem();
+            ChangePasswordtoolStripMenuItem = new ToolStripMenuItem();
+            dgvUsers = new DataGridView();
+            cbIsActive = new ComboBox();
+            btnClose = new Button();
+            btnAddUser = new Button();
+            pbPersonImage = new PictureBox();
+            cmsUsers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbPersonImage).BeginInit();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(376, 212);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(239, 39);
-            this.lblTitle.TabIndex = 100;
-            this.lblTitle.Text = "Manage Users";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTitle.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.FromArgb(192, 0, 0);
+            lblTitle.Location = new Point(376, 212);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(239, 39);
+            lblTitle.TabIndex = 100;
+            lblTitle.Text = "Manage Users";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblRecordsCount
             // 
-            this.lblRecordsCount.AutoSize = true;
-            this.lblRecordsCount.Location = new System.Drawing.Point(152, 690);
-            this.lblRecordsCount.Name = "lblRecordsCount";
-            this.lblRecordsCount.Size = new System.Drawing.Size(27, 20);
-            this.lblRecordsCount.TabIndex = 98;
-            this.lblRecordsCount.Text = "??";
+            lblRecordsCount.AutoSize = true;
+            lblRecordsCount.Location = new Point(152, 690);
+            lblRecordsCount.Name = "lblRecordsCount";
+            lblRecordsCount.Size = new Size(27, 20);
+            lblRecordsCount.TabIndex = 98;
+            lblRecordsCount.Text = "??";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(50, 690);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 20);
-            this.label2.TabIndex = 97;
-            this.label2.Text = "# Records:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(50, 690);
+            label2.Name = "label2";
+            label2.Size = new Size(96, 20);
+            label2.TabIndex = 97;
+            label2.Text = "# Records:";
             // 
             // cbFilterBy
             // 
-            this.cbFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbFilterBy.FormattingEnabled = true;
-            this.cbFilterBy.Items.AddRange(new object[] {
-            "None",
-            "User ID",
-            "UserName",
-            "Person ID",
-            "Full Name",
-            "Is Active"});
-            this.cbFilterBy.Location = new System.Drawing.Point(133, 270);
-            this.cbFilterBy.Name = "cbFilterBy";
-            this.cbFilterBy.Size = new System.Drawing.Size(210, 28);
-            this.cbFilterBy.TabIndex = 96;
+            cbFilterBy.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbFilterBy.FormattingEnabled = true;
+            cbFilterBy.Items.AddRange(new object[] { "None", "User ID", "UserName", "Person ID", "Full Name", "Is Active" });
+            cbFilterBy.Location = new Point(133, 270);
+            cbFilterBy.Name = "cbFilterBy";
+            cbFilterBy.Size = new Size(210, 28);
+            cbFilterBy.TabIndex = 96;
+            cbFilterBy.SelectedIndexChanged += cbFilterBy_SelectedIndexChanged;
             // 
             // txtFilterValue
             // 
-            this.txtFilterValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFilterValue.Location = new System.Drawing.Point(350, 270);
-            this.txtFilterValue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtFilterValue.Name = "txtFilterValue";
-            this.txtFilterValue.Size = new System.Drawing.Size(256, 26);
-            this.txtFilterValue.TabIndex = 95;
-            this.txtFilterValue.Visible = false;
+            txtFilterValue.BorderStyle = BorderStyle.FixedSingle;
+            txtFilterValue.Location = new Point(350, 270);
+            txtFilterValue.Margin = new Padding(4, 5, 4, 5);
+            txtFilterValue.Name = "txtFilterValue";
+            txtFilterValue.Size = new Size(256, 26);
+            txtFilterValue.TabIndex = 95;
+            txtFilterValue.Visible = false;
+            txtFilterValue.TextChanged += txtFilterValue_TextChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 273);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
-            this.label1.TabIndex = 94;
-            this.label1.Text = "Filter By:";
-             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(193, 6);
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(50, 273);
+            label1.Name = "label1";
+            label1.Size = new Size(80, 20);
+            label1.TabIndex = 94;
+            label1.Text = "Filter By:";
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(193, 6);
             // 
             // cmsUsers
             // 
-            this.cmsUsers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showDetailsToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.toolStripMenuItem1,
-            this.editToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.ChangePasswordtoolStripMenuItem,
-            this.toolStripSeparator1,
-            this.sendEmailToolStripMenuItem,
-            this.phoneCallToolStripMenuItem});
-            this.cmsUsers.Name = "contextMenuStrip1";
-            this.cmsUsers.Size = new System.Drawing.Size(197, 304);
+            cmsUsers.Items.AddRange(new ToolStripItem[] { showDetailsToolStripMenuItem, toolStripSeparator2, toolStripMenuItem1, editToolStripMenuItem, deleteToolStripMenuItem, ChangePasswordtoolStripMenuItem });
+            cmsUsers.Name = "contextMenuStrip1";
+            cmsUsers.Size = new Size(197, 222);
             // 
             // showDetailsToolStripMenuItem
             // 
-            this.showDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.showDetailsToolStripMenuItem.Text = "&Show Details";
+            showDetailsToolStripMenuItem.Image = WinForms.Properties.Resources.PersonDetails_32;
+            showDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
+            showDetailsToolStripMenuItem.Size = new Size(196, 38);
+            showDetailsToolStripMenuItem.Text = "&Show Details";
+            showDetailsToolStripMenuItem.Click += showDetailsToolStripMenuItem_Click;
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(196, 38);
-            this.toolStripMenuItem1.Text = "Add &New User";
+            toolStripMenuItem1.Image = WinForms.Properties.Resources.Add_New_User_32;
+            toolStripMenuItem1.ImageScaling = ToolStripItemImageScaling.None;
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(196, 38);
+            toolStripMenuItem1.Text = "Add &New User";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // editToolStripMenuItem
             // 
-            this.editToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.editToolStripMenuItem.Text = "&Edit";
+            editToolStripMenuItem.Image = WinForms.Properties.Resources.edit_32;
+            editToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            editToolStripMenuItem.Name = "editToolStripMenuItem";
+            editToolStripMenuItem.Size = new Size(196, 38);
+            editToolStripMenuItem.Text = "&Edit";
+            editToolStripMenuItem.Click += editToolStripMenuItem_Click;
             // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.deleteToolStripMenuItem.Text = "&Delete";
+            deleteToolStripMenuItem.Image = WinForms.Properties.Resources.Delete_32;
+            deleteToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            deleteToolStripMenuItem.Size = new Size(196, 38);
+            deleteToolStripMenuItem.Text = "&Delete";
+            deleteToolStripMenuItem.Click += deleteToolStripMenuItem_Click;
             // 
             // ChangePasswordtoolStripMenuItem
             // 
-            this.ChangePasswordtoolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ChangePasswordtoolStripMenuItem.Name = "ChangePasswordtoolStripMenuItem";
-            this.ChangePasswordtoolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.ChangePasswordtoolStripMenuItem.Text = "Change &Password";
-            // 
-            // sendEmailToolStripMenuItem
-            // 
-            this.sendEmailToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
-            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.sendEmailToolStripMenuItem.Text = "Send E&mail";
-            // 
-            // phoneCallToolStripMenuItem
-            // 
-            this.phoneCallToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.phoneCallToolStripMenuItem.Name = "phoneCallToolStripMenuItem";
-            this.phoneCallToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.phoneCallToolStripMenuItem.Text = "Phone &Call";
+            ChangePasswordtoolStripMenuItem.Image = WinForms.Properties.Resources.Password_32;
+            ChangePasswordtoolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            ChangePasswordtoolStripMenuItem.Name = "ChangePasswordtoolStripMenuItem";
+            ChangePasswordtoolStripMenuItem.Size = new Size(196, 38);
+            ChangePasswordtoolStripMenuItem.Text = "Change &Password";
+            ChangePasswordtoolStripMenuItem.Click += ChangePasswordtoolStripMenuItem_Click;
             // 
             // dgvUsers
             // 
-            this.dgvUsers.AllowUserToAddRows = false;
-            this.dgvUsers.AllowUserToDeleteRows = false;
-            this.dgvUsers.AllowUserToResizeRows = false;
-            this.dgvUsers.BackgroundColor = System.Drawing.Color.White;
-            this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsers.ContextMenuStrip = this.cmsUsers;
-            this.dgvUsers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvUsers.Location = new System.Drawing.Point(48, 309);
-            this.dgvUsers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dgvUsers.MultiSelect = false;
-            this.dgvUsers.Name = "dgvUsers";
-            this.dgvUsers.ReadOnly = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsers.Size = new System.Drawing.Size(895, 371);
-            this.dgvUsers.TabIndex = 93;
-            this.dgvUsers.TabStop = false;
+            dgvUsers.AllowUserToAddRows = false;
+            dgvUsers.AllowUserToDeleteRows = false;
+            dgvUsers.AllowUserToResizeRows = false;
+            dgvUsers.BackgroundColor = Color.White;
+            dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUsers.ContextMenuStrip = cmsUsers;
+            dgvUsers.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvUsers.Location = new Point(48, 309);
+            dgvUsers.Margin = new Padding(4, 5, 4, 5);
+            dgvUsers.MultiSelect = false;
+            dgvUsers.Name = "dgvUsers";
+            dgvUsers.ReadOnly = true;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvUsers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUsers.Size = new Size(895, 371);
+            dgvUsers.TabIndex = 93;
+            dgvUsers.TabStop = false;
             // 
             // cbIsActive
             // 
-            this.cbIsActive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbIsActive.FormattingEnabled = true;
-            this.cbIsActive.Items.AddRange(new object[] {
-            "All",
-            "Yes",
-            "No"});
-            this.cbIsActive.Location = new System.Drawing.Point(350, 270);
-            this.cbIsActive.Name = "cbIsActive";
-            this.cbIsActive.Size = new System.Drawing.Size(121, 28);
-            this.cbIsActive.TabIndex = 103;
-            this.cbIsActive.Visible = false;
+            cbIsActive.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbIsActive.FormattingEnabled = true;
+            cbIsActive.Items.AddRange(new object[] { "All", "Yes", "No" });
+            cbIsActive.Location = new Point(350, 270);
+            cbIsActive.Name = "cbIsActive";
+            cbIsActive.Size = new Size(121, 28);
+            cbIsActive.TabIndex = 103;
+            cbIsActive.Visible = false;
+            cbIsActive.SelectedIndexChanged += cbIsActive_SelectedIndexChanged;
             // 
             // btnClose
             // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(808, 690);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(135, 36);
-            this.btnClose.TabIndex = 102;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            btnClose.DialogResult = DialogResult.Cancel;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Image = WinForms.Properties.Resources.Close_32;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.Location = new Point(808, 690);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(135, 36);
+            btnClose.TabIndex = 102;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnAddUser
             // 
-            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddUser.Location = new System.Drawing.Point(855, 229);
-            this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(88, 69);
-            this.btnAddUser.TabIndex = 101;
-            this.btnAddUser.UseVisualStyleBackColor = true;
+            btnAddUser.FlatStyle = FlatStyle.Flat;
+            btnAddUser.Image = WinForms.Properties.Resources.Add_New_User_72;
+            btnAddUser.Location = new Point(855, 229);
+            btnAddUser.Name = "btnAddUser";
+            btnAddUser.Size = new Size(88, 69);
+            btnAddUser.TabIndex = 101;
+            btnAddUser.UseVisualStyleBackColor = true;
+            btnAddUser.Click += btnAddUser_Click;
             // 
             // pbPersonImage
             // 
-            this.pbPersonImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbPersonImage.InitialImage = null;
-            this.pbPersonImage.Location = new System.Drawing.Point(386, 14);
-            this.pbPersonImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pbPersonImage.Name = "pbPersonImage";
-            this.pbPersonImage.Size = new System.Drawing.Size(220, 189);
-            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPersonImage.TabIndex = 99;
-            this.pbPersonImage.TabStop = false;
+            pbPersonImage.BackgroundImageLayout = ImageLayout.Zoom;
+            pbPersonImage.Image = WinForms.Properties.Resources.Users_2_400;
+            pbPersonImage.InitialImage = null;
+            pbPersonImage.Location = new Point(386, 14);
+            pbPersonImage.Margin = new Padding(4, 5, 4, 5);
+            pbPersonImage.Name = "pbPersonImage";
+            pbPersonImage.Size = new Size(220, 189);
+            pbPersonImage.SizeMode = PictureBoxSizeMode.Zoom;
+            pbPersonImage.TabIndex = 99;
+            pbPersonImage.TabStop = false;
             // 
             // frmListUsers
             // 
-            this.AcceptButton = this.btnAddUser;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(974, 750);
-            this.Controls.Add(this.cbIsActive);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnAddUser);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.pbPersonImage);
-            this.Controls.Add(this.lblRecordsCount);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbFilterBy);
-            this.Controls.Add(this.txtFilterValue);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvUsers);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmListUsers";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Manage Users";
-            this.cmsUsers.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnAddUser;
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            CancelButton = btnClose;
+            ClientSize = new Size(974, 750);
+            Controls.Add(cbIsActive);
+            Controls.Add(btnClose);
+            Controls.Add(btnAddUser);
+            Controls.Add(lblTitle);
+            Controls.Add(pbPersonImage);
+            Controls.Add(lblRecordsCount);
+            Controls.Add(label2);
+            Controls.Add(cbFilterBy);
+            Controls.Add(txtFilterValue);
+            Controls.Add(label1);
+            Controls.Add(dgvUsers);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmListUsers";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Manage Users";
+            Load += frmListUsers_Load;
+            cmsUsers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbPersonImage).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -314,15 +293,12 @@
         private System.Windows.Forms.ComboBox cbFilterBy;
         private System.Windows.Forms.TextBox txtFilterValue;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem phoneCallToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem showDetailsToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip cmsUsers;
-        private System.Windows.Forms.ToolStripMenuItem sendEmailToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgvUsers;
         private System.Windows.Forms.ToolStripMenuItem ChangePasswordtoolStripMenuItem;
         private System.Windows.Forms.ComboBox cbIsActive;

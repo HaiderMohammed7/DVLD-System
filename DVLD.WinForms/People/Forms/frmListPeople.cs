@@ -21,7 +21,6 @@ namespace DVLD.People
         {
             await LoadPeopleAsync();
         }
-
         private async Task LoadPeopleAsync()
         {
             try
@@ -180,7 +179,6 @@ namespace DVLD.People
         {
             this.Close();
         }
-
         private void btnAddPerson_Click(object sender, EventArgs e)
         {
             var frm = _provider.GetRequiredService<frmAddUpdatePerson>();
@@ -194,7 +192,6 @@ namespace DVLD.People
             var frm = ActivatorUtilities.CreateInstance<frmShowPersonInfo>(_provider, PersonID);
             frm.ShowDialog();
         }
-
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int PersonID = (int)dgvPeople.CurrentRow.Cells[0].Value;
@@ -202,13 +199,11 @@ namespace DVLD.People
             var frm = ActivatorUtilities.CreateInstance<frmAddUpdatePerson>(_provider, PersonID);
             frm.ShowDialog();
         }
-
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             var frm = _provider.GetRequiredService<frmAddUpdatePerson>();
             frm.ShowDialog();
         }
-
         private async void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to delete this person?","Confirm Delete",MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes)

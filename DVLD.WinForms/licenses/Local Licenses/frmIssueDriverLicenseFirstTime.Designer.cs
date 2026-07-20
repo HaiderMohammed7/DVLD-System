@@ -28,102 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlDrivingLicenseApplicationInfo1 = new DVLD.Controls.ApplicationControls.ctrlDrivingLicenseApplicationInfo();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnIssueLicense = new System.Windows.Forms.Button();
-            this.txtNotes = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            ctrlDrivingLicenseApplicationInfo1 = new DVLD.Controls.ApplicationControls.ctrlDrivingLicenseApplicationInfo();
+            btnClose = new Button();
+            btnIssueLicense = new Button();
+            txtNotes = new TextBox();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // ctrlDrivingLicenseApplicationInfo1
             // 
-            this.ctrlDrivingLicenseApplicationInfo1.BackColor = System.Drawing.Color.White;
-            this.ctrlDrivingLicenseApplicationInfo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlDrivingLicenseApplicationInfo1.Location = new System.Drawing.Point(13, 14);
-            this.ctrlDrivingLicenseApplicationInfo1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ctrlDrivingLicenseApplicationInfo1.Name = "ctrlDrivingLicenseApplicationInfo1";
-            this.ctrlDrivingLicenseApplicationInfo1.Size = new System.Drawing.Size(909, 376);
-            this.ctrlDrivingLicenseApplicationInfo1.TabIndex = 0;
+            ctrlDrivingLicenseApplicationInfo1.BackColor = Color.White;
+            ctrlDrivingLicenseApplicationInfo1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ctrlDrivingLicenseApplicationInfo1.Location = new Point(13, 14);
+            ctrlDrivingLicenseApplicationInfo1.Margin = new Padding(4, 5, 4, 5);
+            ctrlDrivingLicenseApplicationInfo1.Name = "ctrlDrivingLicenseApplicationInfo1";
+            ctrlDrivingLicenseApplicationInfo1.Size = new Size(909, 376);
+            ctrlDrivingLicenseApplicationInfo1.TabIndex = 0;
             // 
             // btnClose
             // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(647, 534);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(126, 37);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            btnClose.DialogResult = DialogResult.Cancel;
+            btnClose.FlatStyle = FlatStyle.Popup;
+            btnClose.Image = WinForms.Properties.Resources.Close_32;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.Location = new Point(647, 534);
+            btnClose.Margin = new Padding(4, 5, 4, 5);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(126, 37);
+            btnClose.TabIndex = 3;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
             // 
             // btnIssueLicense
             // 
-            this.btnIssueLicense.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnIssueLicense.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIssueLicense.Location = new System.Drawing.Point(781, 534);
-            this.btnIssueLicense.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnIssueLicense.Name = "btnIssueLicense";
-            this.btnIssueLicense.Size = new System.Drawing.Size(126, 37);
-            this.btnIssueLicense.TabIndex = 2;
-            this.btnIssueLicense.Text = "Issue";
-            this.btnIssueLicense.UseVisualStyleBackColor = true;
+            btnIssueLicense.FlatStyle = FlatStyle.Popup;
+            btnIssueLicense.Image = WinForms.Properties.Resources.License_Type_32;
+            btnIssueLicense.ImageAlign = ContentAlignment.MiddleLeft;
+            btnIssueLicense.Location = new Point(781, 534);
+            btnIssueLicense.Margin = new Padding(4, 5, 4, 5);
+            btnIssueLicense.Name = "btnIssueLicense";
+            btnIssueLicense.Size = new Size(126, 37);
+            btnIssueLicense.TabIndex = 2;
+            btnIssueLicense.Text = "Issue";
+            btnIssueLicense.UseVisualStyleBackColor = true;
             // 
             // txtNotes
             // 
-            this.txtNotes.Location = new System.Drawing.Point(124, 399);
-            this.txtNotes.MaxLength = 500;
-            this.txtNotes.Multiline = true;
-            this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(783, 127);
-            this.txtNotes.TabIndex = 1;
+            txtNotes.Location = new Point(124, 399);
+            txtNotes.MaxLength = 500;
+            txtNotes.Multiline = true;
+            txtNotes.Name = "txtNotes";
+            txtNotes.Size = new Size(783, 127);
+            txtNotes.TabIndex = 1;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(91, 398);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 175;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = WinForms.Properties.Resources.Notes_32;
+            pictureBox1.Location = new Point(91, 398);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(31, 26);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 175;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 395);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
-            this.label1.TabIndex = 174;
-            this.label1.Text = "Notes:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(23, 395);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(61, 20);
+            label1.TabIndex = 174;
+            label1.Text = "Notes:";
             // 
             // frmIssueDriverLicenseFirstTime
             // 
-            this.AcceptButton = this.btnIssueLicense;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(931, 591);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtNotes);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnIssueLicense);
-            this.Controls.Add(this.ctrlDrivingLicenseApplicationInfo1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmIssueDriverLicenseFirstTime";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Issue Driver License For The First Time";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnIssueLicense;
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            CancelButton = btnClose;
+            ClientSize = new Size(931, 591);
+            Controls.Add(pictureBox1);
+            Controls.Add(label1);
+            Controls.Add(txtNotes);
+            Controls.Add(btnClose);
+            Controls.Add(btnIssueLicense);
+            Controls.Add(ctrlDrivingLicenseApplicationInfo1);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmIssueDriverLicenseFirstTime";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Issue Driver License For The First Time";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

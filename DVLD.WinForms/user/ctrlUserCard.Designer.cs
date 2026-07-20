@@ -28,121 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblIsActive = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblUserName = new System.Windows.Forms.Label();
-            this.lblUserID = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            groupBox1 = new GroupBox();
+            lblIsActive = new Label();
+            label2 = new Label();
+            lblUserName = new Label();
+            lblUserID = new Label();
+            label4 = new Label();
+            label1 = new Label();
+            ctrlPersonCard2 = new ctrlPersonCard();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lblIsActive);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.lblUserName);
-            this.groupBox1.Controls.Add(this.lblUserID);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 305);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(819, 86);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Login Information";
+            groupBox1.Controls.Add(lblIsActive);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(lblUserName);
+            groupBox1.Controls.Add(lblUserID);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Location = new Point(13, 305);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(819, 86);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Login Information";
             // 
             // lblIsActive
             // 
-            this.lblIsActive.AutoSize = true;
-            this.lblIsActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIsActive.Location = new System.Drawing.Point(637, 37);
-            this.lblIsActive.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblIsActive.Name = "lblIsActive";
-            this.lblIsActive.Size = new System.Drawing.Size(39, 20);
-            this.lblIsActive.TabIndex = 140;
-            this.lblIsActive.Text = "???";
+            lblIsActive.AutoSize = true;
+            lblIsActive.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblIsActive.Location = new Point(637, 37);
+            lblIsActive.Margin = new Padding(4, 0, 4, 0);
+            lblIsActive.Name = "lblIsActive";
+            lblIsActive.Size = new Size(39, 20);
+            lblIsActive.TabIndex = 140;
+            lblIsActive.Text = "???";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(544, 37);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 20);
-            this.label2.TabIndex = 139;
-            this.label2.Text = "Is Active : ";
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(544, 37);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(93, 20);
+            label2.TabIndex = 139;
+            label2.Text = "Is Active : ";
             // 
             // lblUserName
             // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(434, 37);
-            this.lblUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(39, 20);
-            this.lblUserName.TabIndex = 138;
-            this.lblUserName.Text = "???";
+            lblUserName.AutoSize = true;
+            lblUserName.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUserName.Location = new Point(434, 37);
+            lblUserName.Margin = new Padding(4, 0, 4, 0);
+            lblUserName.Name = "lblUserName";
+            lblUserName.Size = new Size(39, 20);
+            lblUserName.TabIndex = 138;
+            lblUserName.Text = "???";
             // 
             // lblUserID
             // 
-            this.lblUserID.AutoSize = true;
-            this.lblUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserID.Location = new System.Drawing.Point(238, 37);
-            this.lblUserID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblUserID.Name = "lblUserID";
-            this.lblUserID.Size = new System.Drawing.Size(39, 20);
-            this.lblUserID.TabIndex = 137;
-            this.lblUserID.Text = "???";
+            lblUserID.AutoSize = true;
+            lblUserID.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUserID.Location = new Point(238, 37);
+            lblUserID.Margin = new Padding(4, 0, 4, 0);
+            lblUserID.Name = "lblUserID";
+            lblUserID.Size = new Size(39, 20);
+            lblUserID.TabIndex = 137;
+            lblUserID.Text = "???";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(152, 37);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 20);
-            this.label4.TabIndex = 136;
-            this.label4.Text = "User ID : ";
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(152, 37);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(86, 20);
+            label4.TabIndex = 136;
+            label4.Text = "User ID : ";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(338, 37);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
-            this.label1.TabIndex = 130;
-            this.label1.Text = "Username:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(338, 37);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(96, 20);
+            label1.TabIndex = 130;
+            label1.Text = "Username:";
             // 
-            // ctrlPersonCard1
+            // ctrlPersonCard2
             // 
-            this.ctrlPersonCard1.BackColor = System.Drawing.Color.White;
-            this.ctrlPersonCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlPersonCard1.Location = new System.Drawing.Point(4, 8);
-            this.ctrlPersonCard1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ctrlPersonCard1.Name = "ctrlPersonCard1";
-            this.ctrlPersonCard1.Size = new System.Drawing.Size(839, 300);
-            this.ctrlPersonCard1.TabIndex = 2;
+            ctrlPersonCard2.BackColor = Color.White;
+            ctrlPersonCard2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ctrlPersonCard2.Location = new Point(4, 8);
+            ctrlPersonCard2.Margin = new Padding(4, 5, 4, 5);
+            ctrlPersonCard2.Name = "ctrlPersonCard2";
+            ctrlPersonCard2.Size = new Size(839, 300);
+            ctrlPersonCard2.TabIndex = 2;
             // 
             // ctrlUserCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.ctrlPersonCard1);
-            this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "ctrlUserCard";
-            this.Size = new System.Drawing.Size(839, 404);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            Controls.Add(ctrlPersonCard2);
+            Controls.Add(groupBox1);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "ctrlUserCard";
+            Size = new Size(839, 404);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ResumeLayout(false);
 
         }
 
@@ -155,5 +156,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private ctrlPersonCard ctrlPersonCard1;
+        private ctrlPersonCard ctrlPersonCard2;
     }
 }
