@@ -41,6 +41,7 @@
             txtCurrentPassword = new TextBox();
             pictureBox2 = new PictureBox();
             errorProvider1 = new ErrorProvider(components);
+            ctrlUserCard2 = new DVLD.Controls.ctrlUserCard();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -122,6 +123,7 @@
             btnClose.TabIndex = 5;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnSave
             // 
@@ -135,6 +137,7 @@
             btnSave.TabIndex = 4;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // label1
             // 
@@ -171,15 +174,15 @@
             // 
             errorProvider1.ContainerControl = this;
             // 
-            // ctrlUserCard1
+            // ctrlUserCard2
             // 
-            ctrlUserCard1.BackColor = Color.White;
-            ctrlUserCard1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ctrlUserCard1.Location = new Point(16, 14);
-            ctrlUserCard1.Margin = new Padding(4, 5, 4, 5);
-            ctrlUserCard1.Name = "ctrlUserCard1";
-            ctrlUserCard1.Size = new Size(839, 404);
-            ctrlUserCard1.TabIndex = 0;
+            ctrlUserCard2.BackColor = Color.White;
+            ctrlUserCard2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ctrlUserCard2.Location = new Point(16, 14);
+            ctrlUserCard2.Margin = new Padding(4, 5, 4, 5);
+            ctrlUserCard2.Name = "ctrlUserCard2";
+            ctrlUserCard2.Size = new Size(839, 404);
+            ctrlUserCard2.TabIndex = 138;
             // 
             // frmChangePassword
             // 
@@ -190,6 +193,7 @@
             BackColor = Color.White;
             CancelButton = btnClose;
             ClientSize = new Size(868, 673);
+            Controls.Add(ctrlUserCard2);
             Controls.Add(label1);
             Controls.Add(txtCurrentPassword);
             Controls.Add(pictureBox2);
@@ -201,7 +205,6 @@
             Controls.Add(txtNewPassword);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox3);
-            Controls.Add(ctrlUserCard1);
             Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(4, 5, 4, 5);
@@ -232,5 +235,6 @@
         private System.Windows.Forms.TextBox txtCurrentPassword;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Controls.ctrlUserCard ctrlUserCard2;
     }
 }

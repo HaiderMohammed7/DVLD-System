@@ -42,9 +42,15 @@ namespace DVLD
 
             frm.ShowDialog();
         }
-        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var currentUser = await _userService.GetCurrentUserAsync();
 
+            var frm = _provider.GetRequiredService<frmChangePassword>();
+
+            await frm.LoadInfoAsync(currentUser.UserID);
+
+            frm.ShowDialog();
         }
         private async void signOutToolStripMenuItem_Click(object sender, EventArgs e)
         {

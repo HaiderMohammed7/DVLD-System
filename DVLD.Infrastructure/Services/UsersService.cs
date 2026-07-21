@@ -31,5 +31,12 @@ namespace DVLD.Infrastructure.Services
         {
             return await _http.GetAsync<CurrentUserDto>("api/users/me");
         }
+
+        public async Task ChangePasswordAsync(ChangePasswordDto dto)
+        {
+            var response = await _http.PostAsync("api/users/change-password", dto);
+
+            response.EnsureSuccessStatusCode();
+        }
     }
 }
