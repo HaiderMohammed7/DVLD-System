@@ -12,7 +12,9 @@ namespace DVLD.Controls
         private PeopleService _people;
 
         private int _PersonID = -1;
+        private string? _Email;
         public int PersonID { get { return _PersonID; } }
+        public string? Email { get { return _Email; } }
 
         public ctrlPersonCard()
         {
@@ -69,6 +71,7 @@ namespace DVLD.Controls
             lblNationalNo.Text = dto.NationalNo;
             lblFullName.Text = $"{dto.FirstName} {dto.SecondName} {dto.ThirdName} {dto.LastName}";
             lblGendor.Text = dto.Gendor == 0 ? "Female" : "Male";
+            _Email = dto.Email;
             lblEmail.Text = dto.Email;
             lblPhone.Text = dto.Phone;
             lblDateOfBirth.Text = dto.DateOfBirth.ToShortDateString();

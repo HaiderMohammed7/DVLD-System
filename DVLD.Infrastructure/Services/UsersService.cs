@@ -1,5 +1,6 @@
 ﻿using DVLD.Application.DTOs;
 using DVLD.Infrastructure.HTTP;
+using System.Net.Http.Json;
 
 namespace DVLD.Infrastructure.Services
 {
@@ -37,6 +38,20 @@ namespace DVLD.Infrastructure.Services
             var response = await _http.PostAsync("api/users/change-password", dto);
 
             response.EnsureSuccessStatusCode();
+        }
+
+        public async Task<bool> IsPersonLinkedAsync(int PersonId)
+        {
+            return await _http.GetAsync<bool>($"api/users/PersonId/{PersonId}/exists");
+        }
+
+        public async Task<int> CreateUserAsync(CreateUserDto dto)
+        {
+            var response = await _http.PostAsync("api/users", dto);
+
+            response.EnsureSuccessStatusCode();
+
+            return await response.Content.ReadFromJsonAsync<int>();
         }
     }
 }

@@ -106,6 +106,7 @@
             btnPersonInfoNext.TabIndex = 119;
             btnPersonInfoNext.Text = "Next";
             btnPersonInfoNext.UseVisualStyleBackColor = true;
+            btnPersonInfoNext.Click += btnPersonInfoNext_Click;
             // 
             // tpLoginInfo
             // 
@@ -182,6 +183,7 @@
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(167, 26);
             txtUserName.TabIndex = 118;
+            txtUserName.TextChanged += txtUserName_TextChanged;
             // 
             // txtConfirmPassword
             // 
@@ -192,6 +194,7 @@
             txtConfirmPassword.PasswordChar = '*';
             txtConfirmPassword.Size = new Size(167, 26);
             txtConfirmPassword.TabIndex = 124;
+            txtConfirmPassword.TextChanged += txtConfirmPassword_TextChanged;
             // 
             // label1
             // 
@@ -235,6 +238,7 @@
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(167, 26);
             txtPassword.TabIndex = 119;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // pictureBox1
             // 
@@ -294,10 +298,10 @@
             btnClose.TabIndex = 113;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnSave
             // 
-            btnSave.Enabled = false;
             btnSave.FlatStyle = FlatStyle.Popup;
             btnSave.Image = WinForms.Properties.Resources.Save_32;
             btnSave.ImageAlign = ContentAlignment.MiddleLeft;
@@ -308,6 +312,7 @@
             btnSave.TabIndex = 112;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // frmAddUpdateUser
             // 
@@ -328,7 +333,6 @@
             Name = "frmAddUpdateUser";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Add/Update User";
-            Load += frmAddUpdateUser_Load;
             tcUserInfo.ResumeLayout(false);
             tpPersonalInfo.ResumeLayout(false);
             tpLoginInfo.ResumeLayout(false);

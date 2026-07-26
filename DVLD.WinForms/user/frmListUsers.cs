@@ -1,6 +1,5 @@
 ﻿using DVLD.Application.DTOs;
 using DVLD.Infrastructure.Services;
-using DVLD.People;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DVLD.User
@@ -153,11 +152,20 @@ namespace DVLD.User
             frm.ShowDialog();
         }
 
-        private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var userId = (int)dgvUsers.CurrentRow.Cells[0].Value;
+
+            var frm = _provider.GetRequiredService<frmUserInfo>();
+
+            await frm.LoadUserAsync(userId);
+
+            frm.ShowDialog();
         }
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            var frm = _provider.GetRequiredService<frmAddUpdateUser>();
+            frm.ShowDialog();
         }
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -165,8 +173,15 @@ namespace DVLD.User
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
         }
-        private void ChangePasswordtoolStripMenuItem_Click(object sender, EventArgs e)
+        private async void ChangePasswordtoolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var userId = (int)dgvUsers.CurrentRow.Cells[0].Value;
+
+            var frm = _provider.GetRequiredService<frmChangePassword>();
+
+            await frm.LoadInfoAsync(userId);
+
+            frm.ShowDialog();
         }
     }
 }
