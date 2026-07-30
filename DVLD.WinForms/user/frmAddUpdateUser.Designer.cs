@@ -333,6 +333,7 @@
             Name = "frmAddUpdateUser";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Add/Update User";
+            Load += frmAddUpdateUser_Load;
             tcUserInfo.ResumeLayout(false);
             tpPersonalInfo.ResumeLayout(false);
             tpLoginInfo.ResumeLayout(false);

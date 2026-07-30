@@ -1,5 +1,6 @@
 ﻿using DVLD.Application.DTOs;
 using DVLD.Infrastructure.Services;
+using DVLD.People;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DVLD.User
@@ -169,9 +170,21 @@ namespace DVLD.User
         }
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            int userId = (int)dgvUsers.CurrentRow.Cells[0].Value;
+
+            var frm = ActivatorUtilities.CreateInstance<frmAddUpdateUser>(_provider, userId);
+            frm.ShowDialog();
         }
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Are you sure you want to delete this user?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes)
+                return;
+
+            await _userService.DeleteUserAsync((int)dgvUsers.CurrentRow.Cells[0].Value);
+
+            MessageBox.Show("User Deleted Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            await LoadUsersAsync();
         }
         private async void ChangePasswordtoolStripMenuItem_Click(object sender, EventArgs e)
         {

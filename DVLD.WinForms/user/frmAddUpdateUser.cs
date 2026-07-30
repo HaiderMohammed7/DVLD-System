@@ -7,8 +7,10 @@ namespace DVLD.User
     {
         public enum enMode { AddNew, Update };
         private enMode _mode;
+        private int _userId;
 
         private UsersService _usersService;
+
         public frmAddUpdateUser(UsersService usersService, IServiceProvider provider, PeopleService peopleService)
         {
             InitializeComponent();
@@ -17,6 +19,37 @@ namespace DVLD.User
             ctrlPersonCardWithFilter1.SetServices(provider, peopleService);
         }
 
+        public frmAddUpdateUser(int userId, UsersService usersService, IServiceProvider provider, PeopleService people)
+        {
+            InitializeComponent();
+            _mode = enMode.Update;
+            _userId = userId;
+            _usersService = usersService;
+            ctrlPersonCardWithFilter1.SetServices(provider, people);
+        }
+
+        private void _ResetDefualtValues()
+        {
+            if (_mode == enMode.AddNew)
+            {
+                lblTitle.Text = "Add New User";
+                this.Text = "Add New User";
+
+                tpLoginInfo.Enabled = false;
+            }
+            else
+            {
+                lblTitle.Text = "Update User";
+                this.Text = "Update User";
+
+                tpLoginInfo.Enabled = true;
+                btnSave.Enabled = true;
+            }
+            txtUserName.Text = "";
+            txtPassword.Text = "";
+            txtConfirmPassword.Text = "";
+            chkIsActive.Checked = true;
+        }
         private async void btnSave_Click(object sender, EventArgs e)
         {
             if (!this.ValidateChildren())
@@ -37,20 +70,62 @@ namespace DVLD.User
 
             try
             {
-                var userId = await _usersService.CreateUserAsync(dto);
+                if(_mode == enMode.AddNew)
+                {
+                    var userId = await _usersService.CreateUserAsync(dto);
 
-                lblUserID.Text = userId.ToString();
+                    _userId = userId;
+                    lblUserID.Text = userId.ToString();
 
-                _mode = enMode.Update;
-                lblTitle.Text = "Update User";
-                Text = "Update User";
+                    _mode = enMode.Update;
+                    txtPassword.Visible = false;
+                    txtConfirmPassword.Visible = false;
+                    lblTitle.Text = "Update User";
+                    Text = "Update User";
+                }
+                else
+                {
+                    await _usersService.UpdateUserAsync(_userId, new UpdateUserDto
+                    {
+                        UserName = txtUserName.Text.Trim(),
+                        Email = ctrlPersonCardWithFilter1.Email,
+                        IsActive = chkIsActive.Checked,
+                    });
+                }
 
-                MessageBox.Show("Data Saved Successfully.","Saved",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private async Task LoadUserInfo()
+        {
+            var user = await _usersService.GetUserWithUserName(_userId);
+
+            if (user == null)
+            {
+                MessageBox.Show("No User with ID = " + _userId, "User Not Found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                this.Close();
+                return;
+            }
+
+            lblUserID.Text = user.UserId.ToString();
+            txtUserName.Text = user.UserName;
+            txtPassword.Visible = false;
+            txtConfirmPassword.Visible = false;
+            chkIsActive.Checked = user.IsActive;
+            ctrlPersonCardWithFilter1.LoadPersonInfo(user.PersonId);
+        }
+
+        private async void frmAddUpdateUser_Load(object sender, EventArgs e)
+        {
+            _ResetDefualtValues();
+
+            if (_mode == enMode.Update)
+                await LoadUserInfo();
         }
 
         private async void btnPersonInfoNext_Click(object sender, EventArgs e)
@@ -71,6 +146,7 @@ namespace DVLD.User
                     return;
                 }
 
+                tpLoginInfo.Enabled = true;
                 tcUserInfo.SelectedTab = tpLoginInfo;
 
                 txtUserName.Focus();
@@ -125,6 +201,6 @@ namespace DVLD.User
             {
                 errorProvider1.SetError(txtConfirmPassword, "");
             }
-        }
+        }      
     }
 }

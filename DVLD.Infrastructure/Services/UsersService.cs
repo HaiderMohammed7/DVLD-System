@@ -53,5 +53,17 @@ namespace DVLD.Infrastructure.Services
 
             return await response.Content.ReadFromJsonAsync<int>();
         }
+
+        public async Task UpdateUserAsync(int id, UpdateUserDto dto)
+        {
+            await _http.PutAsync($"api/users/{id}", dto);
+        }
+
+        public async Task DeleteUserAsync(int id)
+        {
+            var response = await _http.DeleteAsync($"api/users/{id}");
+
+            response.EnsureSuccessStatusCode();
+        }
     }
 }
