@@ -1,6 +1,5 @@
 ﻿using DVLD.Application.DTOs;
 using DVLD.Infrastructure.Services;
-using DVLD.People;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DVLD.User

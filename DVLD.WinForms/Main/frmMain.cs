@@ -1,4 +1,5 @@
-﻿using DVLD.Infrastructure.Authentication;
+﻿using DVLD.Applications;
+using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.Services;
 using DVLD.People;
 using DVLD.User;
@@ -67,6 +68,12 @@ namespace DVLD
             TokenStorage.Clear();
 
             this.Close();
+        }
+
+        private void manageApplicationTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = _provider.GetRequiredService<frmManageApplicationTypes>();
+            frm.ShowDialog();
         }
     }
 }

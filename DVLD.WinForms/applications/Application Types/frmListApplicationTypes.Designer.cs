@@ -106,24 +106,26 @@
             // 
             cmsApplicationTypes.Items.AddRange(new ToolStripItem[] { toolStripSeparator2, editToolStripMenuItem, toolStripSeparator1 });
             cmsApplicationTypes.Name = "contextMenuStrip1";
-            cmsApplicationTypes.Size = new Size(187, 38);
+            cmsApplicationTypes.Size = new Size(203, 76);
             // 
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(183, 6);
+            toolStripSeparator2.Size = new Size(199, 6);
             // 
             // editToolStripMenuItem
             // 
+            editToolStripMenuItem.Image = WinForms.Properties.Resources.edit_32;
             editToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             editToolStripMenuItem.Name = "editToolStripMenuItem";
-            editToolStripMenuItem.Size = new Size(186, 22);
+            editToolStripMenuItem.Size = new Size(202, 38);
             editToolStripMenuItem.Text = "&Edit Application Type";
+            editToolStripMenuItem.Click += this.editToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(183, 6);
+            toolStripSeparator1.Size = new Size(199, 6);
             // 
             // btnClose
             // 
@@ -138,6 +140,7 @@
             btnClose.TabIndex = 1;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // pbApplicationTypesmage
             // 
@@ -172,6 +175,7 @@
             Name = "frmManageApplicationTypes";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Manage Application Types";
+            Load += frmManageApplicationTypes_Load;
             ((System.ComponentModel.ISupportInitialize)dgvApplicationTypes).EndInit();
             cmsApplicationTypes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbApplicationTypesmage).EndInit();

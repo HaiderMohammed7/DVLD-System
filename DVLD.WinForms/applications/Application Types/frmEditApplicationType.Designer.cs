@@ -135,6 +135,7 @@
             btnSave.TabIndex = 139;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnClose
             // 
@@ -149,6 +150,7 @@
             btnClose.TabIndex = 140;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // pictureBox8
             // 
@@ -196,6 +198,7 @@
             Name = "frmEditApplicationType";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Update Application Type";
+            Load += frmEditApplicationType_Load;
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

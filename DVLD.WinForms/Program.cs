@@ -1,3 +1,4 @@
+using DVLD.Applications;
 using DVLD.Controls;
 using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.HTTP;
@@ -26,6 +27,7 @@ namespace DVLD.WinForms
             services.AddTransient<PeopleService>();
             services.AddTransient<CountriesService>();
             services.AddTransient<UsersService>();
+            services.AddTransient<ApplicationTypeService>();
 
             services.AddTransient<frmLogin>();
             services.AddTransient<frmMain>();
@@ -42,6 +44,9 @@ namespace DVLD.WinForms
             services.AddTransient<frmUserInfo>();
             services.AddTransient<frmChangePassword>();
             services.AddTransient<ctrlUserCard>();
+
+            services.AddTransient<frmManageApplicationTypes>();
+            services.AddTransient<frmEditApplicationType>();
 
             provider = services.BuildServiceProvider();
             ApplicationConfiguration.Initialize();
