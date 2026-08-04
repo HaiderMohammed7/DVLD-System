@@ -2,6 +2,7 @@
 using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.Services;
 using DVLD.People;
+using DVLD.Tests;
 using DVLD.User;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -73,6 +74,12 @@ namespace DVLD
         private void manageApplicationTypesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frm = _provider.GetRequiredService<frmManageApplicationTypes>();
+            frm.ShowDialog();
+        }
+
+        private void manageTestTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = _provider.GetRequiredService<frmListTestTypes>();
             frm.ShowDialog();
         }
     }

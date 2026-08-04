@@ -4,6 +4,7 @@ using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.HTTP;
 using DVLD.Infrastructure.Services;
 using DVLD.People;
+using DVLD.Tests;
 using DVLD.User;
 using DVLD.WinForms.Forms;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,6 +29,7 @@ namespace DVLD.WinForms
             services.AddTransient<CountriesService>();
             services.AddTransient<UsersService>();
             services.AddTransient<ApplicationTypeService>();
+            services.AddTransient<TestTypeService>();
 
             services.AddTransient<frmLogin>();
             services.AddTransient<frmMain>();
@@ -47,6 +49,9 @@ namespace DVLD.WinForms
 
             services.AddTransient<frmManageApplicationTypes>();
             services.AddTransient<frmEditApplicationType>();
+
+            services.AddTransient<frmListTestTypes>();
+            services.AddTransient<frmEditTestType>();
 
             provider = services.BuildServiceProvider();
             ApplicationConfiguration.Initialize();

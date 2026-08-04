@@ -1,5 +1,4 @@
-﻿using DVLD.Application.DTOs;
-using DVLD.Infrastructure.Services;
+﻿using DVLD.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DVLD.Applications
@@ -8,7 +7,6 @@ namespace DVLD.Applications
     {
         private readonly ApplicationTypeService _applicationTypeService;
         private readonly IServiceProvider _provider;
-        private List<ApplicationTypeListDto> _applicationTypes = new();
 
         public frmManageApplicationTypes(ApplicationTypeService applicationType, IServiceProvider provider)
         {
@@ -31,9 +29,9 @@ namespace DVLD.Applications
         {
             try
             {
-                _applicationTypes = await _applicationTypeService.GetAllAsync();
-                dgvApplicationTypes.DataSource = _applicationTypes;
-                lblRecordsCount.Text = _applicationTypes.Count.ToString();
+                var applicationTypes = await _applicationTypeService.GetAllAsync();
+                dgvApplicationTypes.DataSource = applicationTypes;
+                lblRecordsCount.Text = applicationTypes.Count.ToString();
 
                 if (dgvApplicationTypes.Rows.Count > 0)
                 {

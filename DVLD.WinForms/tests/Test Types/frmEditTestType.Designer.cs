@@ -141,6 +141,7 @@
             btnClose.TabIndex = 151;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnSave
             // 
@@ -155,6 +156,7 @@
             btnSave.TabIndex = 150;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // pictureBox8
             // 
@@ -237,6 +239,7 @@
             Name = "frmEditTestType";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Update Test Type";
+            Load += frmEditTestType_Load;
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

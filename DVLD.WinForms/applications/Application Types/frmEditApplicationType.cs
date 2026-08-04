@@ -5,21 +5,21 @@ namespace DVLD.Applications
 {
     public partial class frmEditApplicationType : Form
     {
-        private int __applicationTypeId;
+        private int _applicationTypeId;
         private ApplicationTypeService _applicationTypeService;
 
         public frmEditApplicationType(int id, ApplicationTypeService applicationType)
         {
             InitializeComponent();
-            __applicationTypeId = id;
+            _applicationTypeId = id;
             _applicationTypeService = applicationType;
         }
 
         private async Task LoadData()
         {
-            lblApplicationTypeID.Text = __applicationTypeId.ToString();
+            lblApplicationTypeID.Text = _applicationTypeId.ToString();
 
-            var applicationType = await _applicationTypeService.GetByIdAsync(__applicationTypeId);
+            var applicationType = await _applicationTypeService.GetByIdAsync(_applicationTypeId);
 
             if (applicationType == null)
             {
@@ -63,7 +63,7 @@ namespace DVLD.Applications
                     Fees = decimal.Parse(txtFees.Text)
                 };
 
-                await _applicationTypeService.UpdateAsync(__applicationTypeId, dto);
+                await _applicationTypeService.UpdateAsync(_applicationTypeId, dto);
 
                 MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

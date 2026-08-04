@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             lblTitle = new Label();
             lblRecordsCount = new Label();
             label2 = new Label();
@@ -89,14 +89,14 @@
             dgvTestTypes.MultiSelect = false;
             dgvTestTypes.Name = "dgvTestTypes";
             dgvTestTypes.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvTestTypes.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvTestTypes.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvTestTypes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvTestTypes.Size = new Size(931, 354);
             dgvTestTypes.TabIndex = 113;
@@ -106,24 +106,26 @@
             // 
             cmsTestTypes.Items.AddRange(new ToolStripItem[] { toolStripSeparator2, editToolStripMenuItem, toolStripSeparator1 });
             cmsTestTypes.Name = "contextMenuStrip1";
-            cmsTestTypes.Size = new Size(147, 38);
+            cmsTestTypes.Size = new Size(197, 76);
             // 
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(143, 6);
+            toolStripSeparator2.Size = new Size(193, 6);
             // 
             // editToolStripMenuItem
             // 
+            editToolStripMenuItem.Image = WinForms.Properties.Resources.edit_32;
             editToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             editToolStripMenuItem.Name = "editToolStripMenuItem";
-            editToolStripMenuItem.Size = new Size(146, 22);
+            editToolStripMenuItem.Size = new Size(196, 38);
             editToolStripMenuItem.Text = "&Edit Test Type";
+            editToolStripMenuItem.Click += editToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(143, 6);
+            toolStripSeparator1.Size = new Size(193, 6);
             // 
             // btnClose
             // 
@@ -138,6 +140,7 @@
             btnClose.TabIndex = 112;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // pbApplicationTypesmage
             // 
@@ -171,6 +174,7 @@
             Name = "frmListTestTypes";
             StartPosition = FormStartPosition.CenterParent;
             Text = "List Test Types";
+            Load += frmListTestTypes_Load;
             ((System.ComponentModel.ISupportInitialize)dgvTestTypes).EndInit();
             cmsTestTypes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbApplicationTypesmage).EndInit();
