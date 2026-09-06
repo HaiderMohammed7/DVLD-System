@@ -118,6 +118,7 @@
             localLicenseToolStripMenuItem2.Name = "localLicenseToolStripMenuItem2";
             localLicenseToolStripMenuItem2.Size = new Size(240, 26);
             localLicenseToolStripMenuItem2.Text = "&Local License";
+            localLicenseToolStripMenuItem2.Click += localLicenseToolStripMenuItem2_Click;
             // 
             // internationalLicenseToolStripMenuItem2
             // 
@@ -183,6 +184,7 @@
             manageLocalDrivingLicenseApplicationsToolStripMenuItem.Name = "manageLocalDrivingLicenseApplicationsToolStripMenuItem";
             manageLocalDrivingLicenseApplicationsToolStripMenuItem.Size = new Size(341, 26);
             manageLocalDrivingLicenseApplicationsToolStripMenuItem.Text = "Local Driving License Applications";
+            manageLocalDrivingLicenseApplicationsToolStripMenuItem.Click += manageLocalDrivingLicenseApplicationsToolStripMenuItem_Click;
             // 
             // ManageInternationaDrivingLicenseToolStripMenuItem1
             // 

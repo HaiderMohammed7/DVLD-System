@@ -76,10 +76,21 @@ namespace DVLD
             var frm = _provider.GetRequiredService<frmManageApplicationTypes>();
             frm.ShowDialog();
         }
-
         private void manageTestTypesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frm = _provider.GetRequiredService<frmListTestTypes>();
+            frm.ShowDialog();
+        }
+
+        private void localLicenseToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            var frm = _provider.GetRequiredService<frmAddUpdateLocalDrivingLicesnseApplication>();
+            frm.ShowDialog();
+        }
+
+        private void manageLocalDrivingLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = _provider.GetRequiredService<frmListLocalDrivingLicesnseApplications>();
             frm.ShowDialog();
         }
     }

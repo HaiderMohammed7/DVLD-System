@@ -106,6 +106,7 @@
             btnApplicationInfoNext.TabIndex = 119;
             btnApplicationInfoNext.Text = "Next";
             btnApplicationInfoNext.UseVisualStyleBackColor = true;
+            btnApplicationInfoNext.Click += btnApplicationInfoNext_Click;
             // 
             // ctrlPersonCardWithFilter1
             // 
@@ -309,6 +310,7 @@
             btnClose.TabIndex = 120;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnSave
             // 
@@ -323,6 +325,7 @@
             btnSave.TabIndex = 119;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // frmAddUpdateLocalDrivingLicesnseApplication
             // 
@@ -340,6 +343,7 @@
             Name = "frmAddUpdateLocalDrivingLicesnseApplication";
             StartPosition = FormStartPosition.CenterParent;
             Text = "frmAddUpdateApplication";
+            Load += frmAddUpdateLocalDrivingLicesnseApplication_Load;
             tcApplicationInfo.ResumeLayout(false);
             tpPersonalInfo.ResumeLayout(false);
             tpApplicationInfo.ResumeLayout(false);

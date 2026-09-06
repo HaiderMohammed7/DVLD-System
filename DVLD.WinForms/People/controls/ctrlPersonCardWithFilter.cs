@@ -1,4 +1,6 @@
 ﻿using DVLD.Infrastructure.Services;
+using DVLD.People;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace DVLD.Controls
 {
@@ -6,6 +8,7 @@ namespace DVLD.Controls
     {
         public int PersonId { get { return ctrlPersonCard2.PersonID; } }
         public string? Email { get { return ctrlPersonCard2.Email; } }
+        private IServiceProvider _provider;
         public ctrlPersonCardWithFilter()
         {
             InitializeComponent();
@@ -13,6 +16,7 @@ namespace DVLD.Controls
 
         public void SetServices(IServiceProvider provider, PeopleService people)
         {
+            _provider = provider;
             ctrlPersonCard2.SetServices(provider, people);
         }
 
@@ -35,7 +39,8 @@ namespace DVLD.Controls
 
         private void btnAddNewPerson_Click(object sender, EventArgs e)
         {
-
+            var frm = _provider.GetRequiredService<frmAddUpdatePerson>();
+            frm.ShowDialog();
         }
 
         private void FindNow()

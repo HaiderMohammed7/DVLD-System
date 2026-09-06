@@ -1,8 +1,10 @@
 using DVLD.Applications;
 using DVLD.Controls;
+using DVLD.Controls.ApplicationControls;
 using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.HTTP;
 using DVLD.Infrastructure.Services;
+using DVLD.Licenses.Controls;
 using DVLD.People;
 using DVLD.Tests;
 using DVLD.User;
@@ -25,12 +27,15 @@ namespace DVLD.WinForms
             services.AddSingleton<DVLDApiClient>();
 
             services.AddSingleton<AuthService>();
-            services.AddTransient<PeopleService>();
-            services.AddTransient<CountriesService>();
-            services.AddTransient<UsersService>();
+            services.AddTransient<ApplicationService>();
             services.AddTransient<ApplicationTypeService>();
+            services.AddTransient<CountriesService>();
+            services.AddTransient<LicenseClassService>();
+            services.AddTransient<LocalDrivingLicenseApplicationService>();
+            services.AddTransient<PeopleService>();
             services.AddTransient<TestTypeService>();
-
+            services.AddTransient<UsersService>();
+            
             services.AddTransient<frmLogin>();
             services.AddTransient<frmMain>();
 
@@ -52,6 +57,11 @@ namespace DVLD.WinForms
 
             services.AddTransient<frmListTestTypes>();
             services.AddTransient<frmEditTestType>();
+
+            services.AddTransient<frmAddUpdateLocalDrivingLicesnseApplication>();
+            services.AddTransient<frmListLocalDrivingLicesnseApplications>();
+            services.AddTransient<frmLocalDrivingLicenseApplicationInfo>();
+            services.AddTransient<ctrlDrivingLicenseApplicationInfo>();
 
             provider = services.BuildServiceProvider();
             ApplicationConfiguration.Initialize();

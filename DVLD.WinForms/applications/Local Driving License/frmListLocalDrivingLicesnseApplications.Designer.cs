@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             lblTitle = new Label();
             lblRecordsCount = new Label();
             label2 = new Label();
@@ -109,14 +109,14 @@
             dgvLocalDrivingLicenseApplications.MultiSelect = false;
             dgvLocalDrivingLicenseApplications.Name = "dgvLocalDrivingLicenseApplications";
             dgvLocalDrivingLicenseApplications.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvLocalDrivingLicenseApplications.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvLocalDrivingLicenseApplications.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvLocalDrivingLicenseApplications.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvLocalDrivingLicenseApplications.Size = new Size(1405, 353);
             dgvLocalDrivingLicenseApplications.TabIndex = 119;
@@ -126,114 +126,129 @@
             // 
             cmsApplications.Items.AddRange(new ToolStripItem[] { showDetailsToolStripMenuItem, toolStripSeparator2, editToolStripMenuItem, DeleteApplicationToolStripMenuItem, toolStripSeparator5, CancelApplicaitonToolStripMenuItem, toolStripSeparator1, ScheduleTestsMenue, toolStripSeparator3, issueDrivingLicenseFirstTimeToolStripMenuItem, toolStripSeparator4, showLicenseToolStripMenuItem, toolStripSeparator6, showPersonLicenseHistoryToolStripMenuItem });
             cmsApplications.Name = "contextMenuStrip1";
-            cmsApplications.Size = new Size(247, 216);
+            cmsApplications.Size = new Size(263, 344);
             // 
             // showDetailsToolStripMenuItem
             // 
+            showDetailsToolStripMenuItem.Image = WinForms.Properties.Resources.PersonDetails_32;
             showDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            showDetailsToolStripMenuItem.Size = new Size(246, 22);
+            showDetailsToolStripMenuItem.Size = new Size(262, 38);
             showDetailsToolStripMenuItem.Text = "&Show Application Details";
+            showDetailsToolStripMenuItem.Click += showDetailsToolStripMenuItem_Click;
             // 
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(243, 6);
+            toolStripSeparator2.Size = new Size(259, 6);
             // 
             // editToolStripMenuItem
             // 
+            editToolStripMenuItem.Image = WinForms.Properties.Resources.edit_32;
             editToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             editToolStripMenuItem.Name = "editToolStripMenuItem";
-            editToolStripMenuItem.Size = new Size(246, 22);
+            editToolStripMenuItem.Size = new Size(262, 38);
             editToolStripMenuItem.Text = "&Edit Application";
+            editToolStripMenuItem.Click += editToolStripMenuItem_Click;
             // 
             // DeleteApplicationToolStripMenuItem
             // 
+            DeleteApplicationToolStripMenuItem.Image = WinForms.Properties.Resources.Delete_32_2;
             DeleteApplicationToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             DeleteApplicationToolStripMenuItem.Name = "DeleteApplicationToolStripMenuItem";
-            DeleteApplicationToolStripMenuItem.Size = new Size(246, 22);
+            DeleteApplicationToolStripMenuItem.Size = new Size(262, 38);
             DeleteApplicationToolStripMenuItem.Text = "&Delete Application";
+            DeleteApplicationToolStripMenuItem.Click += DeleteApplicationToolStripMenuItem_Click;
             // 
             // toolStripSeparator5
             // 
             toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new Size(243, 6);
+            toolStripSeparator5.Size = new Size(259, 6);
             // 
             // CancelApplicaitonToolStripMenuItem
             // 
+            CancelApplicaitonToolStripMenuItem.Image = WinForms.Properties.Resources.Delete_32;
             CancelApplicaitonToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             CancelApplicaitonToolStripMenuItem.Name = "CancelApplicaitonToolStripMenuItem";
-            CancelApplicaitonToolStripMenuItem.Size = new Size(246, 22);
+            CancelApplicaitonToolStripMenuItem.Size = new Size(262, 38);
             CancelApplicaitonToolStripMenuItem.Text = "&Cancel Application";
+            CancelApplicaitonToolStripMenuItem.Click += CancelApplicaitonToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(243, 6);
+            toolStripSeparator1.Size = new Size(259, 6);
             // 
             // ScheduleTestsMenue
             // 
             ScheduleTestsMenue.DropDownItems.AddRange(new ToolStripItem[] { scheduleVisionTestToolStripMenuItem, scheduleWrittenTestToolStripMenuItem, scheduleStreetTestToolStripMenuItem });
+            ScheduleTestsMenue.Image = WinForms.Properties.Resources.Schedule_Test_32;
             ScheduleTestsMenue.ImageScaling = ToolStripItemImageScaling.None;
             ScheduleTestsMenue.Name = "ScheduleTestsMenue";
-            ScheduleTestsMenue.Size = new Size(246, 22);
+            ScheduleTestsMenue.Size = new Size(262, 38);
             ScheduleTestsMenue.Text = "Sechdule &Tests";
             // 
             // scheduleVisionTestToolStripMenuItem
             // 
+            scheduleVisionTestToolStripMenuItem.Image = WinForms.Properties.Resources.Vision_Test_32;
             scheduleVisionTestToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             scheduleVisionTestToolStripMenuItem.Name = "scheduleVisionTestToolStripMenuItem";
-            scheduleVisionTestToolStripMenuItem.Size = new Size(188, 22);
+            scheduleVisionTestToolStripMenuItem.Size = new Size(204, 38);
             scheduleVisionTestToolStripMenuItem.Text = "Schedule Vision Test";
             // 
             // scheduleWrittenTestToolStripMenuItem
             // 
+            scheduleWrittenTestToolStripMenuItem.Image = WinForms.Properties.Resources.Written_Test_32;
             scheduleWrittenTestToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             scheduleWrittenTestToolStripMenuItem.Name = "scheduleWrittenTestToolStripMenuItem";
-            scheduleWrittenTestToolStripMenuItem.Size = new Size(188, 22);
+            scheduleWrittenTestToolStripMenuItem.Size = new Size(204, 38);
             scheduleWrittenTestToolStripMenuItem.Text = "Schedule Written Test";
             // 
             // scheduleStreetTestToolStripMenuItem
             // 
+            scheduleStreetTestToolStripMenuItem.Image = WinForms.Properties.Resources.Street_Test_32;
             scheduleStreetTestToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             scheduleStreetTestToolStripMenuItem.Name = "scheduleStreetTestToolStripMenuItem";
-            scheduleStreetTestToolStripMenuItem.Size = new Size(188, 22);
+            scheduleStreetTestToolStripMenuItem.Size = new Size(204, 38);
             scheduleStreetTestToolStripMenuItem.Text = "Schedule Street Test";
             // 
             // toolStripSeparator3
             // 
             toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(243, 6);
+            toolStripSeparator3.Size = new Size(259, 6);
             // 
             // issueDrivingLicenseFirstTimeToolStripMenuItem
             // 
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Image = WinForms.Properties.Resources.IssueDrivingLicense_32;
             issueDrivingLicenseFirstTimeToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             issueDrivingLicenseFirstTimeToolStripMenuItem.Name = "issueDrivingLicenseFirstTimeToolStripMenuItem";
-            issueDrivingLicenseFirstTimeToolStripMenuItem.Size = new Size(246, 22);
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Size = new Size(262, 38);
             issueDrivingLicenseFirstTimeToolStripMenuItem.Text = "&Issue Driving License (First Time)";
             // 
             // toolStripSeparator4
             // 
             toolStripSeparator4.Name = "toolStripSeparator4";
-            toolStripSeparator4.Size = new Size(243, 6);
+            toolStripSeparator4.Size = new Size(259, 6);
             // 
             // showLicenseToolStripMenuItem
             // 
+            showLicenseToolStripMenuItem.Image = WinForms.Properties.Resources.License_View_321;
             showLicenseToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             showLicenseToolStripMenuItem.Name = "showLicenseToolStripMenuItem";
-            showLicenseToolStripMenuItem.Size = new Size(246, 22);
+            showLicenseToolStripMenuItem.Size = new Size(262, 38);
             showLicenseToolStripMenuItem.Text = "Show &License";
             // 
             // toolStripSeparator6
             // 
             toolStripSeparator6.Name = "toolStripSeparator6";
-            toolStripSeparator6.Size = new Size(243, 6);
+            toolStripSeparator6.Size = new Size(259, 6);
             // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
+            showPersonLicenseHistoryToolStripMenuItem.Image = WinForms.Properties.Resources.PersonLicenseHistory_32;
             showPersonLicenseHistoryToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
-            showPersonLicenseHistoryToolStripMenuItem.Size = new Size(246, 22);
+            showPersonLicenseHistoryToolStripMenuItem.Size = new Size(262, 38);
             showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
             // 
             // cbFilterBy
@@ -287,6 +302,7 @@
             btnAddNewApplication.Size = new Size(88, 75);
             btnAddNewApplication.TabIndex = 129;
             btnAddNewApplication.UseVisualStyleBackColor = true;
+            btnAddNewApplication.Click += btnAddNewApplication_Click;
             // 
             // pbPersonImage
             // 
@@ -314,6 +330,7 @@
             btnClose.TabIndex = 118;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // frmListLocalDrivingLicesnseApplications
             // 
@@ -339,6 +356,7 @@
             Name = "frmListLocalDrivingLicesnseApplications";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Local Driving License Applications";
+            Load += frmListLocalDrivingLicesnseApplications_Load;
             ((System.ComponentModel.ISupportInitialize)dgvLocalDrivingLicenseApplications).EndInit();
             cmsApplications.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
