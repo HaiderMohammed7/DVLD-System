@@ -73,6 +73,7 @@
             btnClose.TabIndex = 131;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // ctrlDriverLicenses1
             // 
@@ -113,6 +114,7 @@
             Name = "frmShowPersonLicenseHistory";
             StartPosition = FormStartPosition.CenterParent;
             Text = "License History";
+            Load += frmShowPersonLicenseHistory_Load;
             ((System.ComponentModel.ISupportInitialize)pbPersonImage).EndInit();
             ResumeLayout(false);
 

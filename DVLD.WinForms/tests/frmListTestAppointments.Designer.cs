@@ -51,21 +51,25 @@
             // 
             cmsApplications.Items.AddRange(new ToolStripItem[] { editToolStripMenuItem, takeTestToolStripMenuItem });
             cmsApplications.Name = "contextMenuStrip1";
-            cmsApplications.Size = new Size(123, 48);
+            cmsApplications.Size = new Size(139, 80);
             // 
             // editToolStripMenuItem
             // 
+            editToolStripMenuItem.Image = WinForms.Properties.Resources.edit_32;
             editToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             editToolStripMenuItem.Name = "editToolStripMenuItem";
-            editToolStripMenuItem.Size = new Size(122, 22);
+            editToolStripMenuItem.Size = new Size(138, 38);
             editToolStripMenuItem.Text = "&Edit";
+            editToolStripMenuItem.Click += editToolStripMenuItem_Click;
             // 
             // takeTestToolStripMenuItem
             // 
+            takeTestToolStripMenuItem.Image = WinForms.Properties.Resources.Test_32;
             takeTestToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             takeTestToolStripMenuItem.Name = "takeTestToolStripMenuItem";
-            takeTestToolStripMenuItem.Size = new Size(122, 22);
+            takeTestToolStripMenuItem.Size = new Size(138, 38);
             takeTestToolStripMenuItem.Text = "Take Test";
+            takeTestToolStripMenuItem.Click += takeTestToolStripMenuItem_Click;
             // 
             // lblRecordsCount
             // 
@@ -147,6 +151,7 @@
             btnClose.TabIndex = 128;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // pbTestTypeImage
             // 
@@ -170,6 +175,7 @@
             btnAddNewAppointment.Size = new Size(49, 36);
             btnAddNewAppointment.TabIndex = 137;
             btnAddNewAppointment.UseVisualStyleBackColor = true;
+            btnAddNewAppointment.Click += btnAddNewAppointment_Click;
             // 
             // ctrlDrivingLicenseApplicationInfo1
             // 
@@ -202,6 +208,7 @@
             Name = "frmListTestAppointments";
             StartPosition = FormStartPosition.CenterParent;
             Text = "frmListTestAppointments";
+            Load += frmListTestAppointments_Load;
             cmsApplications.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvLicenseTestAppointments).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbTestTypeImage).EndInit();

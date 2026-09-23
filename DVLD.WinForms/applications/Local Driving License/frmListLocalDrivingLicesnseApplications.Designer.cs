@@ -126,7 +126,8 @@
             // 
             cmsApplications.Items.AddRange(new ToolStripItem[] { showDetailsToolStripMenuItem, toolStripSeparator2, editToolStripMenuItem, DeleteApplicationToolStripMenuItem, toolStripSeparator5, CancelApplicaitonToolStripMenuItem, toolStripSeparator1, ScheduleTestsMenue, toolStripSeparator3, issueDrivingLicenseFirstTimeToolStripMenuItem, toolStripSeparator4, showLicenseToolStripMenuItem, toolStripSeparator6, showPersonLicenseHistoryToolStripMenuItem });
             cmsApplications.Name = "contextMenuStrip1";
-            cmsApplications.Size = new Size(263, 344);
+            cmsApplications.Size = new Size(263, 366);
+            cmsApplications.Opening += cmsApplications_Opening;
             // 
             // showDetailsToolStripMenuItem
             // 
@@ -195,6 +196,7 @@
             scheduleVisionTestToolStripMenuItem.Name = "scheduleVisionTestToolStripMenuItem";
             scheduleVisionTestToolStripMenuItem.Size = new Size(204, 38);
             scheduleVisionTestToolStripMenuItem.Text = "Schedule Vision Test";
+            scheduleVisionTestToolStripMenuItem.Click += scheduleVisionTestToolStripMenuItem_Click;
             // 
             // scheduleWrittenTestToolStripMenuItem
             // 
@@ -203,6 +205,7 @@
             scheduleWrittenTestToolStripMenuItem.Name = "scheduleWrittenTestToolStripMenuItem";
             scheduleWrittenTestToolStripMenuItem.Size = new Size(204, 38);
             scheduleWrittenTestToolStripMenuItem.Text = "Schedule Written Test";
+            scheduleWrittenTestToolStripMenuItem.Click += scheduleWrittenTestToolStripMenuItem_Click;
             // 
             // scheduleStreetTestToolStripMenuItem
             // 
@@ -211,6 +214,7 @@
             scheduleStreetTestToolStripMenuItem.Name = "scheduleStreetTestToolStripMenuItem";
             scheduleStreetTestToolStripMenuItem.Size = new Size(204, 38);
             scheduleStreetTestToolStripMenuItem.Text = "Schedule Street Test";
+            scheduleStreetTestToolStripMenuItem.Click += scheduleStreetTestToolStripMenuItem_Click;
             // 
             // toolStripSeparator3
             // 
@@ -224,6 +228,7 @@
             issueDrivingLicenseFirstTimeToolStripMenuItem.Name = "issueDrivingLicenseFirstTimeToolStripMenuItem";
             issueDrivingLicenseFirstTimeToolStripMenuItem.Size = new Size(262, 38);
             issueDrivingLicenseFirstTimeToolStripMenuItem.Text = "&Issue Driving License (First Time)";
+            issueDrivingLicenseFirstTimeToolStripMenuItem.Click += issueDrivingLicenseFirstTimeToolStripMenuItem_Click;
             // 
             // toolStripSeparator4
             // 
@@ -237,6 +242,7 @@
             showLicenseToolStripMenuItem.Name = "showLicenseToolStripMenuItem";
             showLicenseToolStripMenuItem.Size = new Size(262, 38);
             showLicenseToolStripMenuItem.Text = "Show &License";
+            showLicenseToolStripMenuItem.Click += showLicenseToolStripMenuItem_Click;
             // 
             // toolStripSeparator6
             // 
@@ -250,6 +256,7 @@
             showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
             showPersonLicenseHistoryToolStripMenuItem.Size = new Size(262, 38);
             showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
+            showPersonLicenseHistoryToolStripMenuItem.Click += showPersonLicenseHistoryToolStripMenuItem_Click;
             // 
             // cbFilterBy
             // 
@@ -260,6 +267,7 @@
             cbFilterBy.Name = "cbFilterBy";
             cbFilterBy.Size = new Size(210, 28);
             cbFilterBy.TabIndex = 127;
+            cbFilterBy.SelectedIndexChanged += cbFilterBy_SelectedIndexChanged;
             // 
             // txtFilterValue
             // 
@@ -269,6 +277,7 @@
             txtFilterValue.Name = "txtFilterValue";
             txtFilterValue.Size = new Size(256, 26);
             txtFilterValue.TabIndex = 126;
+            txtFilterValue.TextChanged += txtFilterValue_TextChanged;
             // 
             // label1
             // 

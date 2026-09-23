@@ -1,4 +1,5 @@
 ﻿using DVLD.Applications;
+using DVLD.Drivers;
 using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.Services;
 using DVLD.People;
@@ -26,10 +27,14 @@ namespace DVLD
             var frm = _provider.GetRequiredService<frmListPeople>();
             frm.ShowDialog();
         }
-
         private void employeesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frm = _provider.GetRequiredService<frmListUsers>();
+            frm.ShowDialog();
+        }
+        private void driversToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = _provider.GetRequiredService<frmListDrivers>();
             frm.ShowDialog();
         }
 
@@ -93,5 +98,7 @@ namespace DVLD
             var frm = _provider.GetRequiredService<frmListLocalDrivingLicesnseApplications>();
             frm.ShowDialog();
         }
+
+        
     }
 }

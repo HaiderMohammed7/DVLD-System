@@ -49,8 +49,17 @@ namespace DVLD.Infrastructure.HTTP
                 Content = JsonContent.Create(data)
             };
 
-            request.Headers.Authorization =
-                new AuthenticationHeaderValue("Bearer", TokenStore.Token);
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", TokenStore.Token);
+
+            var response = await _http.SendAsync(request);
+
+            response.EnsureSuccessStatusCode();
+        }
+        public async Task PutAsync(string url)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Put, url);
+
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", TokenStore.Token);
 
             var response = await _http.SendAsync(request);
 

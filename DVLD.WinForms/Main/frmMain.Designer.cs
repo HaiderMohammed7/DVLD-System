@@ -259,6 +259,7 @@
             driversToolStripMenuItem.Name = "driversToolStripMenuItem";
             driversToolStripMenuItem.Size = new Size(140, 68);
             driversToolStripMenuItem.Text = "Drivers";
+            driversToolStripMenuItem.Click += driversToolStripMenuItem_Click;
             // 
             // employeesToolStripMenuItem
             // 

@@ -45,6 +45,7 @@
             btnClose.TabIndex = 17;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // ctrlDrivingLicenseApplicationInfo1
             // 
@@ -70,6 +71,7 @@
             Name = "frmLocalDrivingLicenseApplicationInfo";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Local Driving License Application Info";
+            Load += frmLocalDrivingLicenseApplicationInfo_Load;
             ResumeLayout(false);
 
         }

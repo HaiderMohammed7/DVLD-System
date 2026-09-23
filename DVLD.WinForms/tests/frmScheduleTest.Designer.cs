@@ -54,6 +54,7 @@
             btnClose.TabIndex = 125;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // frmScheduleTest
             // 
@@ -69,6 +70,7 @@
             Name = "frmScheduleTest";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Schedule Test";
+            Load += frmScheduleTest_Load;
             ResumeLayout(false);
 
         }

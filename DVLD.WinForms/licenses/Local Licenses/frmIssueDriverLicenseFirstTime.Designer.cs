@@ -60,6 +60,7 @@
             btnClose.TabIndex = 3;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnIssueLicense
             // 
@@ -73,6 +74,7 @@
             btnIssueLicense.TabIndex = 2;
             btnIssueLicense.Text = "Issue";
             btnIssueLicense.UseVisualStyleBackColor = true;
+            btnIssueLicense.Click += btnIssueLicense_Click;
             // 
             // txtNotes
             // 
@@ -124,6 +126,7 @@
             Name = "frmIssueDriverLicenseFirstTime";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Issue Driver License For The First Time";
+            Load += frmIssueDriverLicenseFirstTime_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

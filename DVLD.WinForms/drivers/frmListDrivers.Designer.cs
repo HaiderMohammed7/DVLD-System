@@ -111,38 +111,44 @@
             // 
             cmsDrivers.Items.AddRange(new ToolStripItem[] { showDetailsToolStripMenuItem, toolStripSeparator2, issueInternationalLicenseToolStripMenuItem, toolStripSeparator1, showPersonLicenseHistoryToolStripMenuItem });
             cmsDrivers.Name = "contextMenuStrip1";
-            cmsDrivers.Size = new Size(226, 82);
+            cmsDrivers.Size = new Size(242, 130);
             // 
             // showDetailsToolStripMenuItem
             // 
+            showDetailsToolStripMenuItem.Image = WinForms.Properties.Resources.PersonDetails_32;
             showDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            showDetailsToolStripMenuItem.Size = new Size(225, 22);
+            showDetailsToolStripMenuItem.Size = new Size(241, 38);
             showDetailsToolStripMenuItem.Text = "&Show Person Info";
+            showDetailsToolStripMenuItem.Click += showDetailsToolStripMenuItem_Click;
             // 
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(222, 6);
+            toolStripSeparator2.Size = new Size(238, 6);
             // 
             // issueInternationalLicenseToolStripMenuItem
             // 
+            issueInternationalLicenseToolStripMenuItem.Image = WinForms.Properties.Resources.International_32;
             issueInternationalLicenseToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             issueInternationalLicenseToolStripMenuItem.Name = "issueInternationalLicenseToolStripMenuItem";
-            issueInternationalLicenseToolStripMenuItem.Size = new Size(225, 22);
+            issueInternationalLicenseToolStripMenuItem.Size = new Size(241, 38);
             issueInternationalLicenseToolStripMenuItem.Text = "Issue International License";
+            issueInternationalLicenseToolStripMenuItem.Click += issueInternationalLicenseToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(222, 6);
+            toolStripSeparator1.Size = new Size(238, 6);
             // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
+            showPersonLicenseHistoryToolStripMenuItem.Image = WinForms.Properties.Resources.PersonLicenseHistory_32;
             showPersonLicenseHistoryToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
-            showPersonLicenseHistoryToolStripMenuItem.Size = new Size(225, 22);
+            showPersonLicenseHistoryToolStripMenuItem.Size = new Size(241, 38);
             showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
+            showPersonLicenseHistoryToolStripMenuItem.Click += showPersonLicenseHistoryToolStripMenuItem_Click;
             // 
             // pbDriverImage
             // 
@@ -170,6 +176,7 @@
             btnClose.TabIndex = 118;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // cbFilterBy
             // 
@@ -180,6 +187,7 @@
             cbFilterBy.Name = "cbFilterBy";
             cbFilterBy.Size = new Size(210, 28);
             cbFilterBy.TabIndex = 126;
+            cbFilterBy.SelectedIndexChanged += cbFilterBy_SelectedIndexChanged;
             // 
             // txtFilterValue
             // 
@@ -190,6 +198,7 @@
             txtFilterValue.Size = new Size(256, 26);
             txtFilterValue.TabIndex = 125;
             txtFilterValue.Visible = false;
+            txtFilterValue.TextChanged += txtFilterValue_TextChanged;
             // 
             // label1
             // 
@@ -222,6 +231,7 @@
             Name = "frmListDrivers";
             StartPosition = FormStartPosition.CenterParent;
             Text = "List Drivers";
+            Load += frmListDrivers_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDrivers).EndInit();
             cmsDrivers.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbDriverImage).EndInit();

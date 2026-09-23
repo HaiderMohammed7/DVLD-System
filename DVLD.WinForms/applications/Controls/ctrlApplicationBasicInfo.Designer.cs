@@ -108,6 +108,7 @@
             llViewPersonInfo.TabIndex = 187;
             llViewPersonInfo.TabStop = true;
             llViewPersonInfo.Text = "View Person Info.";
+            llViewPersonInfo.LinkClicked += llViewPersonInfo_LinkClicked;
             // 
             // lblStatusDate
             // 

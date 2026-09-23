@@ -1,10 +1,21 @@
 using DVLD.Applications;
+using DVLD.Applications.Detain_License;
+using DVLD.Applications.International_License;
+using DVLD.Applications.ReplaceLostOrDamagedLicense;
+using DVLD.Applications.Rlease_Detained_License;
 using DVLD.Controls;
 using DVLD.Controls.ApplicationControls;
+using DVLD.DriverLicense;
+using DVLD.Drivers;
 using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.HTTP;
 using DVLD.Infrastructure.Services;
+using DVLD.Licenses;
 using DVLD.Licenses.Controls;
+using DVLD.Licenses.International_License;
+using DVLD.Licenses.International_Licenses;
+using DVLD.Licenses.International_Licenses.Controls;
+using DVLD.Licenses.Local_Licenses.Controls;
 using DVLD.People;
 using DVLD.Tests;
 using DVLD.User;
@@ -32,10 +43,15 @@ namespace DVLD.WinForms
             services.AddTransient<CountriesService>();
             services.AddTransient<LicenseClassService>();
             services.AddTransient<LocalDrivingLicenseApplicationService>();
-            services.AddTransient<PeopleService>();
+            services.AddTransient<InternationalLicenseService>();
+            services.AddTransient<PeopleService>();       
+            services.AddTransient<DriverService>();       
+            services.AddTransient<LicenseService>();
+            services.AddTransient<TestAppointmentService>();
             services.AddTransient<TestTypeService>();
+            services.AddTransient<TestService>();
             services.AddTransient<UsersService>();
-            
+
             services.AddTransient<frmLogin>();
             services.AddTransient<frmMain>();
 
@@ -54,14 +70,37 @@ namespace DVLD.WinForms
 
             services.AddTransient<frmManageApplicationTypes>();
             services.AddTransient<frmEditApplicationType>();
-
-            services.AddTransient<frmListTestTypes>();
-            services.AddTransient<frmEditTestType>();
-
+            services.AddTransient<ctrlApplicationBasicInfo>();
+            services.AddTransient<frmListInternationalLicesnseApplications>();
+            services.AddTransient<frmNewInternationalLicenseApplication>();
             services.AddTransient<frmAddUpdateLocalDrivingLicesnseApplication>();
             services.AddTransient<frmListLocalDrivingLicesnseApplications>();
             services.AddTransient<frmLocalDrivingLicenseApplicationInfo>();
             services.AddTransient<ctrlDrivingLicenseApplicationInfo>();
+            services.AddTransient<frmRenewLocalDrivingLicenseApplication>();
+            services.AddTransient<frmReplaceLostOrDamagedLicenseApplication>();
+            services.AddTransient<frmReleaseDetainedLicenseApplication>();
+            services.AddTransient<frmListDetainedLicenses>();
+
+            services.AddTransient<frmListDrivers>();
+
+            services.AddTransient<ctrlDriverLicenseInfo>();
+            services.AddTransient<ctrlDriverLicenses>();
+            services.AddTransient<ctrlDriverLicenseInfoWithFilter>();
+            services.AddTransient<frmIssueDriverLicenseFirstTime>();
+            services.AddTransient<frmShowLicenseInfo>();
+            services.AddTransient<frmDetainLicenseApplication>();
+            services.AddTransient<ctrlDriverInternationalLicenseInfo>();
+            services.AddTransient<frmShowInternationalLicenseInfo>();
+            services.AddTransient<frmShowPersonLicenseHistory>();
+
+            services.AddTransient<ctrlScheduleTest>();
+            services.AddTransient<ctrlSecheduledTest>();
+            services.AddTransient<frmListTestAppointments>();
+            services.AddTransient<frmScheduleTest>();
+            services.AddTransient<frmTakeTest>();
+            services.AddTransient<frmListTestTypes>();
+            services.AddTransient<frmEditTestType>();
 
             provider = services.BuildServiceProvider();
             ApplicationConfiguration.Initialize();

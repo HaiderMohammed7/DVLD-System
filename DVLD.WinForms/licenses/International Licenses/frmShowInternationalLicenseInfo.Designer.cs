@@ -50,6 +50,7 @@
             btnClose.TabIndex = 139;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // lblTitle
             // 
@@ -113,6 +114,7 @@
             Name = "frmShowInternationalLicenseInfo";
             StartPosition = FormStartPosition.CenterParent;
             Text = "International Driver Info";
+            Load += frmShowInternationalLicenseInfo_Load;
             ((System.ComponentModel.ISupportInitialize)pbTestTypeImage).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ResumeLayout(false);

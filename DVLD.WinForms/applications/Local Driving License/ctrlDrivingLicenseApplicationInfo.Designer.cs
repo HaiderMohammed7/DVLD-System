@@ -77,6 +77,7 @@
             llShowLicenceInfo.TabIndex = 191;
             llShowLicenceInfo.TabStop = true;
             llShowLicenceInfo.Text = "Show License Info";
+            llShowLicenceInfo.LinkClicked += llShowLicenceInfo_LinkClicked;
             // 
             // pictureBox3
             // 

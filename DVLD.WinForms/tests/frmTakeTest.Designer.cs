@@ -108,6 +108,7 @@
             btnClose.TabIndex = 198;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnSave
             // 
@@ -122,6 +123,7 @@
             btnSave.TabIndex = 197;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // pictureBox7
             // 
@@ -193,6 +195,7 @@
             Name = "frmTakeTest";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Take Test";
+            Load += frmTakeTest_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);

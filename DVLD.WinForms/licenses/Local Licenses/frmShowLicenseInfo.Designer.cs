@@ -81,6 +81,7 @@
             btnClose.TabIndex = 136;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // frmShowLicenseInfo
             // 
@@ -100,6 +101,7 @@
             Name = "frmShowLicenseInfo";
             StartPosition = FormStartPosition.CenterParent;
             Text = "License Info";
+            Load += frmShowLicenseInfo_Load;
             ((System.ComponentModel.ISupportInitialize)pbTestTypeImage).EndInit();
             ResumeLayout(false);
 
