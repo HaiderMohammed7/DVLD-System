@@ -9,6 +9,9 @@ namespace DVLD.DriverLicense
         private LicenseService _licenseService;
         private GetLicenseInfoDto _dto;
         private int _LicenseID;
+        private int _driverId;
+        public int LicenseID { get { return _LicenseID; } }
+        public int DriverId { get { return _driverId; } }
 
         public ctrlDriverLicenseInfo()
         {
@@ -55,6 +58,7 @@ namespace DVLD.DriverLicense
             lblDateOfBirth.Text = _dto.DateOfBirth.ToShortDateString();
 
             lblDriverID.Text = _dto.DriverID.ToString();
+            _driverId = _dto.DriverID;
             lblIssueDate.Text = _dto.IssueDate.ToShortDateString();
             lblExpirationDate.Text = _dto.ExpirationDate.ToShortDateString();
             lblIssueReason.Text = _dto.IssueReason;

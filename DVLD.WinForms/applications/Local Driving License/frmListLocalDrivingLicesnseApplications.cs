@@ -68,10 +68,12 @@ namespace DVLD.Tests
             }
         }
 
-        private void btnAddNewApplication_Click(object sender, EventArgs e)
+        private async void btnAddNewApplication_Click(object sender, EventArgs e)
         {
             var frm = _provider.GetRequiredService<frmAddUpdateLocalDrivingLicesnseApplication>();
             frm.ShowDialog();
+
+            await LoadLDLAAsync();
         }
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -269,12 +271,13 @@ namespace DVLD.Tests
             }
         }
 
-        private void ScheduleTest(TestTypeEnum testType)
+        private async void ScheduleTest(TestTypeEnum testType)
         {
             int ldlaId = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
 
             var frm = ActivatorUtilities.CreateInstance<frmListTestAppointments>(_provider, ldlaId, testType);
             frm.ShowDialog();
+            await LoadLDLAAsync();
         }
         private void scheduleVisionTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -289,11 +292,12 @@ namespace DVLD.Tests
             ScheduleTest(TestTypeEnum.StreetTest);
         }
 
-        private void issueDrivingLicenseFirstTimeToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void issueDrivingLicenseFirstTimeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int LDLAId = (int)dgvLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
             var frm = ActivatorUtilities.CreateInstance<frmIssueDriverLicenseFirstTime>(_provider, LDLAId);
             frm.ShowDialog();
+            await LoadLDLAAsync();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

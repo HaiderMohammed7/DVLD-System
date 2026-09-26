@@ -375,6 +375,7 @@
             btnClose.TabIndex = 174;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // ctrlDriverLicenseInfoWithFilter1
             // 
@@ -397,6 +398,7 @@
             btnIssueLicense.TabIndex = 175;
             btnIssueLicense.Text = "Issue";
             btnIssueLicense.UseVisualStyleBackColor = true;
+            btnIssueLicense.Click += btnIssueLicense_Click;
             // 
             // llShowLicenseHistory
             // 
@@ -408,6 +410,7 @@
             llShowLicenseHistory.TabIndex = 176;
             llShowLicenseHistory.TabStop = true;
             llShowLicenseHistory.Text = "Show Licenses History";
+            llShowLicenseHistory.LinkClicked += llShowLicenseHistory_LinkClicked;
             // 
             // llShowLicenseInfo
             // 
@@ -419,6 +422,7 @@
             llShowLicenseInfo.TabIndex = 177;
             llShowLicenseInfo.TabStop = true;
             llShowLicenseInfo.Text = "Show Licenses Info";
+            llShowLicenseInfo.LinkClicked += llShowLicenseInfo_LinkClicked;
             // 
             // frmNewInternationalLicenseApplication
             // 
@@ -441,6 +445,8 @@
             Name = "frmNewInternationalLicenseApplication";
             StartPosition = FormStartPosition.CenterParent;
             Text = "New International License Application";
+            Activated += frmNewInternationalLicenseApplication_Activated;
+            Load += frmNewInternationalLicenseApplication_Load;
             gpApplicationInfo.ResumeLayout(false);
             gpApplicationInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();

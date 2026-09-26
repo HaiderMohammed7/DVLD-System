@@ -61,6 +61,7 @@
             btnFind.Size = new Size(51, 43);
             btnFind.TabIndex = 18;
             btnFind.UseVisualStyleBackColor = true;
+            btnFind.Click += btnFind_Click;
             // 
             // txtLicenseID
             // 
@@ -70,6 +71,8 @@
             txtLicenseID.Name = "txtLicenseID";
             txtLicenseID.Size = new Size(249, 23);
             txtLicenseID.TabIndex = 17;
+            txtLicenseID.KeyPress += txtLicenseID_KeyPress;
+            txtLicenseID.Validating += txtLicenseID_Validating;
             // 
             // label1
             // 

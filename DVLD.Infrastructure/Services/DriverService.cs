@@ -1,4 +1,5 @@
 ﻿using DVLD.Application.DTOs;
+using DVLD.Application.Features.Driver.DTOs;
 using DVLD.Infrastructure.HTTP;
 
 namespace DVLD.Infrastructure.Services
@@ -24,6 +25,11 @@ namespace DVLD.Infrastructure.Services
         public async Task<List<DriverListDto>> GetAllAsync()
         {
             return await _http.GetAsync<List<DriverListDto>>("api/driver");
+        }
+
+        public async Task<DriverInfoDto> GetByIdAsync(int Id)
+        {
+            return await _http.GetAsync<DriverInfoDto>($"api/driver/{Id}");
         }
     }
 }

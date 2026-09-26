@@ -73,6 +73,7 @@
             btnNewApplication.Size = new Size(88, 75);
             btnNewApplication.TabIndex = 140;
             btnNewApplication.UseVisualStyleBackColor = true;
+            btnNewApplication.Click += btnNewApplication_Click;
             // 
             // btnClose
             // 
@@ -87,13 +88,16 @@
             btnClose.TabIndex = 131;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
+            showPersonLicenseHistoryToolStripMenuItem.Image = WinForms.Properties.Resources.PersonLicenseHistory_32;
             showPersonLicenseHistoryToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
-            showPersonLicenseHistoryToolStripMenuItem.Size = new Size(225, 22);
+            showPersonLicenseHistoryToolStripMenuItem.Size = new Size(241, 38);
             showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
+            showPersonLicenseHistoryToolStripMenuItem.Click += showPersonLicenseHistoryToolStripMenuItem_Click;
             // 
             // pbPersonImage
             // 
@@ -110,23 +114,27 @@
             // 
             // PesonDetailsToolStripMenuItem
             // 
+            PesonDetailsToolStripMenuItem.Image = WinForms.Properties.Resources.PersonDetails_32;
             PesonDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             PesonDetailsToolStripMenuItem.Name = "PesonDetailsToolStripMenuItem";
-            PesonDetailsToolStripMenuItem.Size = new Size(225, 22);
+            PesonDetailsToolStripMenuItem.Size = new Size(241, 38);
             PesonDetailsToolStripMenuItem.Text = "Show Person Details";
+            PesonDetailsToolStripMenuItem.Click += PesonDetailsToolStripMenuItem_Click;
             // 
             // showDetailsToolStripMenuItem
             // 
+            showDetailsToolStripMenuItem.Image = WinForms.Properties.Resources.License_View_32;
             showDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            showDetailsToolStripMenuItem.Size = new Size(225, 22);
+            showDetailsToolStripMenuItem.Size = new Size(241, 38);
             showDetailsToolStripMenuItem.Text = "&Show License Details";
+            showDetailsToolStripMenuItem.Click += showDetailsToolStripMenuItem_Click;
             // 
             // cmsApplications
             // 
             cmsApplications.Items.AddRange(new ToolStripItem[] { PesonDetailsToolStripMenuItem, showDetailsToolStripMenuItem, showPersonLicenseHistoryToolStripMenuItem });
             cmsApplications.Name = "contextMenuStrip1";
-            cmsApplications.Size = new Size(226, 70);
+            cmsApplications.Size = new Size(242, 118);
             // 
             // lblTitle
             // 
@@ -195,6 +203,7 @@
             cbIsReleased.Size = new Size(121, 28);
             cbIsReleased.TabIndex = 163;
             cbIsReleased.Visible = false;
+            cbIsReleased.SelectedIndexChanged += cbIsReleased_SelectedIndexChanged;
             // 
             // cbFilterBy
             // 
@@ -205,6 +214,7 @@
             cbFilterBy.Name = "cbFilterBy";
             cbFilterBy.Size = new Size(210, 28);
             cbFilterBy.TabIndex = 162;
+            cbFilterBy.SelectedIndexChanged += cbFilterBy_SelectedIndexChanged;
             // 
             // txtFilterValue
             // 
@@ -214,6 +224,8 @@
             txtFilterValue.Name = "txtFilterValue";
             txtFilterValue.Size = new Size(256, 26);
             txtFilterValue.TabIndex = 161;
+            txtFilterValue.TextChanged += txtFilterValue_TextChanged;
+            txtFilterValue.KeyPress += txtFilterValue_KeyPress;
             // 
             // label1
             // 
@@ -250,6 +262,7 @@
             Name = "frmListInternationalLicesnseApplications";
             StartPosition = FormStartPosition.CenterParent;
             Text = "List International Licesnse Applications";
+            Load += frmListInternationalLicesnseApplications_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbPersonImage).EndInit();
             cmsApplications.ResumeLayout(false);

@@ -126,6 +126,7 @@
             internationalLicenseToolStripMenuItem2.Name = "internationalLicenseToolStripMenuItem2";
             internationalLicenseToolStripMenuItem2.Size = new Size(240, 26);
             internationalLicenseToolStripMenuItem2.Text = "&International License";
+            internationalLicenseToolStripMenuItem2.Click += internationalLicenseToolStripMenuItem2_Click;
             // 
             // renewDrivingLicenseToolStripMenuItem2
             // 
@@ -192,6 +193,7 @@
             ManageInternationaDrivingLicenseToolStripMenuItem1.Name = "ManageInternationaDrivingLicenseToolStripMenuItem1";
             ManageInternationaDrivingLicenseToolStripMenuItem1.Size = new Size(341, 26);
             ManageInternationaDrivingLicenseToolStripMenuItem1.Text = "International License Applications";
+            ManageInternationaDrivingLicenseToolStripMenuItem1.Click += ManageInternationaDrivingLicenseToolStripMenuItem1_Click;
             // 
             // toolStripSeparator5
             // 

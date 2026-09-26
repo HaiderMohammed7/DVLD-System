@@ -102,6 +102,7 @@ namespace DVLD.Tests
 
             var frm = ActivatorUtilities.CreateInstance<frmScheduleTest>(_provider, _ldlaId, _testType, -1);
             frm.ShowDialog();
+            await LoadTestAppointmentsAsync();
         }
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -111,12 +112,13 @@ namespace DVLD.Tests
             frm.ShowDialog();
         }
 
-        private void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int TestAppointmentID = (int)dgvLicenseTestAppointments.CurrentRow.Cells[0].Value;
 
             var frm = ActivatorUtilities.CreateInstance<frmTakeTest>(_provider, TestAppointmentID, _testType);
             frm.ShowDialog();
+            await LoadTestAppointmentsAsync();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

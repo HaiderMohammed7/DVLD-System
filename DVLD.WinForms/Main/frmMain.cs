@@ -1,4 +1,5 @@
 ﻿using DVLD.Applications;
+using DVLD.Applications.International_License;
 using DVLD.Drivers;
 using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.Services;
@@ -37,7 +38,6 @@ namespace DVLD
             var frm = _provider.GetRequiredService<frmListDrivers>();
             frm.ShowDialog();
         }
-
 
         private async void currentUserInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -92,13 +92,21 @@ namespace DVLD
             var frm = _provider.GetRequiredService<frmAddUpdateLocalDrivingLicesnseApplication>();
             frm.ShowDialog();
         }
-
         private void manageLocalDrivingLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frm = _provider.GetRequiredService<frmListLocalDrivingLicesnseApplications>();
             frm.ShowDialog();
         }
 
-        
+        private void internationalLicenseToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            var frm = _provider.GetRequiredService<frmNewInternationalLicenseApplication>();
+            frm.ShowDialog();
+        }
+        private void ManageInternationaDrivingLicenseToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var frm = _provider.GetRequiredService<frmListInternationalLicesnseApplications>();
+            frm.ShowDialog();
+        }       
     }
 }
