@@ -76,6 +76,7 @@
             llShowLicenseInfo.TabIndex = 189;
             llShowLicenseInfo.TabStop = true;
             llShowLicenseInfo.Text = "Show New Licenses Info";
+            llShowLicenseInfo.LinkClicked += llShowLicenseInfo_LinkClicked;
             // 
             // lblTitle
             // 
@@ -98,6 +99,7 @@
             llShowLicenseHistory.TabIndex = 188;
             llShowLicenseHistory.TabStop = true;
             llShowLicenseHistory.Text = "Show Licenses History";
+            llShowLicenseHistory.LinkClicked += llShowLicenseHistory_LinkClicked;
             // 
             // btnIssueReplacement
             // 
@@ -112,6 +114,7 @@
             btnIssueReplacement.Text = "Issue Replacement";
             btnIssueReplacement.TextAlign = ContentAlignment.MiddleRight;
             btnIssueReplacement.UseVisualStyleBackColor = true;
+            btnIssueReplacement.Click += btnIssueReplacement_Click;
             // 
             // btnClose
             // 
@@ -126,6 +129,7 @@
             btnClose.TabIndex = 186;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // label4
             // 
@@ -366,6 +370,7 @@
             rbLostLicense.TabIndex = 1;
             rbLostLicense.Text = "Lost License";
             rbLostLicense.UseVisualStyleBackColor = true;
+            rbLostLicense.CheckedChanged += rbLostLicense_CheckedChanged;
             // 
             // rbDamagedLicense
             // 
@@ -376,6 +381,7 @@
             rbDamagedLicense.TabIndex = 0;
             rbDamagedLicense.Text = "Damaged License";
             rbDamagedLicense.UseVisualStyleBackColor = true;
+            rbDamagedLicense.CheckedChanged += rbDamagedLicense_CheckedChanged;
             // 
             // ctrlDriverLicenseInfoWithFilter1
             // 
@@ -407,6 +413,8 @@
             Name = "frmReplaceLostOrDamagedLicenseApplication";
             StartPosition = FormStartPosition.CenterParent;
             Text = "License Replacement";
+            Activated += frmReplaceLostOrDamagedLicenseApplication_Activated;
+            Load += frmReplaceLostOrDamagedLicenseApplication_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

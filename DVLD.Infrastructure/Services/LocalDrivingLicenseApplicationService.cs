@@ -64,5 +64,13 @@ namespace DVLD.Infrastructure.Services
 
             return await response.Content.ReadFromJsonAsync<ResponseRenewLicenseDto>();
         }
+        public async Task<ResponseReplaceLicenseDto?> ReplaceLocalDrivingLicenseAsync(ReplaceLicenseDto dto)
+        {
+            var response = await _http.PostAsync("api/local-driving-license-applications/Replace", dto);
+
+            response.EnsureSuccessStatusCode();
+
+            return await response.Content.ReadFromJsonAsync<ResponseReplaceLicenseDto>();
+        }
     }
 }

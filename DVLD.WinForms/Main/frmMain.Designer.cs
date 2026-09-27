@@ -147,6 +147,7 @@
             ReplacementLostOrDamagedDrivingLicenseToolStripMenuItem2.Name = "ReplacementLostOrDamagedDrivingLicenseToolStripMenuItem2";
             ReplacementLostOrDamagedDrivingLicenseToolStripMenuItem2.Size = new Size(399, 26);
             ReplacementLostOrDamagedDrivingLicenseToolStripMenuItem2.Text = "Replacement for Lost or &Damaged License";
+            ReplacementLostOrDamagedDrivingLicenseToolStripMenuItem2.Click += ReplacementLostOrDamagedDrivingLicenseToolStripMenuItem2_Click;
             // 
             // toolStripSeparator7
             // 

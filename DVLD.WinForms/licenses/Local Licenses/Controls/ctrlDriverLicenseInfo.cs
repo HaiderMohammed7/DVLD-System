@@ -14,6 +14,7 @@ namespace DVLD.DriverLicense
         public DateTime ExpirationDate => _dto?.ExpirationDate ?? DateTime.MinValue;
         public byte DefaultValidityLength => _dto?.DefaultValidityLength ?? 0;
         public decimal ClassFees => _dto?.ClassFees ?? 0;
+        public bool IsActive => _dto?.IsActive ?? false;
 
         public ctrlDriverLicenseInfo()
         {

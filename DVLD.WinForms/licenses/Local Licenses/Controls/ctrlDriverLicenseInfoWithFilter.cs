@@ -10,6 +10,7 @@ namespace DVLD.Licenses.Controls
         public DateTime ExpirationDate => ctrlDriverLicenseInfo1.ExpirationDate;
         public byte DefaultValidityLength => ctrlDriverLicenseInfo1.DefaultValidityLength;
         public decimal ClassFees => ctrlDriverLicenseInfo1.ClassFees;
+        public bool IsActive => ctrlDriverLicenseInfo1.IsActive;
         public event Action<int>? LicenseLoaded;
 
         public ctrlDriverLicenseInfoWithFilter()
