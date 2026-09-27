@@ -134,6 +134,7 @@
             renewDrivingLicenseToolStripMenuItem2.Name = "renewDrivingLicenseToolStripMenuItem2";
             renewDrivingLicenseToolStripMenuItem2.Size = new Size(399, 26);
             renewDrivingLicenseToolStripMenuItem2.Text = "&Renew Driving License";
+            renewDrivingLicenseToolStripMenuItem2.Click += renewDrivingLicenseToolStripMenuItem2_Click;
             // 
             // toolStripSeparator6
             // 

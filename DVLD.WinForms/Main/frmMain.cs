@@ -3,6 +3,7 @@ using DVLD.Applications.International_License;
 using DVLD.Drivers;
 using DVLD.Infrastructure.Authentication;
 using DVLD.Infrastructure.Services;
+using DVLD.Licenses;
 using DVLD.People;
 using DVLD.Tests;
 using DVLD.User;
@@ -107,6 +108,12 @@ namespace DVLD
         {
             var frm = _provider.GetRequiredService<frmListInternationalLicesnseApplications>();
             frm.ShowDialog();
-        }       
+        }
+
+        private void renewDrivingLicenseToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            var frm = _provider.GetRequiredService<frmRenewLocalDrivingLicenseApplication>();
+            frm.ShowDialog();
+        }
     }
 }

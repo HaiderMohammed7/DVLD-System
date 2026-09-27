@@ -1,4 +1,5 @@
 ﻿using DVLD.Application.DTOs;
+using DVLD.Application.Features.LocalDrivingLicenseApplications.DTOs;
 using DVLD.Infrastructure.HTTP;
 using System.Net.Http.Json;
 
@@ -54,6 +55,14 @@ namespace DVLD.Infrastructure.Services
         public async Task<bool> DoesPassTestType(int ldlaId, int testTypeId)
         {
             return await _http.GetAsync<bool>( $"api/local-driving-license-applications/DoesPassTestType?ldlaId={ldlaId}&testTypeID={testTypeId}");
+        }
+        public async Task<ResponseRenewLicenseDto?> RenewLocalDrivingLicenseAsync(RenewLocalDrivingLicenseDto dto)
+        {
+            var response = await _http.PostAsync("api/local-driving-license-applications/Renew", dto);
+
+            response.EnsureSuccessStatusCode();
+
+            return await response.Content.ReadFromJsonAsync<ResponseRenewLicenseDto>();
         }
     }
 }

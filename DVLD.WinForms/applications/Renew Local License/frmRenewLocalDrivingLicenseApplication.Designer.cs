@@ -94,6 +94,7 @@
             btnRenewLicense.TabIndex = 180;
             btnRenewLicense.Text = " Renew";
             btnRenewLicense.UseVisualStyleBackColor = true;
+            btnRenewLicense.Click += btnRenewLicense_Click;
             // 
             // btnClose
             // 
@@ -108,6 +109,7 @@
             btnClose.TabIndex = 179;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // gpApplicationInfo
             // 
@@ -522,6 +524,7 @@
             llShowLicenseInfo.TabIndex = 182;
             llShowLicenseInfo.TabStop = true;
             llShowLicenseInfo.Text = "Show New Licenses Info";
+            llShowLicenseInfo.LinkClicked += llShowLicenseInfo_LinkClicked;
             // 
             // llShowLicenseHistory
             // 
@@ -533,6 +536,7 @@
             llShowLicenseHistory.TabIndex = 181;
             llShowLicenseHistory.TabStop = true;
             llShowLicenseHistory.Text = "Show Licenses History";
+            llShowLicenseHistory.LinkClicked += llShowLicenseHistory_LinkClicked;
             // 
             // ctrlDriverLicenseInfoWithFilter1
             // 
@@ -563,6 +567,8 @@
             Name = "frmRenewLocalDrivingLicenseApplication";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Renew Local Driving License";
+            Activated += frmRenewLocalDrivingLicenseApplication_Activated;
+            Load += frmRenewLocalDrivingLicenseApplication_Load;
             gpApplicationInfo.ResumeLayout(false);
             gpApplicationInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();

@@ -7,6 +7,9 @@ namespace DVLD.Licenses.Controls
     {
         public int LicenseID { get; private set; } = -1;
         public int DriverId { get { return ctrlDriverLicenseInfo1.DriverId; } }
+        public DateTime ExpirationDate => ctrlDriverLicenseInfo1.ExpirationDate;
+        public byte DefaultValidityLength => ctrlDriverLicenseInfo1.DefaultValidityLength;
+        public decimal ClassFees => ctrlDriverLicenseInfo1.ClassFees;
         public event Action<int>? LicenseLoaded;
 
         public ctrlDriverLicenseInfoWithFilter()

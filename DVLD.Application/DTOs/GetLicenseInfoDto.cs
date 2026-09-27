@@ -14,6 +14,10 @@
 
         public int DriverID { get; set; }
 
+        public byte DefaultValidityLength { get; set; }
+
+        public decimal ClassFees { get; set; }
+
         public bool IsActive { get; set; }
 
         public DateTime IssueDate { get; set; }
