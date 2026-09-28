@@ -74,6 +74,7 @@
             btnClose.TabIndex = 181;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // pictureBox8
             // 
@@ -127,6 +128,7 @@
             llShowLicenseInfo.TabIndex = 184;
             llShowLicenseInfo.TabStop = true;
             llShowLicenseInfo.Text = "Show Licenses Info";
+            llShowLicenseInfo.LinkClicked += llShowLicenseInfo_LinkClicked;
             // 
             // btnDetain
             // 
@@ -140,6 +142,7 @@
             btnDetain.TabIndex = 182;
             btnDetain.Text = "Detain";
             btnDetain.UseVisualStyleBackColor = true;
+            btnDetain.Click += btnDetain_Click;
             // 
             // pictureBox1
             // 
@@ -247,6 +250,7 @@
             llShowLicenseHistory.TabIndex = 183;
             llShowLicenseHistory.TabStop = true;
             llShowLicenseHistory.Text = "Show Licenses History";
+            llShowLicenseHistory.LinkClicked += llShowLicenseHistory_LinkClicked;
             // 
             // gpDetain
             // 
@@ -278,6 +282,7 @@
             txtFineFees.Name = "txtFineFees";
             txtFineFees.Size = new Size(102, 26);
             txtFineFees.TabIndex = 196;
+            txtFineFees.Validating += txtFineFees_Validating;
             // 
             // lblCreatedByUser
             // 
@@ -335,6 +340,8 @@
             Name = "frmDetainLicenseApplication";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Detain License";
+            Activated += frmDetainLicenseApplication_Activated;
+            Load += frmDetainLicenseApplication_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

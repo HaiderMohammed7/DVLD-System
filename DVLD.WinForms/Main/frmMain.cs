@@ -1,4 +1,5 @@
 ﻿using DVLD.Applications;
+using DVLD.Applications.Detain_License;
 using DVLD.Applications.International_License;
 using DVLD.Applications.ReplaceLostOrDamagedLicense;
 using DVLD.Drivers;
@@ -121,6 +122,22 @@ namespace DVLD
         {
             var frm = _provider.GetRequiredService<frmReplaceLostOrDamagedLicenseApplication>();
             frm.ShowDialog();
+        }
+
+        private void detainLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = _provider.GetRequiredService<frmDetainLicenseApplication>();
+            frm.ShowDialog();
+        }
+
+        private void ManageDetainedLicensestoolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void releaseDetainedLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

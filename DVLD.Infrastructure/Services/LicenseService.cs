@@ -33,5 +33,12 @@ namespace DVLD.Infrastructure.Services
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<int>();
         }
+
+        public async Task<int> DetainLicenseAsync(DetainLicenseDto dto)
+        {
+            var response = await _http.PostAsync("api/license/Detain", dto);
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<int>();
+        }
     }
 }

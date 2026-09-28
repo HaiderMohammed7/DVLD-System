@@ -11,6 +11,7 @@ namespace DVLD.Licenses.Controls
         public byte DefaultValidityLength => ctrlDriverLicenseInfo1.DefaultValidityLength;
         public decimal ClassFees => ctrlDriverLicenseInfo1.ClassFees;
         public bool IsActive => ctrlDriverLicenseInfo1.IsActive;
+        public bool IsDetained => ctrlDriverLicenseInfo1.IsDetained;
         public event Action<int>? LicenseLoaded;
 
         public ctrlDriverLicenseInfoWithFilter()

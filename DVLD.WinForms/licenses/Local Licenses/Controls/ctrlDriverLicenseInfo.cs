@@ -15,6 +15,7 @@ namespace DVLD.DriverLicense
         public byte DefaultValidityLength => _dto?.DefaultValidityLength ?? 0;
         public decimal ClassFees => _dto?.ClassFees ?? 0;
         public bool IsActive => _dto?.IsActive ?? false;
+        public bool IsDetained => _dto?.IsDetained ?? false;
 
         public ctrlDriverLicenseInfo()
         {
