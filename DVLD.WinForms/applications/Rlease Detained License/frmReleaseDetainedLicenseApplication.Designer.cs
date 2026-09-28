@@ -171,6 +171,7 @@
             btnClose.TabIndex = 188;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnRelease
             // 
@@ -184,6 +185,7 @@
             btnRelease.TabIndex = 189;
             btnRelease.Text = "Release";
             btnRelease.UseVisualStyleBackColor = true;
+            btnRelease.Click += btnRelease_Click;
             // 
             // lblCreatedByUser
             // 
@@ -283,6 +285,7 @@
             llShowLicenseInfo.TabIndex = 191;
             llShowLicenseInfo.TabStop = true;
             llShowLicenseInfo.Text = "Show Licenses Info";
+            llShowLicenseInfo.LinkClicked += llShowLicenseInfo_LinkClicked;
             // 
             // gpDetain
             // 
@@ -434,6 +437,7 @@
             llShowLicenseHistory.TabIndex = 190;
             llShowLicenseHistory.TabStop = true;
             llShowLicenseHistory.Text = "Show Licenses History";
+            llShowLicenseHistory.LinkClicked += llShowLicenseHistory_LinkClicked;
             // 
             // frmReleaseDetainedLicenseApplication
             // 
@@ -455,6 +459,8 @@
             Name = "frmReleaseDetainedLicenseApplication";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Release Detained License";
+            Activated += frmReleaseDetainedLicenseApplication_Activated;
+            Load += frmReleaseDetainedLicenseApplication_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

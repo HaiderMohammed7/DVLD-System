@@ -26,6 +26,7 @@ namespace DVLD.Licenses.Controls
 
         public async Task LoadLicenseInfo(int licenseId)
         {
+            txtLicenseID.Text = licenseId.ToString();
             await ctrlDriverLicenseInfo1.LoadInfo(licenseId);
             LicenseID = ctrlDriverLicenseInfo1.LicenseID;
 

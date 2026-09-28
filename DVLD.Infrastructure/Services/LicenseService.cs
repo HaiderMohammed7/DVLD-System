@@ -40,5 +40,28 @@ namespace DVLD.Infrastructure.Services
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<int>();
         }
+        public async Task<int> ReleaseDetainedLicenseAsync(ReleaseDetainedLicenseDto dto)
+        {
+            var response = await _http.PostAsync("api/license/Release", dto);
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<int>();
+        }
+
+        public async Task<GetReleaseLicenseInfo> ReleaseInfo(int Id)
+        {
+            try
+            {
+                return await _http.GetAsync<GetReleaseLicenseInfo>($"api/license/ReleaseInfo/{Id}");
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.NotFound)
+            {
+                return null;
+            }
+        }
+
+        public async Task<List<DetainedListDto>> GetDetainedList()
+        {
+            return await _http.GetAsync<List<DetainedListDto>>("api/license/GetDetainedList");
+        }
     }
 }

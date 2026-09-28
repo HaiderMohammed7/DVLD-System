@@ -62,6 +62,7 @@
             btnDetainLicense.Size = new Size(88, 75);
             btnDetainLicense.TabIndex = 154;
             btnDetainLicense.UseVisualStyleBackColor = true;
+            btnDetainLicense.Click += btnDetainLicense_Click;
             // 
             // cbFilterBy
             // 
@@ -72,6 +73,7 @@
             cbFilterBy.Name = "cbFilterBy";
             cbFilterBy.Size = new Size(210, 28);
             cbFilterBy.TabIndex = 152;
+            cbFilterBy.SelectedIndexChanged += cbFilterBy_SelectedIndexChanged;
             // 
             // txtFilterValue
             // 
@@ -81,6 +83,8 @@
             txtFilterValue.Name = "txtFilterValue";
             txtFilterValue.Size = new Size(256, 26);
             txtFilterValue.TabIndex = 151;
+            txtFilterValue.TextChanged += txtFilterValue_TextChanged;
+            txtFilterValue.KeyPress += txtFilterValue_KeyPress;
             // 
             // label1
             // 
@@ -105,13 +109,16 @@
             btnClose.TabIndex = 148;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
+            showPersonLicenseHistoryToolStripMenuItem.Image = WinForms.Properties.Resources.PersonLicenseHistory_32;
             showPersonLicenseHistoryToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
-            showPersonLicenseHistoryToolStripMenuItem.Size = new Size(225, 22);
+            showPersonLicenseHistoryToolStripMenuItem.Size = new Size(241, 38);
             showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
+            showPersonLicenseHistoryToolStripMenuItem.Click += showPersonLicenseHistoryToolStripMenuItem_Click;
             // 
             // pbPersonImage
             // 
@@ -128,35 +135,42 @@
             // 
             // PesonDetailsToolStripMenuItem
             // 
+            PesonDetailsToolStripMenuItem.Image = WinForms.Properties.Resources.PersonDetails_32;
             PesonDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             PesonDetailsToolStripMenuItem.Name = "PesonDetailsToolStripMenuItem";
-            PesonDetailsToolStripMenuItem.Size = new Size(225, 22);
+            PesonDetailsToolStripMenuItem.Size = new Size(241, 38);
             PesonDetailsToolStripMenuItem.Text = "Show Person Details";
+            PesonDetailsToolStripMenuItem.Click += PesonDetailsToolStripMenuItem_Click;
             // 
             // showDetailsToolStripMenuItem
             // 
+            showDetailsToolStripMenuItem.Image = WinForms.Properties.Resources.License_View_32;
             showDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            showDetailsToolStripMenuItem.Size = new Size(225, 22);
+            showDetailsToolStripMenuItem.Size = new Size(241, 38);
             showDetailsToolStripMenuItem.Text = "&Show License Details";
+            showDetailsToolStripMenuItem.Click += showDetailsToolStripMenuItem_Click;
             // 
             // cmsApplications
             // 
             cmsApplications.Items.AddRange(new ToolStripItem[] { PesonDetailsToolStripMenuItem, showDetailsToolStripMenuItem, showPersonLicenseHistoryToolStripMenuItem, toolStripMenuItem1, releaseDetainedLicenseToolStripMenuItem });
             cmsApplications.Name = "contextMenuStrip1";
-            cmsApplications.Size = new Size(226, 98);
+            cmsApplications.Size = new Size(242, 162);
+            cmsApplications.Opening += cmsApplications_Opening;
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(222, 6);
+            toolStripMenuItem1.Size = new Size(238, 6);
             // 
             // releaseDetainedLicenseToolStripMenuItem
             // 
+            releaseDetainedLicenseToolStripMenuItem.Image = WinForms.Properties.Resources.Release_Detained_License_32;
             releaseDetainedLicenseToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             releaseDetainedLicenseToolStripMenuItem.Name = "releaseDetainedLicenseToolStripMenuItem";
-            releaseDetainedLicenseToolStripMenuItem.Size = new Size(225, 22);
+            releaseDetainedLicenseToolStripMenuItem.Size = new Size(241, 38);
             releaseDetainedLicenseToolStripMenuItem.Text = "Release Detained License";
+            releaseDetainedLicenseToolStripMenuItem.Click += releaseDetainedLicenseToolStripMenuItem_Click;
             // 
             // lblTotalRecords
             // 
@@ -225,6 +239,7 @@
             cbIsReleased.Size = new Size(121, 28);
             cbIsReleased.TabIndex = 159;
             cbIsReleased.Visible = false;
+            cbIsReleased.SelectedIndexChanged += cbIsReleased_SelectedIndexChanged;
             // 
             // btnReleaseDetainedLicense
             // 
@@ -235,6 +250,7 @@
             btnReleaseDetainedLicense.Size = new Size(88, 75);
             btnReleaseDetainedLicense.TabIndex = 160;
             btnReleaseDetainedLicense.UseVisualStyleBackColor = true;
+            btnReleaseDetainedLicense.Click += btnReleaseDetainedLicense_Click;
             // 
             // frmListDetainedLicenses
             // 
@@ -260,6 +276,7 @@
             Name = "frmListDetainedLicenses";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "List Detained Licenses";
+            Load += frmListDetainedLicenses_Load;
             ((System.ComponentModel.ISupportInitialize)pbPersonImage).EndInit();
             cmsApplications.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvDetainedLicenses).EndInit();

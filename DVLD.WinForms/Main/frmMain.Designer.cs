@@ -160,6 +160,7 @@
             releaseDetainedDrivingLicenseToolStripMenuItem2.Name = "releaseDetainedDrivingLicenseToolStripMenuItem2";
             releaseDetainedDrivingLicenseToolStripMenuItem2.Size = new Size(399, 26);
             releaseDetainedDrivingLicenseToolStripMenuItem2.Text = "Release Detained Driving License";
+            releaseDetainedDrivingLicenseToolStripMenuItem2.Click += releaseDetainedDrivingLicenseToolStripMenuItem2_Click;
             // 
             // retakeTestToolStripMenuItem2
             // 
@@ -167,6 +168,7 @@
             retakeTestToolStripMenuItem2.Name = "retakeTestToolStripMenuItem2";
             retakeTestToolStripMenuItem2.Size = new Size(399, 26);
             retakeTestToolStripMenuItem2.Text = "Retake Test";
+            retakeTestToolStripMenuItem2.Click += retakeTestToolStripMenuItem2_Click;
             // 
             // toolStripSeparator3
             // 
