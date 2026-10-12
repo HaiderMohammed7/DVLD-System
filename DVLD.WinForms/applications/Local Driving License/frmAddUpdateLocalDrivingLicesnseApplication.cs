@@ -10,38 +10,38 @@ namespace DVLD.Applications
         private enMode _mode;
         private int _lDLAID = -1;
 
-        private LicenseClassService _licenseClassService;
         private UsersService _userService;
-        private ApplicationTypeService _applicationTypeService;
+        private LicenseService _licenseService;
+        private ApplicationService _applicationService;
         private LocalDrivingLicenseApplicationService _localDrivingLicenseApplicationService;
 
-        public frmAddUpdateLocalDrivingLicesnseApplication(LicenseClassService licenseClassService, UsersService users, ApplicationTypeService applicationTypeService, LocalDrivingLicenseApplicationService localDrivingLicenseApplicationService, IServiceProvider provider, PeopleService peopleService)
+        public frmAddUpdateLocalDrivingLicesnseApplication(LicenseService licenseService, UsersService users, ApplicationService applicationService, LocalDrivingLicenseApplicationService localDrivingLicenseApplicationService, IServiceProvider provider, PeopleService peopleService)
         {
             InitializeComponent();
             _mode = enMode.AddNew;
-            _licenseClassService = licenseClassService;
+            _licenseService = licenseService;
             _userService = users;
-            _applicationTypeService = applicationTypeService;
+            _applicationService = applicationService;
             _localDrivingLicenseApplicationService = localDrivingLicenseApplicationService;
             ctrlPersonCardWithFilter1.SetServices(provider, peopleService);
         }
 
-        public frmAddUpdateLocalDrivingLicesnseApplication(int LDLAId, LicenseClassService licenseClassService, UsersService users, ApplicationTypeService applicationTypeService, LocalDrivingLicenseApplicationService localDrivingLicenseApplicationService, IServiceProvider provider, PeopleService peopleService)
+        public frmAddUpdateLocalDrivingLicesnseApplication(int LDLAId, LicenseService licenseService, UsersService users, ApplicationService applicationService, LocalDrivingLicenseApplicationService localDrivingLicenseApplicationService, IServiceProvider provider, PeopleService peopleService)
         {
             InitializeComponent();
             _mode=enMode.Update;
             _lDLAID = LDLAId;
 
-            _licenseClassService = licenseClassService;
+            _licenseService = licenseService;
             _userService = users;
-            _applicationTypeService = applicationTypeService;
+            _applicationService = applicationService;
             _localDrivingLicenseApplicationService = localDrivingLicenseApplicationService;
             ctrlPersonCardWithFilter1.SetServices(provider, peopleService);
         }
 
         private async Task _FillLicenseClassesInComoboBox()
         {
-            var LicenseClasses = await _licenseClassService.GetAllAsync();
+            var LicenseClasses = await _licenseService.GetLicenseClasses();
 
             cbLicenseClass.DataSource = LicenseClasses;
             cbLicenseClass.DisplayMember = "ClassName";
@@ -57,9 +57,9 @@ namespace DVLD.Applications
             if (user is null)
                 throw new Exception("User not found");
 
-            var CurrentUser = await _userService.GetUserWithUserName(user.UserID);
+            var CurrentUser = await _userService.GetInfo(user.UserId);
 
-            var applicationType = await _applicationTypeService.GetByIdAsync((int)ApplicationTypeEnum.NewLocalDrivingLicense);
+            var applicationType = await _applicationService.GetApplicationTypeById((int)ApplicationTypeEnum.NewLocalDrivingLicense);
 
             if (_mode == enMode.AddNew)
             {
@@ -94,7 +94,7 @@ namespace DVLD.Applications
                 return;
             }
 
-            var CreatedBy = await _userService.GetUserWithUserName(LDLA.CreatedByUserID);
+            var CreatedBy = await _userService.GetInfo(LDLA.CreatedByUserID);
 
             ctrlPersonCardWithFilter1.LoadPersonInfo(LDLA.PersonId);
             lblLocalDrivingLicebseApplicationID.Text = LDLA.LocalDrivingLicenseApplicationID.ToString();

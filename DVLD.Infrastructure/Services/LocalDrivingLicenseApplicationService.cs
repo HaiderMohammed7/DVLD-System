@@ -1,5 +1,4 @@
 ﻿using DVLD.Application.DTOs;
-using DVLD.Application.Features.LocalDrivingLicenseApplications.DTOs;
 using DVLD.Infrastructure.HTTP;
 using System.Net.Http.Json;
 
@@ -30,9 +29,9 @@ namespace DVLD.Infrastructure.Services
         {
             return await _http.GetAsync<GetLocalDrivingLicenseApplicationDto>($"api/local-driving-license-applications/{Id}");
         }
-        public async Task<GetLocalDrivingLicenseApplicationInfoDto> GetForDetails(int Id)
+        public async Task<GetLocalDrivingLicenseApplicationInfoDto> GetForDetails(int id)
         {
-            return await _http.GetAsync<GetLocalDrivingLicenseApplicationInfoDto>($"api/local-driving-license-applications/Details/{Id}");
+            return await _http.GetAsync<GetLocalDrivingLicenseApplicationInfoDto>($"api/local-driving-license-applications/{id}/details");
         }
         public async Task<List<LDLAListDto>> GetAllAsync()
         {
@@ -40,7 +39,7 @@ namespace DVLD.Infrastructure.Services
         }
         public async Task Cancel(int id)
         {
-            await _http.PutAsync($"api/local-driving-license-applications/Cancel/{id}");
+            await _http.PutAsync($"api/local-driving-license-applications/{id}/cancel");
         }
         public async Task DeleteAsync(int id)
         {
@@ -48,29 +47,13 @@ namespace DVLD.Infrastructure.Services
 
             response.EnsureSuccessStatusCode();
         }
-        public async Task<bool> IsThereAnActiveScheduledTest(int ldlaId, int testTypeId)
+        public async Task<bool> HasActiveScheduledTest(int id, int testTypeId)
         {
-            return await _http.GetAsync<bool>( $"api/local-driving-license-applications/IsThereAnActiveScheduledTest?ldlaId={ldlaId}&testTypeID={testTypeId}");
+            return await _http.GetAsync<bool>( $"api/local-driving-license-applications/{id}/tests/{testTypeId}/active");
         }
-        public async Task<bool> DoesPassTestType(int ldlaId, int testTypeId)
+        public async Task<bool> HasPassedTestType(int id, int testTypeId)
         {
-            return await _http.GetAsync<bool>( $"api/local-driving-license-applications/DoesPassTestType?ldlaId={ldlaId}&testTypeID={testTypeId}");
-        }
-        public async Task<ResponseRenewLicenseDto?> RenewLocalDrivingLicenseAsync(RenewLocalDrivingLicenseDto dto)
-        {
-            var response = await _http.PostAsync("api/local-driving-license-applications/Renew", dto);
-
-            response.EnsureSuccessStatusCode();
-
-            return await response.Content.ReadFromJsonAsync<ResponseRenewLicenseDto>();
-        }
-        public async Task<ResponseReplaceLicenseDto?> ReplaceLocalDrivingLicenseAsync(ReplaceLicenseDto dto)
-        {
-            var response = await _http.PostAsync("api/local-driving-license-applications/Replace", dto);
-
-            response.EnsureSuccessStatusCode();
-
-            return await response.Content.ReadFromJsonAsync<ResponseReplaceLicenseDto>();
+            return await _http.GetAsync<bool>( $"api/local-driving-license-applications/{id}/tests/{testTypeId}/passed");
         }
     }
 }

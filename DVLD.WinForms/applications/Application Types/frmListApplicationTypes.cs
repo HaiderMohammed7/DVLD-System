@@ -5,13 +5,13 @@ namespace DVLD.Applications
 {
     public partial class frmManageApplicationTypes : Form
     {
-        private readonly ApplicationTypeService _applicationTypeService;
+        private readonly ApplicationService _applicationService;
         private readonly IServiceProvider _provider;
 
-        public frmManageApplicationTypes(ApplicationTypeService applicationType, IServiceProvider provider)
+        public frmManageApplicationTypes(ApplicationService applicationService, IServiceProvider provider)
         {
             InitializeComponent();
-            _applicationTypeService = applicationType;
+            _applicationService = applicationService;
             _provider = provider;
         }
 
@@ -29,7 +29,7 @@ namespace DVLD.Applications
         {
             try
             {
-                var applicationTypes = await _applicationTypeService.GetAllAsync();
+                var applicationTypes = await _applicationService.GetApplicationTypes();
                 dgvApplicationTypes.DataSource = applicationTypes;
                 lblRecordsCount.Text = applicationTypes.Count.ToString();
 

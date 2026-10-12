@@ -13,45 +13,41 @@ namespace DVLD.Infrastructure.Services
             _http = HTTP;
         }
 
-        public async Task<PersonDto> GetMyPersonAsync()
+        public async Task<PersonDto> GetByIdAsync(int id)
         {
-            return await _http.GetAsync<PersonDto>("api/people/me");
+            return await _http.GetAsync<PersonDto>($"api/people/{id}");
         }
-
-        public async Task<PersonDto> GetByIdAsync(int Id)
-        {
-            return await _http.GetAsync<PersonDto>($"api/people/{Id}");
-        }
-
-        public async Task<string> GetCountryNameById(int Id)
-        {
-            return await _http.GetAsync<string>($"api/people/{Id}/CountryName");
-        }
-
         public async Task<List<PeopleListDto>> GetAllAsync()
         {
             return await _http.GetAsync<List<PeopleListDto>>("api/people");
         }
 
-        public async Task<PersonDto> CreateAsync(CreatePersonDto request)
+        public async Task<int> CreateAsync(CreatePersonDto request)
         {
             var response = await _http.PostAsync("api/people", request);
 
             response.EnsureSuccessStatusCode();
 
-            return await response.Content.ReadFromJsonAsync<PersonDto>() ?? throw new Exception("Response body was null");
+            return await response.Content.ReadFromJsonAsync<int>();
         }
-
-        public async Task UpdateAsync(int personId,UpdatePersonDto request)
+        public async Task UpdateAsync(int id, UpdatePersonDto request)
         {
-            await _http.PutAsync($"api/people/{personId}",request);
+            await _http.PutAsync($"api/people/{id}", request);
         }
-
-        public async Task DeleteAsync(int personId)
+        public async Task DeleteAsync(int id)
         {
-            var response = await _http.DeleteAsync($"api/people/{personId}");
+            var response = await _http.DeleteAsync($"api/people/{id}");
 
             response.EnsureSuccessStatusCode();
+        }
+
+        public async Task<string> GetCountryName(int id)
+        {
+            return await _http.GetAsync<string>($"api/people/{id}/country-name");
+        }
+        public async Task<List<CountryDto>> GetCountries()
+        {
+            return await _http.GetAsync<List<CountryDto>>("api/people/countries");
         }
     }
 }

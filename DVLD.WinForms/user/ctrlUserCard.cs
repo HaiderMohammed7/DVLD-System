@@ -22,7 +22,7 @@ namespace DVLD.Controls
         {
             _ResetPersonInfo();
 
-            _user = await _usersService.GetUserWithUserName(UserID);
+            _user = await _usersService.GetInfo(UserID);
 
             if (_user == null)
             {

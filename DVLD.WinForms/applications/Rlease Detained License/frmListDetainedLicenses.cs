@@ -27,7 +27,7 @@ namespace DVLD.Applications.Rlease_Detained_License
         {
             try
             {
-                _detainedLists = await _licenseService.GetDetainedList();
+                _detainedLists = await _licenseService.GetDetainedLicenses();
                 dgvDetainedLicenses.DataSource = _detainedLists;
 
                 cbFilterBy.SelectedIndex = 0;

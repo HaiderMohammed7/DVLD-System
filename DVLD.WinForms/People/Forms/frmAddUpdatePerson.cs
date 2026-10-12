@@ -11,25 +11,22 @@ namespace DVLD.People
 
         private enMode _mode;
         private int _PersonId;
-        private CountriesService _countries;
         private PeopleService _people;
         PersonDto _person;
 
-        public frmAddUpdatePerson(CountriesService countries, PeopleService people)
+        public frmAddUpdatePerson(PeopleService people)
         {
             InitializeComponent();
             _mode = enMode.AddNew;
-            _countries = countries;
             _people = people;
             _person = new PersonDto();
         }
 
-        public frmAddUpdatePerson(int PersonId, CountriesService countries, PeopleService people)
+        public frmAddUpdatePerson(int PersonId, PeopleService people)
         {
             InitializeComponent();
             _mode = enMode.Update;
             _PersonId = PersonId;
-            _countries = countries;
             _people = people;
         }
 
@@ -37,13 +34,12 @@ namespace DVLD.People
         {
             await ResetDefualtValues();
 
-            if (_mode == enMode.Update)
-                await LoadPersonDataAsync();
+            if (_mode == enMode.Update) await LoadPersonDataAsync();
         }
 
         private async Task LoadCountriesAsync()
         {
-            var Countries = await _countries.GetCountryNameAsync();
+            var Countries = await _people.GetCountries();
 
             cbCountry.DataSource = Countries;
             cbCountry.DisplayMember = "CountryName";
@@ -69,21 +65,15 @@ namespace DVLD.People
             txtNationalNo.Text = _person.NationalNo;
             dtpDateOfBirth.Value = _person.DateOfBirth;
 
-            if (_person.Gendor == 1)
-                rbMale.Checked = true;
-            else
-                rbFemale.Checked = true;
+            if (_person.Gendor == 1) rbMale.Checked = true;
+            else rbFemale.Checked = true;
 
             txtAddress.Text = _person.Address;
             txtPhone.Text = _person.Phone;
             txtEmail.Text = _person.Email;
             cbCountry.SelectedValue = _person.NationalityCountryID;
 
-            if (_person.ImagePath != "")
-            {
-                pbPersonImage.ImageLocation = _person.ImagePath;
-
-            }
+            if (_person.ImagePath != "") pbPersonImage.ImageLocation = _person.ImagePath;
 
             llRemoveImage.Visible = (_person.ImagePath != "");
         }
@@ -92,19 +82,11 @@ namespace DVLD.People
         {
             await LoadCountriesAsync();
 
-            if (_mode == enMode.AddNew)
-            {
-                lblTitle.Text = "Add New Person";
-            }
-            else
-            {
-                lblTitle.Text = "Update Person";
-            }
+            if (_mode == enMode.AddNew) lblTitle.Text = "Add New Person";
+            else lblTitle.Text = "Update Person";
 
-            if (rbMale.Checked)
-                pbPersonImage.Image = Resources.Male_512;
-            else
-                pbPersonImage.Image = Resources.Female_512;
+            if (rbMale.Checked) pbPersonImage.Image = Resources.Male_512;
+            else pbPersonImage.Image = Resources.Female_512;
 
             llRemoveImage.Visible = (pbPersonImage.ImageLocation != null);
 
@@ -128,8 +110,7 @@ namespace DVLD.People
 
         private bool _HandlePersonImage()
         {
-            if (_person.ImagePath == pbPersonImage.ImageLocation)
-                return true;
+            if (_person.ImagePath == pbPersonImage.ImageLocation) return true;
 
             if (string.IsNullOrWhiteSpace(pbPersonImage.ImageLocation))
             {
@@ -158,24 +139,20 @@ namespace DVLD.People
 
         private void rbFemale_Click(object sender, EventArgs e)
         {
-            if (pbPersonImage.ImageLocation == null)
-                pbPersonImage.Image = Resources.Female_512;
+            if (pbPersonImage.ImageLocation == null) pbPersonImage.Image = Resources.Female_512;
         }
 
         private void rbMale_Click(object sender, EventArgs e)
         {
-            if (pbPersonImage.ImageLocation == null)
-                pbPersonImage.Image = Resources.Male_512;
+            if (pbPersonImage.ImageLocation == null) pbPersonImage.Image = Resources.Male_512;
         }
 
         private void llRemoveImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             pbPersonImage.ImageLocation = null;
 
-            if (rbMale.Checked)
-                pbPersonImage.Image = Resources.Male_512;
-            else
-                pbPersonImage.Image = Resources.Female_512;
+            if (rbMale.Checked) pbPersonImage.Image = Resources.Male_512;
+            else pbPersonImage.Image = Resources.Female_512;
 
             llRemoveImage.Visible = false;
         }
@@ -236,13 +213,13 @@ namespace DVLD.People
         {
             var dto = BuildCreateDto();
 
-            var person = await _people.CreateAsync(dto);
+            var personId = await _people.CreateAsync(dto);
 
             MessageBox.Show("Person Added Successfully","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
-            _PersonId = person.PersonID;
+            _PersonId = personId;
 
-            lblPersonID.Text = person.PersonID.ToString();
+            lblPersonID.Text = personId.ToString();
 
             _mode = enMode.Update;
 
@@ -266,8 +243,7 @@ namespace DVLD.People
                 return;
             }
 
-            if (!_HandlePersonImage())
-                return;
+            if (!_HandlePersonImage()) return;
 
             try
             {

@@ -38,7 +38,7 @@ namespace DVLD.Controls.ApplicationControls
 
         private async Task _FillApplicationInfo()
         {
-            var user = await _usersService.GetUserWithUserName(_application.CreatedByUserID);
+            var user = await _usersService.GetInfo(_application.CreatedByUserID);
 
             lblApplicationID.Text = _application.ApplicationID.ToString();
             lblStatus.Text = _application.Status;

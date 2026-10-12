@@ -29,7 +29,7 @@ namespace DVLD.Licenses.Local_Licenses.Controls
         {
             try
             {
-                _local = await _driverService.GetLocalLicense(_personId);
+                _local = await _driverService.GetLocalLicenses(_personId);
                 dgvLocalLicensesHistory.DataSource = _local;
                 lblLocalLicensesRecords.Text = _local.Count.ToString();
 
@@ -63,7 +63,7 @@ namespace DVLD.Licenses.Local_Licenses.Controls
         {
             try
             {
-                _international = await _driverService.GetInternationalLicense(_personId);
+                _international = await _driverService.GetInternationalLicenses(_personId);
                 dgvInternationalLicensesHistory.DataSource = _international;
                 lblLocalLicensesRecords.Text = _international.Count.ToString();
 

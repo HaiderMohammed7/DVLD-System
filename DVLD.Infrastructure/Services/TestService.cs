@@ -14,16 +14,16 @@ namespace DVLD.Infrastructure.Services
             _http = http;
         }
 
-        public async Task Create(ConductTestDto dto)
+        public async Task Conduct(ConductTestDto dto)
         {
-            await _http.PostAsync("api/Test/Conduct", dto);
+            await _http.PostAsync("api/tests/conduct", dto);
         }
 
         public async Task<GetTestInfoDto> GetByIdAsync(int Id)
         {
             try
             {
-                return await _http.GetAsync<GetTestInfoDto>($"api/Test/{Id}");
+                return await _http.GetAsync<GetTestInfoDto>($"api/tests/{Id}");
             }           
             catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.NotFound)
             {

@@ -10,18 +10,18 @@ namespace DVLD.Applications.International_License
     {
         private int _localLicenseId = -1;
         private readonly IServiceProvider _provider;
-        private readonly ApplicationTypeService _typeService;
+        private readonly ApplicationService _applicationService;
         private readonly UsersService _usersService;
         private readonly DriverService _driverService;
         private InternationalLicenseService _internationalLicenseService;
         private int _personId;
         private int _internationalId;
 
-        public frmNewInternationalLicenseApplication(IServiceProvider serviceProvider, ApplicationTypeService applicationTypeService, UsersService usersService, InternationalLicenseService internationalLicenseService, LicenseService licenseService, DriverService driverService)
+        public frmNewInternationalLicenseApplication(IServiceProvider serviceProvider, ApplicationService applicationService, UsersService usersService, InternationalLicenseService internationalLicenseService, LicenseService licenseService, DriverService driverService)
         {
             InitializeComponent();
             _provider = serviceProvider;
-            _typeService = applicationTypeService;
+            _applicationService = applicationService;
             _usersService = usersService;
             _driverService = driverService;
             _internationalLicenseService = internationalLicenseService;
@@ -41,7 +41,7 @@ namespace DVLD.Applications.International_License
             lblIssueDate.Text = lblApplicationDate.Text;
             lblExpirationDate.Text = DateTime.Now.AddYears(1).ToShortDateString();
 
-            var applicationType = await _typeService.GetByIdAsync((int)ApplicationTypeEnum.NewInternationalLicense);
+            var applicationType = await _applicationService.GetApplicationTypeById((int)ApplicationTypeEnum.NewInternationalLicense);
             lblFees.Text = applicationType.Fees.ToString();
 
             int driverId = ctrlDriverLicenseInfoWithFilter1.DriverId;
@@ -53,7 +53,7 @@ namespace DVLD.Applications.International_License
                     _personId = driver.PersonId;
                     llShowLicenseHistory.Enabled = true;
 
-                    var user = await _usersService.GetUserWithUserName(driver.CreatedUserId);
+                    var user = await _usersService.GetInfo(driver.CreatedUserId);
                     if (user != null) lblCreatedByUser.Text = user.UserName;
                 }
             }

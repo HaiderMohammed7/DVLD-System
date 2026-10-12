@@ -13,39 +13,26 @@ namespace DVLD.Infrastructure.Services
             _http = HTTP;
         }
 
-        public async Task<UserDto> GetByIdAsync(int Id)
-        {
-            return await _http.GetAsync<UserDto>($"api/users/{Id}");
-        }
-
-        public async Task<List<UserListDto>> GetAllAsync()
-        {
-            return await _http.GetAsync<List<UserListDto>>("api/users");
-        }
-
-        public async Task<UserInfoDto>GetUserWithUserName(int id)
-        {
-            return await _http.GetAsync<UserInfoDto>($"api/users/withUsername/{id}");
-        }
-
         public async Task<CurrentUserDto> GetCurrentUserAsync()
         {
             return await _http.GetAsync<CurrentUserDto>("api/users/me");
         }
 
-        public async Task ChangePasswordAsync(ChangePasswordDto dto)
+        public async Task<UserDto> GetByIdAsync(int Id)
         {
-            var response = await _http.PostAsync("api/users/change-password", dto);
-
-            response.EnsureSuccessStatusCode();
+            return await _http.GetAsync<UserDto>($"api/users/{Id}");
+        }
+        public async Task<UserInfoDto> GetInfo(int id)
+        {
+            return await _http.GetAsync<UserInfoDto>($"api/users/{id}/info");
         }
 
-        public async Task<bool> IsPersonLinkedAsync(int PersonId)
+        public async Task<List<UserListDto>> GetAllAsync()
         {
-            return await _http.GetAsync<bool>($"api/users/PersonId/{PersonId}/exists");
-        }
+            return await _http.GetAsync<List<UserListDto>>("api/users");
+        }   
 
-        public async Task<int> CreateUserAsync(CreateUserDto dto)
+        public async Task<int> CreateAsync(CreateUserDto dto)
         {
             var response = await _http.PostAsync("api/users", dto);
 
@@ -53,17 +40,27 @@ namespace DVLD.Infrastructure.Services
 
             return await response.Content.ReadFromJsonAsync<int>();
         }
-
-        public async Task UpdateUserAsync(int id, UpdateUserDto dto)
+        public async Task UpdateAsync(int id, UpdateUserDto dto)
         {
             await _http.PutAsync($"api/users/{id}", dto);
         }
-
-        public async Task DeleteUserAsync(int id)
+        public async Task DeleteAsync(int id)
         {
             var response = await _http.DeleteAsync($"api/users/{id}");
 
             response.EnsureSuccessStatusCode();
         }
+
+        public async Task<bool> IsPersonLinkedAsync(int personId)
+        {
+            return await _http.GetAsync<bool>($"api/users/person/{personId}/exists");
+        }
+
+        public async Task ChangePasswordAsync(ChangePasswordDto dto)
+        {
+            var response = await _http.PostAsync("api/users/change-password", dto);
+
+            response.EnsureSuccessStatusCode();
+        }    
     }
 }

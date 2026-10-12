@@ -39,9 +39,6 @@ namespace DVLD.WinForms
 
             services.AddSingleton<AuthService>();
             services.AddTransient<ApplicationService>();
-            services.AddTransient<ApplicationTypeService>();
-            services.AddTransient<CountriesService>();
-            services.AddTransient<LicenseClassService>();
             services.AddTransient<LocalDrivingLicenseApplicationService>();
             services.AddTransient<InternationalLicenseService>();
             services.AddTransient<PeopleService>();       

@@ -19,7 +19,7 @@ namespace DVLD.Licenses.International_Licenses.Controls
 
         public async Task LoadInfo(int InternationalLicenseId)
         {
-            var InternationalLicense = await _internationalLicenseService.GetById(InternationalLicenseId);
+            var InternationalLicense = await _internationalLicenseService.GetByIdAsync(InternationalLicenseId);
             if (InternationalLicense == null)
             {
                 MessageBox.Show("Could not find Internationa License ID = " + InternationalLicenseId, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

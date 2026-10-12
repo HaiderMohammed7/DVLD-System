@@ -179,7 +179,7 @@ namespace DVLD.User
             if (MessageBox.Show("Are you sure you want to delete this user?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes)
                 return;
 
-            await _userService.DeleteUserAsync((int)dgvUsers.CurrentRow.Cells[0].Value);
+            await _userService.DeleteAsync((int)dgvUsers.CurrentRow.Cells[0].Value);
 
             MessageBox.Show("User Deleted Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

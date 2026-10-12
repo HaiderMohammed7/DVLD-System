@@ -2,8 +2,9 @@
 {
     public class CurrentUserDto
     {
-        public int UserID { get; set; }
+        public int UserId { get; set; }
         public int AuthUserId { get; set; }
-        public int PersonID { get; set; }
+        public int PersonId { get; set; }
+        public string? Role { get; set; }
     }
 }

@@ -74,7 +74,7 @@ namespace DVLD.Tests
 
         private async Task<bool> _HandleActiveTestAppointmentConstraint()
         {
-            if (_Mode == enMode.AddNew && await _localDrivingLicenseApplicationService.IsThereAnActiveScheduledTest(_ldlaId, (int)_testTypeId))
+            if (_Mode == enMode.AddNew && await _localDrivingLicenseApplicationService.HasActiveScheduledTest(_ldlaId, (int)_testTypeId))
             {
                 lblUserMessage.Text = "Person Already have an active appointment for this test";
                 btnSave.Enabled = false;
@@ -111,7 +111,7 @@ namespace DVLD.Tests
                     return true;
 
                 case TestTypeEnum.WrittenTest:
-                    if (!await _localDrivingLicenseApplicationService.DoesPassTestType(_ldlaId, (int)TestTypeEnum.VisionTest))
+                    if (!await _localDrivingLicenseApplicationService.HasPassedTestType(_ldlaId, (int)TestTypeEnum.VisionTest))
                     {
                         lblUserMessage.Text = "Cannot Sechule, Vision Test should be passed first";
                         lblUserMessage.Visible = true;
@@ -128,7 +128,7 @@ namespace DVLD.Tests
                     return true;
 
                 case TestTypeEnum.StreetTest:
-                    if (!await _localDrivingLicenseApplicationService.DoesPassTestType(_ldlaId, (int)TestTypeEnum.WrittenTest))
+                    if (!await _localDrivingLicenseApplicationService.HasPassedTestType(_ldlaId, (int)TestTypeEnum.WrittenTest))
                     {
                         lblUserMessage.Text = "Cannot Sechule, Written Test should be passed first";
                         lblUserMessage.Visible = true;
@@ -157,7 +157,7 @@ namespace DVLD.Tests
             _ldlaId = LocalDrivingLicenseApplicationID;
             _testAppointmentId = AppointmentID;
 
-            _scheduleTestInfoDto = await _testAppointmentService.ScheduleInfo(_ldlaId,(int)_testTypeId);
+            _scheduleTestInfoDto = await _testAppointmentService.GetScheduleInfo(_ldlaId,(int)_testTypeId);
 
             if (_scheduleTestInfoDto == null)
             {

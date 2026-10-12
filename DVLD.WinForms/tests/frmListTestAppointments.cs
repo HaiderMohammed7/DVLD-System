@@ -94,7 +94,7 @@ namespace DVLD.Tests
 
         private async void btnAddNewAppointment_Click(object sender, EventArgs e)
         {
-            if(await _localDrivingLicense.IsThereAnActiveScheduledTest(_ldlaId, (int)_testType))
+            if(await _localDrivingLicense.HasActiveScheduledTest(_ldlaId, (int)_testType))
             {
                 MessageBox.Show("Person Already have an active appointment for this test, You cannot add new appointment", "Not allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

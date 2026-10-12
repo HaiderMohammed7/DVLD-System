@@ -66,7 +66,7 @@ namespace DVLD.Tests
         {
             _testAppointmentId = testAppointmentId;
 
-            _scheduledTestInfoDto = await _testAppointmentService.GetScheduledTestInfoAsync(testAppointmentId);
+            _scheduledTestInfoDto = await _testAppointmentService.GetScheduledTestInfo(testAppointmentId);
 
             if (_scheduledTestInfoDto == null)
             {

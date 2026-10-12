@@ -45,7 +45,7 @@ namespace DVLD.DriverLicense
             {
                 btnIssueLicense.Enabled = false;
 
-                int licenseID = await _licenseService.IssueDriverLicense(dto);
+                int licenseID = await _licenseService.Issue(dto);
 
                 MessageBox.Show("License Issued Successfully with License ID = " + licenseID,"Succeeded",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 this.Close();

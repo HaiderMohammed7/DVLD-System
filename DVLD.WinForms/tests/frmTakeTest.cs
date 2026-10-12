@@ -66,7 +66,7 @@ namespace DVLD.Tests
             try
             {
                 btnSave.Enabled = false;
-                await _testService.Create(dto);
+                await _testService.Conduct(dto);
                 MessageBox.Show("Data Saved Successfully.","Saved",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception ex)

@@ -56,12 +56,12 @@ namespace DVLD.Applications.Rlease_Detained_License
                     _personId = driver.PersonId;
                     llShowLicenseHistory.Enabled = true;
 
-                    var user = await _usersService.GetUserWithUserName(driver.CreatedUserId);
+                    var user = await _usersService.GetInfo(driver.CreatedUserId);
                     if (user != null) lblCreatedByUser.Text = user.UserName;
                 }
             }
 
-            var dto = await _licenseService.ReleaseInfo(_licenseId);
+            var dto = await _licenseService.GetReleaseInfo(_licenseId);
 
             lblApplicationFees.Text = dto.ApplicationFees.ToString();
             lblDetainID.Text = dto.DetainId.ToString();
@@ -89,7 +89,7 @@ namespace DVLD.Applications.Rlease_Detained_License
 
             try
             {
-                var applicationId = await _licenseService.ReleaseDetainedLicenseAsync(dto);
+                var applicationId = await _licenseService.ReleaseAsync(dto);
 
                 if (applicationId == -1)
                 {

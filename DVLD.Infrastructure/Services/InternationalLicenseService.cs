@@ -12,15 +12,15 @@ namespace DVLD.Infrastructure.Services
             _http = http;
         }
 
-        public async Task<GetInternationalLicenseInfoDto> GetById(int internationalLicenseId)
+        public async Task<GetInternationalLicenseInfoDto> GetByIdAsync(int id)
         {
-            return await _http.GetAsync<GetInternationalLicenseInfoDto>($"api/inernationalLicense/Info/{internationalLicenseId}");
+            return await _http.GetAsync<GetInternationalLicenseInfoDto>($"api/international-licenses/{id}");
         }
 
         public async Task<int> IssueInternationalLicense(int localLicenseId)
         {
             var dto = new IssueInternationalLicenseDto { LocalLicenseID = localLicenseId };
-            var response = await _http.PostAsync("api/inernationalLicense/Issue", dto);
+            var response = await _http.PostAsync("api/international-licenses/issue", dto);
             response.EnsureSuccessStatusCode();
 
             return await response.Content.ReadFromJsonAsync<int>();
@@ -28,7 +28,7 @@ namespace DVLD.Infrastructure.Services
 
         public async Task<List<ListInternationalLicenseApplicationDto>> GetAllAsync()
         {
-            return await _http.GetAsync<List<ListInternationalLicenseApplicationDto>>("api/inernationalLicense");
+            return await _http.GetAsync<List<ListInternationalLicenseApplicationDto>>("api/international-licenses");
         }
     }
 }

@@ -12,24 +12,24 @@ namespace DVLD.Infrastructure.Services
             _http = http;
         }
 
-        public async Task<List<GetDriverLocalLicenseDto>> GetLocalLicense(int peronsId)
+        public async Task<List<GetDriverLocalLicenseDto>> GetLocalLicenses(int personId)
         {
-            return await _http.GetAsync<List<GetDriverLocalLicenseDto>>($"api/driver/driverLocalLicense/{peronsId}");
+            return await _http.GetAsync<List<GetDriverLocalLicenseDto>>($"api/drivers/person/{personId}/local-licenses");
         }
 
-        public async Task<List<GetDriverInternationalLicenseDto>> GetInternationalLicense(int peronsId)
+        public async Task<List<GetDriverInternationalLicenseDto>> GetInternationalLicenses(int personId)
         {
-            return await _http.GetAsync<List<GetDriverInternationalLicenseDto>>($"api/driver/driverInternationalLicense/{peronsId}");
+            return await _http.GetAsync<List<GetDriverInternationalLicenseDto>>($"api/drivers/person/{personId}/international-licenses");
         }
 
         public async Task<List<DriverListDto>> GetAllAsync()
         {
-            return await _http.GetAsync<List<DriverListDto>>("api/driver");
+            return await _http.GetAsync<List<DriverListDto>>("api/drivers");
         }
 
-        public async Task<DriverInfoDto> GetByIdAsync(int Id)
+        public async Task<DriverInfoDto> GetByIdAsync(int id)
         {
-            return await _http.GetAsync<DriverInfoDto>($"api/driver/{Id}");
+            return await _http.GetAsync<DriverInfoDto>($"api/drivers/{id}");
         }
     }
 }

@@ -6,25 +6,24 @@ namespace DVLD.Applications
     public partial class frmEditApplicationType : Form
     {
         private int _applicationTypeId;
-        private ApplicationTypeService _applicationTypeService;
+        private ApplicationService _applicationService;
 
-        public frmEditApplicationType(int id, ApplicationTypeService applicationType)
+        public frmEditApplicationType(int id, ApplicationService applicationService)
         {
             InitializeComponent();
             _applicationTypeId = id;
-            _applicationTypeService = applicationType;
+            _applicationService = applicationService;
         }
 
         private async Task LoadData()
         {
             lblApplicationTypeID.Text = _applicationTypeId.ToString();
 
-            var applicationType = await _applicationTypeService.GetByIdAsync(_applicationTypeId);
+            var applicationType = await _applicationService.GetApplicationTypeById(_applicationTypeId);
 
             if (applicationType == null)
             {
                 MessageBox.Show("Application Type not found.","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 Close();
                 return;
             }
@@ -63,7 +62,7 @@ namespace DVLD.Applications
                     Fees = decimal.Parse(txtFees.Text)
                 };
 
-                await _applicationTypeService.UpdateAsync(_applicationTypeId, dto);
+                await _applicationService.UpdateApplicationType(_applicationTypeId, dto);
 
                 MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

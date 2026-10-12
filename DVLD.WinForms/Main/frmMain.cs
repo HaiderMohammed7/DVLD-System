@@ -49,7 +49,7 @@ namespace DVLD
 
             var frm = _provider.GetRequiredService<frmUserInfo>();
 
-            await frm.LoadUserAsync(user.UserID);
+            await frm.LoadUserAsync(user.UserId);
 
             frm.ShowDialog();
         }
@@ -59,7 +59,7 @@ namespace DVLD
 
             var frm = _provider.GetRequiredService<frmChangePassword>();
 
-            await frm.LoadInfoAsync(currentUser.UserID);
+            await frm.LoadInfoAsync(currentUser.UserId);
 
             frm.ShowDialog();
         }

@@ -72,7 +72,7 @@ namespace DVLD.User
             {
                 if(_mode == enMode.AddNew)
                 {
-                    var userId = await _usersService.CreateUserAsync(dto);
+                    var userId = await _usersService.CreateAsync(dto);
 
                     _userId = userId;
                     lblUserID.Text = userId.ToString();
@@ -80,16 +80,16 @@ namespace DVLD.User
                     _mode = enMode.Update;
                     txtPassword.Visible = false;
                     txtConfirmPassword.Visible = false;
+                    chkIsActive.Visible = false;
                     lblTitle.Text = "Update User";
                     Text = "Update User";
                 }
                 else
                 {
-                    await _usersService.UpdateUserAsync(_userId, new UpdateUserDto
+                    await _usersService.UpdateAsync(_userId, new UpdateUserDto
                     {
                         UserName = txtUserName.Text.Trim(),
                         Email = ctrlPersonCardWithFilter1.Email,
-                        IsActive = chkIsActive.Checked,
                     });
                 }
 
@@ -103,7 +103,7 @@ namespace DVLD.User
 
         private async Task LoadUserInfo()
         {
-            var user = await _usersService.GetUserWithUserName(_userId);
+            var user = await _usersService.GetInfo(_userId);
 
             if (user == null)
             {
@@ -116,7 +116,7 @@ namespace DVLD.User
             txtUserName.Text = user.UserName;
             txtPassword.Visible = false;
             txtConfirmPassword.Visible = false;
-            chkIsActive.Checked = user.IsActive;
+            chkIsActive.Visible = false;
             ctrlPersonCardWithFilter1.LoadPersonInfo(user.PersonId);
         }
 

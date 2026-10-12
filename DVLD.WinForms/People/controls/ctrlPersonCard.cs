@@ -75,7 +75,7 @@ namespace DVLD.Controls
             lblEmail.Text = dto.Email;
             lblPhone.Text = dto.Phone;
             lblDateOfBirth.Text = dto.DateOfBirth.ToShortDateString();
-            lblCountry.Text = await _people.GetCountryNameById(dto.PersonID);
+            lblCountry.Text = await _people.GetCountryName(dto.PersonID);
             lblAddress.Text = dto.Address;
             _LoadPersonImage(dto);
         }

@@ -15,17 +15,17 @@ namespace DVLD.Infrastructure.Services
 
         public async Task<TestAppointmentDTO> GetByIdAsync(int Id)
         {
-            return await _http.GetAsync<TestAppointmentDTO>($"api/TestAppointment/{Id}");
+            return await _http.GetAsync<TestAppointmentDTO>($"api/test-appointments/{Id}");
         }
 
         public async Task<List<AppointmentsListDto>> GetAllAsync()
         {
-            return await _http.GetAsync<List<AppointmentsListDto>>("api/TestAppointment");
+            return await _http.GetAsync<List<AppointmentsListDto>>("api/test-appointments");
         }
 
-        public async Task<ScheduleTestResultDto> Schedule(ScheduleTestDto dto)
+        public async Task<ScheduleTestResultDto?> Schedule(ScheduleTestDto dto)
         {
-            var response = await _http.PostAsync("api/TestAppointment/Schedule", dto);
+            var response = await _http.PostAsync("api/test-appointments/schedule", dto);
 
             response.EnsureSuccessStatusCode();
 
@@ -34,18 +34,18 @@ namespace DVLD.Infrastructure.Services
 
         public async Task<bool> Update(UpdateTestAppointmentDto dto)
         {
-            await _http.PutAsync("api/TestAppointment/Update", dto);
+            await _http.PutAsync("api/test-appointments/update", dto);
             return true;
         }
 
-        public async Task<GetScheduleTestInfoDto> ScheduleInfo(int localDrivingLicenseApplicationID, int testTypeID)
+        public async Task<GetScheduleTestInfoDto> GetScheduleInfo(int localDrivingLicenseApplicationId, int testTypeId)
         {
-            return await _http.GetAsync<GetScheduleTestInfoDto>($"api/TestAppointment/ScheduleInfo/{localDrivingLicenseApplicationID}/{testTypeID}");
+            return await _http.GetAsync<GetScheduleTestInfoDto>($"api/test-appointments/schedule-info/{localDrivingLicenseApplicationId}/{testTypeId}");
         }
 
-        public async Task<GetScheduledTestInfoDto> GetScheduledTestInfoAsync(int testAppointmentID)
+        public async Task<GetScheduledTestInfoDto> GetScheduledTestInfo(int testAppointmentId)
         {
-            return await _http.GetAsync<GetScheduledTestInfoDto>($"api/TestAppointment/ScheduledTestInfo/{testAppointmentID}");
+            return await _http.GetAsync<GetScheduledTestInfoDto>($"api/test-appointments/{testAppointmentId}/scheduled-info");
         }
     }
 }

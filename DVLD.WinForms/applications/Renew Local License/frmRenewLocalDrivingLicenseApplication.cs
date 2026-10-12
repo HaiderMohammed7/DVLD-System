@@ -9,25 +9,27 @@ namespace DVLD.Licenses
 {
     public partial class frmRenewLocalDrivingLicenseApplication : Form
     {
-        private readonly ApplicationTypeService _applicationTypeService;
+        private readonly ApplicationService _applicationService;
         private readonly DriverService _driverService;
         private readonly UsersService _usersService;
+        private readonly LicenseService _licenseService;
         private readonly IServiceProvider _provider;
         private readonly LocalDrivingLicenseApplicationService _local;
         private int _oldLicenseId;
         private int _newLicenseId;
         private int _personId;
 
-        public frmRenewLocalDrivingLicenseApplication(LicenseService licenseService, ApplicationTypeService applicationTypeService, DriverService driverService, UsersService usersService, IServiceProvider serviceProvider, LocalDrivingLicenseApplicationService localDrivingLicenseApplicationService)
+        public frmRenewLocalDrivingLicenseApplication(LicenseService licenseService, ApplicationService applicationService, DriverService driverService, UsersService usersService, IServiceProvider serviceProvider, LocalDrivingLicenseApplicationService localDrivingLicenseApplicationService)
         {
             InitializeComponent();
             ctrlDriverLicenseInfoWithFilter1.LicenseLoaded += CtrlDriverLicenseInfoWithFilter1_LicenseLoaded;
             ctrlDriverLicenseInfoWithFilter1.SetServices(licenseService);
-            _applicationTypeService = applicationTypeService;
+            _applicationService = applicationService;
             _driverService = driverService;
             _usersService = usersService;
             _provider = serviceProvider;
             _local = localDrivingLicenseApplicationService;
+            _licenseService = licenseService;
         }
 
         private async void CtrlDriverLicenseInfoWithFilter1_LicenseLoaded(int licenseId)
@@ -56,7 +58,7 @@ namespace DVLD.Licenses
                     _personId = driver.PersonId;
                     llShowLicenseHistory.Enabled = true;
 
-                    var user = await _usersService.GetUserWithUserName(driver.CreatedUserId);
+                    var user = await _usersService.GetInfo(driver.CreatedUserId);
                     if (user != null) lblCreatedByUser.Text = user.UserName;
                 }
             }
@@ -71,7 +73,7 @@ namespace DVLD.Licenses
 
             lblExpirationDate.Text = "???";
 
-            var applicationType = await _applicationTypeService.GetByIdAsync((int)ApplicationTypeEnum.RenewDrivingLicense);
+            var applicationType = await _applicationService.GetApplicationTypeById((int)ApplicationTypeEnum.RenewDrivingLicense);
             lblApplicationFees.Text = applicationType.Fees.ToString();     
         }
 
@@ -87,7 +89,7 @@ namespace DVLD.Licenses
 
             try
             {
-                var response = await _local.RenewLocalDrivingLicenseAsync(dto);
+                var response = await _licenseService.RenewAsync(dto);
 
                 if (response == null)
                 {

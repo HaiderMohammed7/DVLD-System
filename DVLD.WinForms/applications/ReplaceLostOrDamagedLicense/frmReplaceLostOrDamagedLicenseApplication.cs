@@ -11,7 +11,8 @@ namespace DVLD.Applications.ReplaceLostOrDamagedLicense
     public partial class frmReplaceLostOrDamagedLicenseApplication : Form
     {
         private readonly UsersService _usersService;
-        private readonly ApplicationTypeService _applicationTypeService;
+        private readonly LicenseService _licenseService;
+        private readonly ApplicationService _applicationService;
         private readonly DriverService _driverService;
         private readonly IServiceProvider _provider;
         private readonly LocalDrivingLicenseApplicationService _local;
@@ -20,16 +21,17 @@ namespace DVLD.Applications.ReplaceLostOrDamagedLicense
         private int _oldLicenseId;
         private int _newLicenseId;
 
-        public frmReplaceLostOrDamagedLicenseApplication(LicenseService licenseService, UsersService usersService, ApplicationTypeService applicationTypeService, DriverService driverService, IServiceProvider serviceProvider, LocalDrivingLicenseApplicationService localDrivingLicenseApplicationService)
+        public frmReplaceLostOrDamagedLicenseApplication(LicenseService licenseService, UsersService usersService, ApplicationService applicationService, DriverService driverService, IServiceProvider serviceProvider, LocalDrivingLicenseApplicationService localDrivingLicenseApplicationService)
         {
             InitializeComponent();
             ctrlDriverLicenseInfoWithFilter1.LicenseLoaded += CtrlDriverLicenseInfoWithFilter1_LicenseLoaded;
             ctrlDriverLicenseInfoWithFilter1.SetServices(licenseService);
             _usersService = usersService;
-            _applicationTypeService = applicationTypeService;
+            _applicationService = applicationService;
             _driverService = driverService;
             _provider = serviceProvider;
             _local = localDrivingLicenseApplicationService;
+            _licenseService = licenseService;
         }
 
         private IssueReasonEnum GetIssueReason()
@@ -52,7 +54,7 @@ namespace DVLD.Applications.ReplaceLostOrDamagedLicense
                     _personId = driver.PersonId;
                     llShowLicenseHistory.Enabled = true;
 
-                    var user = await _usersService.GetUserWithUserName(driver.CreatedUserId);
+                    var user = await _usersService.GetInfo(driver.CreatedUserId);
                     if (user != null) lblCreatedByUser.Text = user.UserName;
                 }
             }
@@ -83,7 +85,7 @@ namespace DVLD.Applications.ReplaceLostOrDamagedLicense
             lblTitle.Text = "Replacement for Damaged License";
             this.Text = lblTitle.Text;
 
-            var applicationType = await _applicationTypeService.GetByIdAsync((int)ApplicationTypeEnum.ReplacementDamagedLicense);
+            var applicationType = await _applicationService.GetApplicationTypeById((int)ApplicationTypeEnum.ReplacementDamagedLicense);
             if (applicationType != null) lblApplicationFees.Text = applicationType.Fees.ToString();
         }
         private async void rbLostLicense_CheckedChanged(object sender, EventArgs e)
@@ -93,7 +95,7 @@ namespace DVLD.Applications.ReplaceLostOrDamagedLicense
             lblTitle.Text = "Replacement for Lost License";
             this.Text = lblTitle.Text;
 
-            var applicationType = await _applicationTypeService.GetByIdAsync((int)ApplicationTypeEnum.ReplacementLostLicense);
+            var applicationType = await _applicationService.GetApplicationTypeById((int)ApplicationTypeEnum.ReplacementLostLicense);
             if (applicationType != null) lblApplicationFees.Text = applicationType.Fees.ToString();
         }
 
@@ -109,7 +111,7 @@ namespace DVLD.Applications.ReplaceLostOrDamagedLicense
 
             try
             {
-                var response = await _local.ReplaceLocalDrivingLicenseAsync(dto);
+                var response = await _licenseService.ReplaceAsync(dto);
 
                 if (response == null)
                 {
